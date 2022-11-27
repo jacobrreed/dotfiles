@@ -1,0 +1,58 @@
+* {
+  font-family: JetBrainsMono NerdFont;
+  font-size: 18px;
+}
+
+#window {
+  background-color: #212337;
+  color: #323449;
+  /* Uncomment this if you aren't using Hyprland borders */
+  /* border: 2px solid #37f499; */
+  /* border-radius: 0px; */
+}
+
+#outer-box {
+  padding: 20px;
+}
+
+#input {
+  background-color: #212337;
+  border: 2px solid #a48cf2;
+  padding: 8px 12px;
+  color: #37f499;
+}
+
+#scroll {
+  margin-top: 20px;
+}
+
+#img {
+  padding-right: 15px;
+  padding-left: 5px;
+}
+
+#text {
+  color: #37f499;
+}
+
+#text:selected {
+  color: #212337;
+}
+
+#entry {
+  padding: 6px;
+  border-radius: 8px;
+}
+
+#entry:selected {
+  background: linear-gradient(
+    90deg,
+    rgb(55, 244, 153) 50%,
+    rgb(4, 209, 249) 100%
+  );
+}
+
+#input,
+#entry:selected {
+  border-radius: 4px;
+}

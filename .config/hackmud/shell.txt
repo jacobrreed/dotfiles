@@ -1,0 +1,82 @@
+
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-authentication success-</color>
+
+<color=#FF0000FF>:::TRUST COMMUNICATION::: </color><color=#FF8000FF>Larceny</color>, <color=#0070DDFF>laundering</color>, <color=#9B9B9BFF>theft of currency and information</color>, <color=#CACACAFF>deception</color>, <color=#FF96E0FF>betrayal</color>, and <color=#FFF404FF>backstabbing</color> are all part of hackmud, and <color=#1EFF00FF>strongly encouraged</color>.
+
+<color=#FFFFFFFF>Discrimination, discriminatory language, and personal abuse are not. </color>
+<color=#FF0000FF>Violators will be removed.</color>
+
+Direct enquiries to <color=#FFFFFFFF>conduct@hackmud.com</color>
+Full rules: <color=#FFFFFFFF>https://hackmud.com/forums/general_discussion/rules</color>
+
+Usage: <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>neonvoid</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>user neonvoid</color>
+Active user is now <color=#9B9B9BFF>neonvoid</color>
+
+
+<color=#9B9B9BFF>-autocompletes added-</color>
+
+<color=#FFFFFFFF>>><color=#FF8000FF>sys</color>.<color=#1EFF00FF>specs</color></color>
+     // / \\_ _|/ ||\   
+    || |  =█◣██◢█ || |  
+    || | ((-- --- || |  
+
+<color=#9B9B9BFF>neonvoid</color> (<color=#00FFFFFF>weaver</color>)
+
+<color=#00FFFFFF>tier</color>:<color=#FF00ECFF> 1</color>
+
+<color=#00FFFFFF>hardline_count</color>:<color=#FF00ECFF> 20</color>
+<color=#00FFFFFF>next_hardline</color>: <color=#FF00ECFF>735s</color>
+
+<color=#9B9B9BFF>architect</color>(<color=#FF00ECFF>17</color>) <color=#9B9B9BFF>junkrack</color>(<color=#FF00ECFF>0</color>) <color=#9B9B9BFF>infiltrator</color>(<color=#FF00ECFF>0</color>) <color=#9B9B9BFF>scavenger</color>(<color=#FF00ECFF>0</color>) <color=#9B9B9BFF>executive</color>(<color=#FF00ECFF>0</color>) 
+
+<color=#00FFFFFF>channel_count</color>:<color=#FF00ECFF> 5</color>
+
+<color=#00FFFFFF>gc_max</color>: <color=#CACACAFF>20<color=#1EFF00FF>M</color></color><color=#9B9B9BFF>GC</color>
+
+<color=#9B9B9BFF>upgrade space</color>
+<color=#00FFFFFF>slots</color>:<color=#FF00ECFF> 32</color>/32
+<color=#00FFFFFF>loaded</color>:<color=#FF00ECFF> 8</color>/8
+
+<color=#9B9B9BFF>script space</color>
+<color=#00FFFFFF>publics</color>:<color=#FF00ECFF> 0</color>
+<color=#00FFFFFF>slots</color>:<color=#FF00ECFF> 6</color>
+<color=#00FFFFFF>chars</color>:<color=#FF00ECFF> 2000</color>
+
+<color=#FFFFFFFF>>>/b</color>
+Macro does not exist.
+
+<color=#FFFFFFFF>>>/chat tunnelsnakesrule test</color>
+Macro does not exist.
+
+<color=#FFFFFFFF>>>/chat</color>
+Macro does not exist.
+
+<color=#FFFFFFFF>>>#</color>
+<color=#FFFFFFFF>>><color=#9B9B9BFF>#help</color></color>
+<color=#9B9B9BFF>#help</color>                    [show this message]
+<color=#9B9B9BFF>#scripts</color> or <color=#9B9B9BFF>#</color>            [show all of your local scripts]
+<color=#9B9B9BFF>#dir</color>              [open the local directory with your scripts]
+<color=#9B9B9BFF>#edit</color> Èscript nameÉ      [create or open a local script and edit it]
+<color=#9B9B9BFF>#DELETE</color> Èscript nameÉ    [delete a local script with no confirmation prompt. BE CAREFUL!]
+<color=#9B9B9BFF>#up</color> Èscript nameÉ delete [delete a script from the server]
+<color=#9B9B9BFF>#up</color> Èscript nameÉ Èoptional:publicÉ Èoptional:privateÉ [upload a local script to the server]
+<color=#9B9B9BFF>#up</color> Èscript nameÉ Èoptional:dryÉ [validate code, security level, and char count without pushing changes]
+<color=#9B9B9BFF>#up</color> Èscript nameÉ Èoptional:shiftÉ [confirm a security level change]
+<color=#9B9B9BFF>#down</color> Èscript nameÉ [pulls server copy of script down. if local file exists, *.down.js will be created. this file will be overwritten by #down calls]
+
+
+<color=#FFFFFFFF>>>#</color>
+<color=#FFFFFFFF>>><color=#FF8000FF>scripts</color>.<color=#1EFF00FF>user</color></color>
+<color=#9B9B9BFF>neonvoid</color>.<color=#1EFF00FF>c</color>    <color=#9B9B9BFF>neonvoid</color>.<color=#1EFF00FF>e</color>    <color=#9B9B9BFF>neonvoid</color>.<color=#1EFF00FF>hx</color>   <color=#9B9B9BFF>neonvoid</color>.<color=#1EFF00FF>scan</color> 
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>shutdown</color></color>
+<color=#9B9B9BFF>-terminal poweroff-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>

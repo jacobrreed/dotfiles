@@ -1,0 +1,190 @@
+@define-color bg #212337;
+@define-color light-bg #323449;
+@define-color fg #ebfafa;
+@define-color comment #7081d0;
+@define-color cyan #04d1f9;
+@define-color green #37f499;
+@define-color pink #f265b5;
+@define-color purple #a48cf2;
+@define-color red #f16c75;
+@define-color yellow #f1fc79;
+@define-color orange #f7c67f;
+
+window#waybar {
+  background-color: transparent;
+  color: @purple;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 18px;
+}
+
+#workspaces {
+  border-style: solid;
+  border-width: 2px;
+  border-color: @cyan;
+  border-radius: 8px;
+  background: @bg;
+}
+
+#workspaces button {
+  font-size: 20px;
+  color: @fg;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#workspaces button:hover {
+  background: @cyan;
+  border: 1px solid @cyan;
+}
+
+#workspaces button.active {
+  background: @green;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-right: 15px;
+  color: @bg;
+}
+
+#window {
+  background-color: @bg;
+  border-style: solid;
+  border-width: 2px;
+  border-color: @purple;
+  border-radius: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+  border-width: 0px;
+}
+
+box#system {
+  background-color: @bg;
+  border-style: solid;
+  border-width: 2px;
+  border-color: @green;
+  border-radius: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 10px;
+}
+
+box#network {
+  background-color: @bg;
+  border-style: solid;
+  border-width: 2px;
+  border-color: @cyan;
+  border-radius: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 10px;
+}
+
+#custom-icon {
+  font-size: 30px;
+  color: @cyan;
+  border-style: solid;
+  border-width: 2px;
+  border-color: @green;
+  margin-right: 5px;
+  padding-right: 20px;
+  padding-left: 10px;
+  border-radius: 8px;
+  background-color: @bg;
+}
+
+#battery {
+  color: @cyan;
+}
+
+#battery.medium {
+  color: @orange;
+}
+
+#battery.warning {
+  color: @yellow;
+}
+
+#battery.critical {
+  color: @red;
+}
+
+#battery.charging {
+  color: @green;
+}
+
+#clock {
+  color: @green;
+}
+
+#idle_inhibitor {
+  margin-right: 5px;
+  color: @cyan;
+}
+
+#custom-icon {
+  margin-left: 5px;
+}
+
+#custom-separator {
+  color: @light-bg;
+}
+
+#bluetooth {
+  color: @purple;
+}
+
+#backlight {
+  color: @green;
+}
+
+#backlight-slider slider {
+  min-height: 0px;
+  min-width: 0px;
+  opacity: 0;
+  border: none;
+  box-shadow: none;
+}
+
+#backlight-slider highlight {
+  background-color: @cyan;
+}
+
+#backlight-slider trough {
+  min-height: 5px;
+  min-width: 30px;
+  border-radius: 5px;
+  background-color: @light-bg;
+}
+
+#memory {
+  color: @cyan;
+}
+
+#cpu {
+  color: @pink;
+}
+
+#pulseaudio {
+  color: @purple;
+}
+
+#network {
+  color: @pink;
+}
+
+#custom-updates {
+  color: @green;
+}
+
+#tray {
+  background-color: @bg;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: @pink;
+  padding-right: 10px;
+  padding-left: 10px;
+}

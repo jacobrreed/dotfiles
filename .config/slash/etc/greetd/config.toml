@@ -1,0 +1,16 @@
+[terminal]
+# The VT to run the greeter on. Can be "next", "current" or a number
+# designating the VT.
+vt = 1
+
+[initial_session]
+command = "Hyprland"
+user = "neonvoid"
+
+[default_session]
+command = "tuigreet -c Hyprland -w 120 -g'Enter the Void' -r -t"
+
+# The user to run the command as. The privileges this user must have depends
+# on the greeter. A graphical greeter may for example require the user to be
+# in the `video` group.
+user = "greeter"

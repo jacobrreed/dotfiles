@@ -1,0 +1,10 @@
+user user neonvoid
+sys.specs
+/b
+/chat tunnelsnakesrule test
+/chat
+#
+#help
+#
+scripts.user
+shutdown
