@@ -1,0 +1,169 @@
+{
+  "layer": "top",
+  "modules-left": [
+    "custom/icon",
+    "custom/blank",
+    "hyprland/workspaces",
+    "custom/blank",
+    "hyprland/submap",
+    "hyprland/window"
+  ],
+  "modules-center": [
+    "tray"
+  ],
+  "modules-right": [
+    "group/network",
+    "group/system"
+  ],
+  "group/network": {
+    "orientation": "horizontal",
+    "modules": [
+      "bluetooth",
+      "custom/separator",
+      "network",
+      "custom/separator",
+      "idle_inhibitor"
+    ]
+  },
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10
+  },
+  "group/system": {
+    "orientation": "horizontal",
+    "modules": [
+      "pulseaudio",
+      "custom/separator",
+      "memory",
+      "custom/separator",
+      "cpu",
+      "custom/separator",
+      "battery",
+      "custom/separator",
+      "backlight",
+      "custom/separator",
+      "clock"
+    ]
+  },
+  "cpu": {
+    "interval": 10,
+    "format": "{usage}%  ",
+    "max-length": 10
+  },
+  "memory": {
+    "interval": 10,
+    "format": "{percentage}%   ",
+    "max-length": 10
+  },
+  "custom/icon": {
+    "format": "󰣇",
+    "on-click": "wlogout --protocol layer-shell -b 5 -s -c 50  -T 400 -B 400"
+  },
+  "bluetooth": {
+    "format": "",
+    "format-disabled": ""
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "󰞷",
+      "2": "󰖟",
+      "96": " ",
+      "97": "",
+      "98": "󱞁",
+      "99": "󰙯"
+    }
+  },
+  "hyprland/window": {
+    "format": "{class}  {title}",
+    "rewrite": {
+      "Vivaldi-stable(.*)(.*- Vivaldi)": "  $1"
+    },
+    "max-length": 300
+  },
+  "hyprland/submap": {
+    "max-length": 8,
+    "format": "󰩨 "
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": " ",
+      "deactivated": " "
+    }
+  },
+  "network": {
+    "interface": "wlan0",
+    "format": "{ifname}",
+    "format-wifi": " ",
+    "format-ethernet": "{ipaddr}/{cidr} 󰈀 ",
+    "format-disconnected": "󰤮 ", //An empty format will hide the module.
+    "tooltip-format": "{ifname} via {gwaddr} 󰊗 ",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%)  ",
+    "tooltip-format-ethernet": "{ifname}  ",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50,
+    "on-click": "nm-connection-editor"
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-muted": "󰖁 ",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        ""
+      ]
+    },
+    "scroll-step": 1,
+    "on-click": "pavucontrol",
+    "ignored-sinks": [
+      "Easy Effects Sink"
+    ]
+  },
+  "battery": {
+    "states": {
+      "medium": 40,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity}% {icon}",
+    "format-icons": [
+      " ",
+      " ",
+      " ",
+      " ",
+      " "
+    ],
+    "format-charging": " {capacity}% {icon}",
+    "interval": 5
+  },
+  "clock": {
+    "format": "{:%H:%M:%S}",
+    "interval": 1,
+    "tooltip": true,
+    "tooltip-format": "{:%A, %B %d, %Y}"
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{percent}% 󰛨 "
+  },
+  "custom/notification": {
+    // TODO add notification pausing on right click and clear on left click
+    // show count of notifications
+    "format": "  ",
+    "on-click-right": "dunstctl set-paused toggle"
+  },
+  "custom/separator": {
+    "format": " ┆ "
+  },
+  "custom/blank": {
+    "format": " "
+  }
+}

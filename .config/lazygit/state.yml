@@ -1,0 +1,16 @@
+lastupdatecheck: 0
+recentrepos:
+- /home/neonvoid/dev/lily58-zmk
+- /home/neonvoid/dev/siyuan
+- /home/neonvoid/dev/codecrafters-http-server-rust
+- /home/neonvoid/dev/codecrafters-http-server-go
+startuppopupversion: 5
+lastversion: 0.41.0
+customcommandshistory: []
+hidecommandlog: false
+ignorewhitespaceindiffview: false
+diffcontextsize: 1
+localbranchsortorder: recency
+remotebranchsortorder: alphabetical
+gitlogorder: topo-order
+gitlogshowgraph: always
