@@ -1,0 +1,16 @@
+# ignore everything
+/*
+/*/
+
+# But not these files
+!.zshrc
+!.gitignore
+!.p10k.zsh
+!README.md
+!/.config/
+!/.gitconfig#*
+!/vivaldi-dracula-theme
+# But these
+systemd/
+.zshenv
+**/*.DS_Store

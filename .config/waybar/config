@@ -1,0 +1,91 @@
+{
+	"layer": "top",
+	"modules-left": ["cpu","memory","custom/media","tray"],
+	"modules-center": ["hyprland/workspaces"],
+	"modules-right": ["pulseaudio", "network", "clock", "battery", "custom/power"],
+	
+	"pulseaudio": {
+               "tooltip": false,
+               "scroll-step": 5,
+               "format": "{icon} {volume}%",
+                      "format-muted": " {volume}%",
+                      "format-icons": {
+                          "headphone": " ",
+                          "default": [" ", "󰕾 ", "󱄡 "]
+                      },
+        "on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle"
+	},
+        "wlr/workspaces": {
+          "sort-by-name": true,
+          "format": "{name}",
+          "on-click": "activate"
+        },
+        "hyprland/window": {
+          "format": "{}"
+        },
+
+	"network": {
+		"tooltip": false,
+                "format": "{icon}",
+                "format-alt": "{ipaddr} {icon}",
+                "format-alt-click": "click-right",
+                "format-icons": {
+                  "wifi": "  ",
+                  "ethernet": "󰈀 ",
+                  "disconnected": "󰌙 ",
+                },
+                "on-click": "kitty -e nmtui",
+	},
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "󱐥 {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": [" ", " ", " ", " ", " "],
+    },
+	"tray":{
+		"icon-size":18,
+		"spacing": 10
+	},
+    "clock": {
+        "format": "{: %I:%M %p}",
+        "format-alt": "{: %I:%M %p   %d/%m/%Y}"
+    },
+    "cpu": {
+        "interval": 15,
+        "format": " {}%",
+        "max-length": 10
+    },
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+        "max-length": 10
+    },
+    "custom/media": {
+        "interval": 30,
+        "format": "{icon} {}",
+        "return-type": "json",
+        "max-length": 20,
+        "format-icons": {
+            "spotify": " ",
+            "default": " "
+        },
+        "escape": true,
+        "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
+        "on-click": "playerctl play-pause"
+    },
+    "custom/launcher":{
+        "format": "",
+        "on-click": "wofi -show drun -terminal kitty -theme ~/.config/rofi/launcher.rasi -show combi -icon-theme 'Papirus' -show-icons",
+        "on-click-right": "killall wofi"
+    },
+    "custom/power":{
+        "format": " 󰐥 ",
+        "on-click": "wlogout -p layer-shell"
+    },
+}

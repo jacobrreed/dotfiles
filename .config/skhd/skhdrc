@@ -1,0 +1,27 @@
+cmd - return: open -n -a Wezterm
+# Restart Yabai
+alt + cmd - r: yabai --restart-service 
+alt + cmd - q: skhd --restart-service
+### Switch focus to another destop ###
+# cmd - 1 : yabai -m space --focus 1
+# cmd - 2 : yabai -m space --focus 2
+# cmd - 3 : yabai -m space --focus 3
+# cmd - 4 : yabai -m space --focus 4
+# cmd - 5 : yabai -m space --focus 5
+# cmd - 6 : yabai -m space --focus 6
+# cmd - 7 : yabai -m space --focus 7
+# cmd - 8 : yabai -m space --focus 8
+# cmd - 9 : yabai -m space --focus 9
+# cmd - 0 : yabai -m space --focus 10
+# cmd - l : yabai -m space --focus next
+# cmd - h : yabai -m space --focus prev
+
+#resize windows
+cmd + alt - h : yabai -m window --resize right:-20:0
+cmd + alt - l : yabai -m window --resize right:20:0
+
+hyper - h : yabai -m window --swap west   # Send window to space on the left
+hyper - l : yabai -m window --swap east   # Send window to space on the left
+# cmd + shift - l : yabai -m window --space next  # Send window to space on the right
+
+# cmd + alt -

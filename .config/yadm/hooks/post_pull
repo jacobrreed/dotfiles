@@ -1,0 +1,20 @@
+#!/bin/sh
+
+#FastNodeManager
+# curl -fsSL https://fnm.vercel.app/install | bash 
+
+
+#if [ -f "/etc/arch-release" ]; then
+  #Yay
+#  sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+#  # Install pacman packages
+#  sudo pacman -S - < .config/pacman/pkglist.txt  
+#  # Install AUR yay packages
+#  yay -S - < .config/pacman/pkglist_aur.txt
+#else
+  #Do nothing
+#fi
+
+
+
+

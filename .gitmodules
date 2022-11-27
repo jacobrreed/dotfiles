@@ -1,0 +1,6 @@
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = git@github.com:jacobrreed/nvim.git
+[submodule "vivaldi-dracula-theme"]
+	path = vivaldi-dracula-theme
+	url = git@github.com:jacobrreed/vivaldi-dracula-theme.git
