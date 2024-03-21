@@ -11,19 +11,19 @@ antigen apply
 
 # FZF Plugin
 export FZF_PREVIEW_ADVANCED="bat"
-export FZF_DEFAULT_OPTS='--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 --color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4'
+export FZF_DEFAULT_OPTS='--color=fg:#ebfafa,bg:#282a36,hl:#37f499 --color=fg+:#ebfafa,bg+:#212337,hl+:#37f499 --color=info:#f7c67f,prompt:#04d1f9,pointer:#7081d0 --color=marker:#7081d0,spinner:#f7c67f,header:#323449'
 
 # Pure Prompt
 zmodload zsh/nearcolor
-zstyle :prompt:pure:git:arrow color "#FF5555"
-zstyle :prompt:pure:git:branch color "#FF79C6"
-zstyle :prompt:pure:path color "#BD93F9"
-zstyle :prompt:pure:prompt:error color "#FF5555"
-zstyle :prompt:pure:prompt:success color "#50FA7B"
-zstyle :prompt:pure:prompt:continuation color "#FFB86C"
-zstyle :prompt:pure:suspended_jobs color "#FF5555"
-zstyle :prompt:pure:user color "#BD93F9"
-zstyle :prompt:pure:user:root color "#F1FA8C"
+zstyle :prompt:pure:git:arrow color "#f16c75"
+zstyle :prompt:pure:git:branch color "#04d1f9"
+zstyle :prompt:pure:path color "#37f499"
+zstyle :prompt:pure:prompt:error color "#f16c75"
+zstyle :prompt:pure:prompt:success color "#37f499"
+zstyle :prompt:pure:prompt:continuation color "#f7c67f"
+zstyle :prompt:pure:suspended_jobs color "#f16c75"
+zstyle :prompt:pure:user color "#a48cf2"
+zstyle :prompt:pure:user:root color "#f1fc79"
 
 # User Configuration
 # Exports

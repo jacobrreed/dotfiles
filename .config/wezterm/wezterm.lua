@@ -5,6 +5,7 @@ local config = wezterm.config_builder()
 config.font_size = 18
 config.font = wezterm.font("JetBrains Mono", { weight = "DemiBold" })
 
+config.enable_kitty_graphics = true
 config.default_cursor_style = "SteadyBlock"
 
 config.window_close_confirmation = "NeverPrompt"
@@ -266,11 +267,12 @@ config.ssh_domains = {
   },
 }
 
-local dracula = wezterm.color.get_builtin_schemes()["Dracula (Official)"]
-dracula.cursor_bg = "#FF79C6"
-dracula.split = "#FF79C6"
-config.color_schemes = {
-  ["dracula"] = dracula,
-}
-config.color_scheme = "dracula"
+-- local dracula = wezterm.color.get_builtin_schemes()["Dracula (Official)"]
+-- dracula.cursor_bg = "#FF79C6"
+-- dracula.split = "#FF79C6"
+-- config.color_schemes = {
+--   ["dracula"] = dracula,
+-- }
+-- config.color_scheme = "dracula"
+config.color_scheme = "Eldritch"
 return config
