@@ -5,7 +5,6 @@ local config = wezterm.config_builder()
 config.font_size = 18
 config.font = wezterm.font("JetBrains Mono", { weight = "DemiBold" })
 
-config.enable_kitty_graphics = true
 config.default_cursor_style = "SteadyBlock"
 
 config.window_close_confirmation = "NeverPrompt"
