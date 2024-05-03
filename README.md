@@ -7,23 +7,11 @@ Dotfiles managed using [YADM](https://yadm.io/docs/getting_started#)
 ### Bundled (not inclusive of everything)
 
 - Neovim using [LazyVim](https://www.lazyvim.org/) (sub repo: https://github.com/jacobrreed/nvim)
-- ZSH w/ OhMyZsh and plugin manager using Antigen
-- Tmux
-- Waybar
-- Hyprland
-- Kitty
-- WezTerm
-- bat (better cat)
-- lsd (better ls)
-- Homebrew package backups
-- Pacman package backups
-- btop (better htop)
-- dunst (notifications for wayland)
-- flameshot (screenshot util)
-- Karabiner (macOS keyboard remapping)
-- Neofetch (system info)
-- SpotifyTui (Spotify in terminal)
-- Wofi (rofi for wayland)
+- ZSH profile and plugin manager antigen
+- Hyprland setup
+- Arch setup
+- MacOS setup (with homebrew)
+
 
 #### Notes
 
