@@ -73,7 +73,6 @@ pipewire-jack
 pipewire-pulse
 plymouth
 plymouth-theme-dark-planet-git
-plymouth-theme-deus-ex-git
 polkit-kde-agent
 pyenv
 python-pip
@@ -96,7 +95,6 @@ tldr
 tofi
 ttf-dejavu
 ttf-jetbrains-mono
-ttf-jetbrains-mono-nerd
 ttf-liberation
 ttf-nerd-fonts-symbols-mono
 ttf-roboto
