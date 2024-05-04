@@ -106,6 +106,7 @@ vivaldi
 vulkan-radeon
 waybar
 waybar-module-pacman-updates-git
+wev
 wget
 wl-clipboard
 wlogout
