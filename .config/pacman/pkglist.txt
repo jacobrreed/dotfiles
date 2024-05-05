@@ -76,6 +76,7 @@ plymouth-theme-dark-planet-git
 polkit-kde-agent
 pyenv
 python-pip
+qmk
 qt5-wayland
 qt6-wayland
 radeontop
@@ -106,6 +107,7 @@ vivaldi
 vulkan-radeon
 waybar
 waybar-module-pacman-updates-git
+webkit2gtk
 wev
 wget
 wl-clipboard
@@ -119,4 +121,5 @@ yadm
 yazi
 yubioath-desktop
 zoxide
+zsa-wally-cli
 zsh
