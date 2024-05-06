@@ -69,10 +69,10 @@ borders \
   width=5
 
 
+yabai -m config external_bar all:25:0
 killall sketchybar && sketchybar 
 
 # S K E T C H Y B A R  E V E N T S
 yabai -m signal --add event=window_focused action="sketchybar -m --trigger window_focus &> /dev/null"
 yabai -m signal --add event=window_title_changed action="sketchybar -m --trigger title_change &> /dev/null"
 
-sleep 1 && yabai -m config external_bar all:25:0
