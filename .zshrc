@@ -44,6 +44,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="/home/USER/.pyenv/bin:$PATH"
 export PATH="/Applications/flameshot.app/Contents/MacOS/:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/nvim/bin:$PATH"
 if command -v brew &> /dev/null; then
   export HOMEBREW_GITHUB_API_TOKEN=
   export DYLD_LIBRARY_PATH="$(brew --prefix)/lib:$DYLD_LIBRARY_PATH"
