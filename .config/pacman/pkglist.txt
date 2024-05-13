@@ -7,6 +7,7 @@ bluez
 bluez-utils
 btop
 cava
+chrono-date
 copyq
 dhcpcd
 discord
@@ -35,6 +36,7 @@ godot-git
 greetd
 greetd-tuigreet
 grim
+helix
 hyprcursor-git
 hypridle
 hyprland-git
@@ -105,7 +107,6 @@ vi
 vim
 vivaldi
 vulkan-radeon
-waybar
 waybar-module-pacman-updates-git
 webkit2gtk
 wev

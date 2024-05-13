@@ -1,4 +1,4 @@
-theme = "dracula"
+theme = "eldritch"
 
 [editor]
 auto-pairs = true
@@ -61,6 +61,7 @@ skip-levels = 0
 C-s = ":w"
 C-q = ":xa!"
 "ret" = ["open_below", "normal_mode"]
+
 [keys.insert]
 C-s = ":w"
 C-q = ":xa!"
