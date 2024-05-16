@@ -44,7 +44,6 @@ do
     background.height=25
     label.drawing=off
     script="$PLUGIN_DIR/space.sh"
-    click_script="yabai -m space --focus $sid"
   )
   sketchybar --add space space."$sid" left --set space."$sid" "${space[@]}"
 done
@@ -55,13 +54,6 @@ done
 sketchybar --add item front_app center \
            --set front_app icon.drawing=on script="$PLUGIN_DIR/front_app.sh" \
            --subscribe front_app front_app_switched
-# Window title of focused app 
-sketchybar -m --add event window_focus \
-              --add event title_change
-## Window title subscriptions
-sketchybar -m --add item title center \
-              --set title script="$PLUGIN_DIR/window.sh" \
-              --subscribe title window_focus front_app_switched space_change title_change
 
 ##### Adding Right Items #####
 sketchybar --add item clock right \

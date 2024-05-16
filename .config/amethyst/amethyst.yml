@@ -1,0 +1,99 @@
+# Mods
+mod1:
+  - command
+mod2:
+  - command
+  - shift
+mod3:
+  - option
+  - shift
+mod4:
+  - option
+  - shift
+  - control
+
+# General
+ignore-menu-bar: false
+new-windows-to-main: false
+follow-space-thrown-windows: false
+hide-menu-bar-icon: false
+window-margins: true
+smart_window_margins: true
+window-margin-size: 5
+disable-padding-on-builtin-display: true
+screen-padding-top: 20
+
+# Layouts
+restore-layouts-on-launch: true
+window-resize-step: 5
+layouts:
+  - tall
+  - fullscreen
+
+# Shortcuts
+cycle-layout:
+  mod: mod3
+  key: space
+cycle-layout-backwards:
+  mod: mod4
+  key: space
+focus-cw:
+  mod: mod1
+  key: l
+focus-ccw:
+  mod: mod1
+  key: h
+swap-ccw:
+  mod: mod2
+  key: h
+swap-cw:
+  mod: mod2
+  key: l
+throw-screen-1:
+  mod: mod2
+  key: 1
+throw-screen-2:
+  mod: mod2
+  key: 2
+throw-screen-3:
+  mod: mod2
+  key: 3
+throw-screen-4:
+  mod: mod2
+  key: 4
+throw-screen-5:
+  mod: mod2
+  key: 5
+focus-screen-1:
+  mod: mod1
+  key: 1
+focus-screen-2:
+  mod: mod1
+  key: 2
+focus-screen-3:
+  mod: mod1
+  key: 3
+focus-screen-4:
+  mod: mod1
+  key: 4
+focus-screen-5:
+  mod: mod1
+  key: 5
+relaunch-amethyst:
+  mod: mod2
+  key: r
+
+# Mouse
+mouse-follows-focus: false
+focus-follows-mouse: false
+mouse-swaps-windows: true
+mouse-resizes-windows: true
+
+# Floating
+floating:
+  [
+    com.apple.systempreferences,
+    us.zoom.xos,
+    com.bitwarden.desktop,
+    com.tinyspec.slackmacgap,
+  ]
