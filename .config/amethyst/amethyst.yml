@@ -21,7 +21,6 @@ window-margins: true
 smart_window_margins: true
 window-margin-size: 5
 disable-padding-on-builtin-display: true
-screen-padding-top: 20
 
 # Layouts
 restore-layouts-on-launch: true
@@ -204,7 +203,6 @@ mouse-resizes-windows: true
 floating:
   [
     com.apple.systempreferences,
-    us.zoom.xos,
     com.bitwarden.desktop,
     com.tinyspec.slackmacgap,
   ]
