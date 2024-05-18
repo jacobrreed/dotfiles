@@ -7,7 +7,6 @@ bluez
 bluez-utils
 btop
 cava
-chrono-date
 copyq
 dhcpcd
 discord
@@ -57,6 +56,7 @@ lsof
 ltunify
 man-db
 man-pages
+mercury-browser-bin
 mkinitcpio-colors-git
 neovim-git
 network-manager-applet
@@ -101,11 +101,11 @@ ttf-jetbrains-mono
 ttf-liberation
 ttf-nerd-fonts-symbols-mono
 ttf-roboto
+ttyper
 udiskie
 usbutils
 vi
 vim
-vivaldi
 vulkan-radeon
 waybar-module-pacman-updates-git
 webkit2gtk
