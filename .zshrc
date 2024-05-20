@@ -24,7 +24,6 @@ zinit light Aloxaf/fzf-tab
 zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
 zinit light sindresorhus/pure
 # Snippets
-zinit snippet OMZP::aliases # als show aliases by group
 zinit snippet OMZP::archlinux # pacin = sudo pacman -S, pacupg = sudo pacman -Syu, paclist = list all explicitly installed packages
 zinit snippet OMZP::brew # bcubc = upgrade and clean
 zinit snippet OMZP::colored-man-pages

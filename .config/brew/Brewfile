@@ -40,6 +40,7 @@ brew "lsd"
 brew "luarocks"
 brew "mas"
 brew "neovim"
+brew "oci-cli"
 brew "openjdk"
 brew "opensc", link: false
 brew "openssh"
