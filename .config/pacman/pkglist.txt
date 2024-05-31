@@ -8,6 +8,7 @@ bluez-utils
 btop
 cava
 copyq
+cups
 dhcpcd
 discord
 docker
@@ -48,6 +49,7 @@ iwd
 keyd-git
 kitty
 lazygit
+libu2f-server
 libva-mesa-driver
 libva-utils
 linux
@@ -56,7 +58,6 @@ lsof
 ltunify
 man-db
 man-pages
-mercury-browser-bin
 mkinitcpio-colors-git
 neovim-git
 network-manager-applet
@@ -64,6 +65,7 @@ networkmanager
 ntfs-3g
 nwg-look
 obsidian
+opensc
 openssh
 os-prober
 paccache-hook
@@ -92,6 +94,7 @@ spotifyd
 steam
 steamcmd
 swww
+system-config-printer
 terminus-font
 thefuck
 tldr
@@ -99,6 +102,7 @@ tofi
 ttf-dejavu
 ttf-jetbrains-mono
 ttf-liberation
+ttf-maple
 ttf-nerd-fonts-symbols-mono
 ttf-roboto
 ttyper
@@ -106,6 +110,8 @@ udiskie
 usbutils
 vi
 vim
+vivaldi
+vivaldi-ffmpeg-codecs
 vulkan-radeon
 waybar-module-pacman-updates-git
 webkit2gtk
