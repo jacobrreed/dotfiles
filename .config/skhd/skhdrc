@@ -45,4 +45,4 @@ cmd + shift - l : yabai -m window --swap east   # Send window to space on the le
 
 # Apps
 cmd - return: open -n -a kitty
-cmd - b: open -n -a Floorp
+cmd - b: open -n -a Vivaldi
