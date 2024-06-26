@@ -80,6 +80,7 @@ export FZF_PATH="$HOME/.config/fzf"
 zmodload zsh/nearcolor
 
 # Pure Prompt
+export PURE_PROMPT_SYMBOL="›"
 zstyle :prompt:pure:git:arrow color "#f16c75"
 zstyle :prompt:pure:git:branch color "#04d1f9"
 zstyle :prompt:pure:path color "#37f499"
