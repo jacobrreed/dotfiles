@@ -18,8 +18,8 @@ cmd + shift - 4 : yabai -m window --space $(yabai -m query --spaces | jq '.[] | 
 cmd + shift - s : yabai -m window --space $(yabai -m query --spaces | jq '.[] | select(.label=="slack")' | jq '.index'); yabai -m space --focus $(yabai -m query --spaces | jq '.[] | select(.label=="slack")' | jq '.index')
 
 ## Focus windows
-cmd - l : yabai -m window --focus east
-cmd - h : yabai -m window --focus west
+# cmd - l : yabai -m window --focus east
+# cmd - h : yabai -m window --focus west
 
 # Full screen window
 cmd + shift - f: yabai -m window --toggle zoom-parent
