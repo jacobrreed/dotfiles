@@ -122,6 +122,7 @@ alias findhere="find . -name"
 alias e="nvim"
 alias vim="nvim"
 alias vi="nvim"
+alias oil="~/.local/bin/oil-ssh.sh"
 # Kitty & Kitten aliases
 alias icat="kitten icat"
 alias s="kitten ssh"
