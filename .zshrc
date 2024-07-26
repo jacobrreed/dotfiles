@@ -208,6 +208,6 @@ export _ZO_RESOLVE_SYMLINKS=1
 eval "$(zoxide init zsh --cmd cd --hook pwd)"
 
 # Fastfetch
-if command -v fastfetch &> /dev/null; then
-  fastfetch
-fi
+# if command -v fastfetch &> /dev/null; then
+#   fastfetch
+# fi
