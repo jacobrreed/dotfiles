@@ -94,6 +94,7 @@ zstyle :prompt:pure:user:root color "#f1fc79"
 # User Configuration
 # Exports
 export ZSH_DISABLE_COMPFIX="true"
+export DISABLE_AUTO_TITLE="true"
 # Node memory limit
 export NODE_OPTIONS=--max-old-space-size=8192
 # PATHS
@@ -208,6 +209,6 @@ export _ZO_RESOLVE_SYMLINKS=1
 eval "$(zoxide init zsh --cmd cd --hook pwd)"
 
 # Fastfetch
-# if command -v fastfetch &> /dev/null; then
-#   fastfetch
-# fi
+if command -v fastfetch &> /dev/null; then
+  fastfetch
+fi

@@ -11,11 +11,11 @@ cmd - 4 : yabai -m space --focus $(yabai -m query --spaces | jq '.[] | select(.l
 cmd - s : yabai -m space --focus $(yabai -m query --spaces | jq '.[] | select(.label=="slack")' | jq '.index')
 
 # Move window to space
-cmd + shift - 1 : yabai -m window --space $(yabai -m query --spaces | jq '.[] | select(.label=="dev")' | jq '.index'); yabai -m space --focus $(yabai -m query --spaces | jq '.[] | select(.label=="dev")' | jq '.index')
-cmd + shift - 2 : yabai -m window --space $(yabai -m query --spaces | jq '.[] | select(.label=="zoom")' | jq '.index'); yabai -m space --focus $(yabai -m query --spaces | jq '.[] | select(.label=="zoom")' | jq '.index')
-cmd + shift - 3 : yabai -m window --space $(yabai -m query --spaces | jq '.[] | select(.label=="email")' | jq '.index'); yabai -m space --focus $(yabai -m query --spaces | jq '.[] | select(.label=="email")' | jq '.index')
-cmd + shift - 4 : yabai -m window --space $(yabai -m query --spaces | jq '.[] | select(.label=="notes")' | jq '.index'); yabai -m space --focus $(yabai -m query --spaces | jq '.[] | select(.label=="notes")' | jq '.index')
-cmd + shift - s : yabai -m window --space $(yabai -m query --spaces | jq '.[] | select(.label=="slack")' | jq '.index'); yabai -m space --focus $(yabai -m query --spaces | jq '.[] | select(.label=="slack")' | jq '.index')
+cmd + shift - 1 : yabai -m window --space $(yabai -m query --spaces | jq '.[] | select(.label=="dev")' | jq '.index')
+cmd + shift - 2 : yabai -m window --space $(yabai -m query --spaces | jq '.[] | select(.label=="zoom")' | jq '.index')
+cmd + shift - 3 : yabai -m window --space $(yabai -m query --spaces | jq '.[] | select(.label=="email")' | jq '.index')
+cmd + shift - 4 : yabai -m window --space $(yabai -m query --spaces | jq '.[] | select(.label=="notes")' | jq '.index')
+cmd + shift - s : yabai -m window --space $(yabai -m query --spaces | jq '.[] | select(.label=="slack")' | jq '.index')
 
 ## Focus windows
 # cmd - l : yabai -m window --focus east
