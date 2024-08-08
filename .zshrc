@@ -127,6 +127,7 @@ alias oil="~/.local/bin/oil-ssh.sh"
 # Kitty & Kitten aliases
 alias icat="kitten icat"
 alias s="kitten ssh"
+alias ssh="kitten ssh"
 alias d="kitten diff"
 # Workspaces aliases
 alias dev="cd ~/dev"
@@ -147,6 +148,12 @@ reload-ssh() {
       echo "Failed to remove previous card"
   fi
   ssh-add -s /usr/local/lib/opensc-pkcs11.so
+}
+# Refresh Gov Access
+ssh-gov() {
+  reload-ssh
+  ssh -v -t -L 127.0.0.1:9090:ingress-proxy.svc.ad1.us-langley-1:8080 bastion-ad1.us-langley-1.oraclegoviaas.com watch -n 90 date
+  ssh -v -t -L 127.0.0.1:7070:ingress-proxy.svc.ad1.us-gov-ashburn-1:8080 bastion-ad1.us-gov-ashburn-1.oraclegoviaas.com watch -n 90 date
 }
 # Deletes all files/folders with a given name recursively
 # Usage: deleteall node_modules
