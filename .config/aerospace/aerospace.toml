@@ -134,8 +134,8 @@ cmd-shift-k = ['join-with up', 'mode main']
 cmd-shift-l = ['join-with right', 'mode main']
 
 [mode.resize.binding]      # 2. Declare 'resize' binding mode
-j = 'resize smart -50'
-k = 'resize smart +50'
+l = 'resize smart -50'
+h = 'resize smart +50'
 esc = ['mode main']
 
 # Window Rules
@@ -170,6 +170,10 @@ run = 'layout floating'
 [[on-window-detected]]
 check-further-callbacks = true
 if.app-name-regex-substring = 'Cisco'
+run = 'layout floating'
+[[on-window-detected]]
+check-further-callbacks = true
+if.app-name-regex-substring = 'Authenticator'
 run = 'layout floating'
 
 [workspace-to-monitor-force-assignment]

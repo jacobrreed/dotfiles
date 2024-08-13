@@ -17,7 +17,6 @@ default=(
 sketchybar --default "${default[@]}"
 
 
-
 ##### Adding Left Items #####
 # We add some regular items to the left side of the bar, where
 # only the properties deviating from the current defaults need to be set
