@@ -125,10 +125,13 @@ alias vim="nvim"
 alias vi="nvim"
 alias oil="~/.local/bin/oil-ssh.sh"
 # Kitty & Kitten aliases
-alias icat="kitten icat"
-alias s="kitten ssh"
-alias ssh="kitten ssh"
-alias d="kitten diff"
+if [[ "$TERM" == "xterm-kitty" ]]; then
+  alias cat="kitten icat"
+  alias s="kitten ssh"
+  alias icat="kitten icat"
+  alias ssh="kitten ssh"
+  alias d="kitten diff"
+fi
 # Workspaces aliases
 alias dev="cd ~/dev"
 if command -v lsd &> /dev/null; then
