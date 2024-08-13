@@ -1,13 +1,9 @@
 #!/bin/bash
 
-# W I N D O W  T I T L E 
-WINDOW_TITLE=$(/opt/homebrew/bin/yabai -m query --windows --window | jq -r '.title')
+# W I N D O W  T I T L E
+WINDOW_TITLE=$(/opt/homebrew/bin/aerospace list-windows --focused | cut -f3 -d '|')
 
-if [[ $WINDOW_TITLE = "" ]]; then
-  WINDOW_TITLE=$(/opt/homebrew/bin/yabai -m query --windows --window | jq -r '.app')
-fi
-
-if [[ ${#WINDOW_TITLE} -gt 50 ]]; then
+if [[ ${#WINDOW_TITLE} -gt 150 ]]; then
   WINDOW_TITLE=$(echo "$WINDOW_TITLE" | cut -c 1-50)
   sketchybar -m --set title label="┆   $WINDOW_TITLE"…
   exit 0

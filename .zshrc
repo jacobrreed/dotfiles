@@ -39,6 +39,7 @@ zinit snippet OMZP::gh
 # Press esc twice to thefuck last command
 zinit snippet OMZP::thefuck
 # y = yarn, ya = yarn add, yad = yarn add --dev, yst=yarn start, yt = yarn test
+zinit light trystan2k/zsh-tab-title
 zinit snippet OMZP::yarn
 
 autoload -Uz compinit && compinit
@@ -94,7 +95,6 @@ zstyle :prompt:pure:user:root color "#f1fc79"
 # User Configuration
 # Exports
 export ZSH_DISABLE_COMPFIX="true"
-export DISABLE_AUTO_TITLE="true"
 # Node memory limit
 export NODE_OPTIONS=--max-old-space-size=8192
 # PATHS
@@ -219,3 +219,9 @@ eval "$(zoxide init zsh --cmd cd --hook pwd)"
 if command -v fastfetch &> /dev/null; then
   fastfetch
 fi
+
+# ZSH Tab title
+DISABLE_AUTO_TITLE="true"
+ZSH_TAB_TITLE_DISABLE_AUTO_TITLE=false
+ZSH_TAB_TITLE_ONLY_FOLDER=true
+ZSH_TAB_TITLE_CONCAT_FOLDER_PROCESS=true

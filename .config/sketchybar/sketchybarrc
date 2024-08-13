@@ -21,34 +21,19 @@ sketchybar --default "${default[@]}"
 ##### Adding Left Items #####
 # We add some regular items to the left side of the bar, where
 # only the properties deviating from the current defaults need to be set
-
-# ##### Adding Mission Control Space Indicators #####
-# Let's add some mission control spaces:
-# https://felixkratz.github.io/SketchyBar/config/components#space----associate-mission-control-spaces-with-an-item
-# to indicate active and available mission control spaces.
-
-SPACE_ICONS=("~" " " "󰇰 " "󰏫 " " ")
-sketchybar --add item space_icon left
-sketchybar --set space_icon icon=""
-sketchybar --set space_icon padding_left="-5"
-for i in "${!SPACE_ICONS[@]}"
-do
-  sid="$(($i+1))"
-  space=(
-    space="$sid"
-    icon="${SPACE_ICONS[i]}"
-    icon.padding_left=7
-    icon.padding_right=7
-    background.color=0xff7081d0
-    background.corner_radius=6
-    background.height=25
-    label.drawing=off
-    script="$PLUGIN_DIR/space.sh"
-    click_script="yabai -m space --focus $sid"
-  )
-  sketchybar --add space space."$sid" left --set space."$sid" "${space[@]}"
+sketchybar --add event aerospace_workspace_change
+for sid in $(aerospace list-workspaces --all); do
+    sketchybar --add item space.$sid left \
+        --subscribe space.$sid aerospace_workspace_change \
+        --set space.$sid \
+        label.color=0xff04d1f9 \
+        label.font.size=18.0 \
+        background.corner_radius=5 \
+        background.drawing=off \
+        label="$sid" \
+        click_script="aerospace workspace $sid" \
+        script="$CONFIG_DIR/plugins/aerospace.sh $sid"
 done
-
 
 ##### Adding Center Items #####
 # Focused App
