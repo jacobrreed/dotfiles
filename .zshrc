@@ -144,6 +144,14 @@ fi
 if command -v btop &> /dev/null; then
   alias htop="btop"
 fi
+# Update system
+if command -v brew &> /dev/null; then
+  alias brewup="brew upgrade && cd ~/.config/brew && ./brewbackup.sh && cd ~ && yadm add . && yadm commit -m 'upd' && yadm push"
+fi
+if command -v nvim &> /dev/null; then
+  alias eup="nvim --headless '+Lazy! sync' +qa && cd ~/.config/nvim && git add . && git commit -m 'upd' && git push"
+fi
+
 # Yubikey handler, use if SSH isn't accepting yubikey automatically
 reload-ssh() {
   ssh-add -e /usr/local/lib/opensc-pkcs11.so >> /dev/null
