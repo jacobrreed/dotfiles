@@ -58,7 +58,7 @@ sketchybar --add item clock right \
            --subscribe battery system_woke power_source_change 
 
 sketchybar -m --add item packages right \
-              --set packages update_freq=7200 \
+              --set packages update_freq=120 \
               --set packages script="$PLUGIN_DIR/package_monitor.sh" \
               --set packages label=" ( )" \
               --subscribe packages mouse.clicked 
