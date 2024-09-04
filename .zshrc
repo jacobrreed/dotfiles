@@ -23,6 +23,8 @@ zinit light zsh-users/zsh-completions
 zinit light Aloxaf/fzf-tab
 zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
 zinit light sindresorhus/pure
+zinit ice depth=1
+zinit light jeffreytse/zsh-vi-mode
 # Snippets
 zinit snippet OMZP::archlinux # pacin = sudo pacman -S, pacupg = sudo pacman -Syu, paclist = list all explicitly installed packages
 zinit snippet OMZP::brew # bcubc = upgrade and clean
@@ -59,10 +61,7 @@ setopt hist_ignore_dups
 setopt hist_find_no_dups
 
 # Keybinds
-# Emacs binds
 bindkey -e
-bindkey '^j' history-search-backward
-bindkey '^k' history-search-forward
 
 # Completion Styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
