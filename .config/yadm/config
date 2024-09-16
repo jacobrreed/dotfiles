@@ -2,3 +2,5 @@
 	rebase = true
 [yadm]
 	cipher = openssl
+[http]
+	postBuffer = 524288000

@@ -13,3 +13,5 @@
   side-by-side=true
 [pull]
   rebase=true
+[http]
+	postBuffer = 157286400
