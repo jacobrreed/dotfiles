@@ -3,6 +3,7 @@ base
 base-devel
 bat
 betterdiscordctl
+bitwarden
 bluez
 bluez-utils
 btop
@@ -32,17 +33,14 @@ git
 git-delta
 github-cli
 gnome-themes-extra
-godot-git
 greetd
 greetd-tuigreet
 grim
 helix
-hyprcursor-git
+hyprcursor
 hypridle
-hyprland-git
-hyprlock
+hyprland
 hyprpicker
-hyprwayland-scanner-git
 imagemagick
 inotify-tools
 iwd
@@ -107,6 +105,8 @@ ttf-nerd-fonts-symbols-mono
 ttf-roboto
 ttyper
 udiskie
+unityhub
+unrar
 usbutils
 vi
 vim
