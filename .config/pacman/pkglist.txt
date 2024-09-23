@@ -33,6 +33,7 @@ git
 git-delta
 github-cli
 gnome-themes-extra
+godot
 greetd
 greetd-tuigreet
 grim
@@ -67,7 +68,7 @@ opensc
 openssh
 os-prober
 paccache-hook
-paru
+paru-git
 pavucontrol
 pipewire
 pipewire-alsa
