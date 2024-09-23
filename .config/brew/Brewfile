@@ -54,6 +54,7 @@ brew "opensc", link: false
 brew "openssh"
 brew "openssl@1.1"
 brew "pillow"
+brew "pipx"
 brew "pngpaste"
 brew "pngquant"
 brew "poppler"

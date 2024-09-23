@@ -97,7 +97,7 @@ export ZSH_DISABLE_COMPFIX="true"
 # Node memory limit
 export NODE_OPTIONS=--max-old-space-size=8192
 # PATHS
-export PATH=$PATH
+export PATH=$PATH:$(pyenv root)/shims
 export PATH=$PATH:$HOME/.yarn/bin #yarn
 export PATH=$PATH:~/.cargo/bin # Rust
 export PATH=$PATH:~/.rd/bin # Rancher
@@ -235,3 +235,6 @@ DISABLE_AUTO_TITLE="true"
 ZSH_TAB_TITLE_DISABLE_AUTO_TITLE=false
 ZSH_TAB_TITLE_ONLY_FOLDER=true
 ZSH_TAB_TITLE_CONCAT_FOLDER_PROCESS=true
+
+# Created by `pipx` on 2024-09-16 13:43:36
+export PATH="$PATH:/Users/jrreed/.local/bin"
