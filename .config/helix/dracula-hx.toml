@@ -1,8 +1,0 @@
-inherits = "dracula"
-
-# Override the theming for "keyword"s:
-"keyword" = {  }
-
-# Override colors in the palette:
-[palette]
-

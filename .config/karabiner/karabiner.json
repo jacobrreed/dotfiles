@@ -92,7 +92,10 @@
                     "to": [{ "key_code": "escape" }]
                 }
             ],
-            "virtual_hid_keyboard": { "indicate_sticky_modifier_keys_state": false }
+            "virtual_hid_keyboard": {
+                "indicate_sticky_modifier_keys_state": false,
+                "keyboard_type_v2": "ansi"
+            }
         }
     ]
 }
