@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/Users/jrreed/.zsh/completions:"* ]]; then export FPATH="/Users/jrreed/.zsh/completions:$FPATH"; fi
 # Homebrew
 if [[ -f "/opt/homebrew/bin/brew" ]] then
   # If you're using macOS, you'll want this enabled
@@ -103,6 +105,14 @@ export PATH=$PATH:~/.cargo/bin # Rust
 export PATH=$PATH:~/.rd/bin # Rancher
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="/home/USER/.pyenv/bin:$PATH"
+export PATH="$PATH:$HOME/dev/bin"
+
+# XDG
+#if on mac, use ~/dev for XDG for nvim
+#if [[ "$OSTYPE" == "darwin"* ]]; then
+#  export XDG_DATA_HOME="$HOME/dev/.local/share"
+#  export XDG_STATE_HOME="$HOME/dev/.local/state"
+#fi
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -145,7 +155,7 @@ if command -v btop &> /dev/null; then
 fi
 # Update system
 if command -v brew &> /dev/null; then
-  alias brewup="brew upgrade && cd ~/.config/brew && ./brewbackup.sh && cd ~ && yadm add . && yadm commit -m 'upd' && yadm push"
+  alias brewup="brew upgrade && cd ~/.config/brew && ./brewbackup.sh"
 fi
 if command -v nvim &> /dev/null; then
   alias eup="nvim --headless '+Lazy! sync' +qa && cd ~/.config/nvim && git add . && git commit -m 'upd' && git push"
@@ -238,3 +248,4 @@ ZSH_TAB_TITLE_CONCAT_FOLDER_PROCESS=true
 
 # Created by `pipx` on 2024-09-16 13:43:36
 export PATH="$PATH:/Users/jrreed/.local/bin"
+. "/Users/jrreed/.deno/env"
