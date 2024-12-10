@@ -49,7 +49,6 @@ keyd-git
 kitty
 lazygit
 libu2f-server
-libva-mesa-driver
 libva-utils
 linux
 linux-firmware
@@ -58,7 +57,7 @@ ltunify
 man-db
 man-pages
 mkinitcpio-colors-git
-neovim-git
+neovim
 network-manager-applet
 networkmanager
 ntfs-3g
@@ -68,7 +67,8 @@ opensc
 openssh
 os-prober
 paccache-hook
-paru-git
+paru
+paru-debug
 pavucontrol
 pipewire
 pipewire-alsa
