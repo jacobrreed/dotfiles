@@ -3,7 +3,7 @@ local action = wezterm.action
 local config = wezterm.config_builder()
 
 config.font_size = 18
-config.font = wezterm.font("JetBrains Mono", { weight = "DemiBold" })
+config.font = wezterm.font("Iosevka Custom", { weight = "Regular" })
 
 config.default_cursor_style = "SteadyBlock"
 
