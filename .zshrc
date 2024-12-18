@@ -23,28 +23,11 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 zinit light Aloxaf/fzf-tab
-zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
-zinit light sindresorhus/pure
+# zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
+# zinit light sindresorhus/pure
 zinit ice depth=1
 zinit light jeffreytse/zsh-vi-mode
-# Snippets
-zinit snippet OMZP::archlinux # pacin = sudo pacman -S, pacupg = sudo pacman -Syu, paclist = list all explicitly installed packages
-zinit snippet OMZP::brew # bcubc = upgrade and clean
-zinit snippet OMZP::colored-man-pages
-zinit snippet OMZP::cp
-# dbl = docker build, dcls = docker container ls, dr = docker container run, drs = docker container restart, drm = docker container rm, dvprune = docker volume prune
-zinit snippet OMZP::docker 
-zinit snippet OMZP::docker-compose # dcupd = docker-compose up -d, dcdn = docker-compose down
-zinit snippet OMZP::fnm
-zinit snippet OMZP::fzf
-# ga = git add, gaa = git add all, gco = git checkout, gcb = git checkout -b, gcmsg = git commit -m, gd = git diff, glo = git log oneline decorate, gp = git push, gpf! = git push --force
-zinit snippet OMZP::git 
-zinit snippet OMZP::gh
-# Press esc twice to thefuck last command
-zinit snippet OMZP::thefuck
-# y = yarn, ya = yarn add, yad = yarn add --dev, yst=yarn start, yt = yarn test
 zinit light trystan2k/zsh-tab-title
-zinit snippet OMZP::yarn
 
 autoload -Uz compinit && compinit
 zinit cdreplay -q
@@ -82,16 +65,16 @@ export FZF_PATH="$HOME/.config/fzf"
 zmodload zsh/nearcolor
 
 # Pure Prompt
-export PURE_PROMPT_SYMBOL="›"
-zstyle :prompt:pure:git:arrow color "#f16c75"
-zstyle :prompt:pure:git:branch color "#04d1f9"
-zstyle :prompt:pure:path color "#37f499"
-zstyle :prompt:pure:prompt:error color "#f16c75"
-zstyle :prompt:pure:prompt:success color "#37f499"
-zstyle :prompt:pure:prompt:continuation color "#f7c67f"
-zstyle :prompt:pure:suspended_jobs color "#f16c75"
-zstyle :prompt:pure:user color "#a48cf2"
-zstyle :prompt:pure:user:root color "#f1fc79"
+# export PURE_PROMPT_SYMBOL="›"
+# zstyle :prompt:pure:git:arrow color "#f16c75"
+# zstyle :prompt:pure:git:branch color "#04d1f9"
+# zstyle :prompt:pure:path color "#37f499"
+# zstyle :prompt:pure:prompt:error color "#f16c75"
+# zstyle :prompt:pure:prompt:success color "#37f499"
+# zstyle :prompt:pure:prompt:continuation color "#f7c67f"
+# zstyle :prompt:pure:suspended_jobs color "#f16c75"
+# zstyle :prompt:pure:user color "#a48cf2"
+# zstyle :prompt:pure:user:root color "#f1fc79"
 
 # User Configuration
 # Exports
@@ -106,6 +89,7 @@ export PATH=$PATH:~/.rd/bin # Rancher
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="/home/USER/.pyenv/bin:$PATH"
 export PATH="$PATH:$HOME/dev/bin"
+export PATH="$PATH:/Users/jrreed/.local/bin"
 
 # XDG
 #if on mac, use ~/dev for XDG for nvim
@@ -139,6 +123,15 @@ if command -v lazygit &> /dev/null; then
     alias ly='lazygit --use-config-file "$HOME/.config/yadm/lazygit.yml,$HOME/Library/Application Support/lazygit/config.yml" --work-tree ~ --git-dir ~/.local/share/yadm/repo.git'
   fi
 fi
+# Yazi
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
 # Kitty & Kitten aliases
 if [[ "$TERM" == "xterm-kitty" ]]; then
   alias cat="kitten icat"
@@ -255,6 +248,4 @@ ZSH_TAB_TITLE_DISABLE_AUTO_TITLE=false
 ZSH_TAB_TITLE_ONLY_FOLDER=true
 ZSH_TAB_TITLE_CONCAT_FOLDER_PROCESS=true
 
-# Created by `pipx` on 2024-09-16 13:43:36
-export PATH="$PATH:/Users/jrreed/.local/bin"
-. "/Users/jrreed/.deno/env"
+eval "$(starship init zsh)"

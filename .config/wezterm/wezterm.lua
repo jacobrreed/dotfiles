@@ -19,15 +19,9 @@ config.window_padding = {
   right = 2,
 }
 config.window_background_opacity = 0.95
-config.macos_window_background_blur = 20
+config.macos_window_background_blur = 10
 config.win32_system_backdrop = "Acrylic"
 config.warn_about_missing_glyphs = false
-
-config.hyperlink_rules = wezterm.default_hyperlink_rules()
-table.insert(config.hyperlink_rules, {
-  regex = [[["]?([\w\d]{1}[-\w\d]+)(/){1}([-\w\d\.]+)["]?]],
-  format = "https://www.github.com/$1/$3",
-})
 
 config.leader = { key = "t", mods = "CTRL", timeout_milliseconds = 1000 }
 
@@ -44,7 +38,43 @@ config.mouse_bindings = {
     action = wezterm.action.Nop,
   },
 }
+
+-- Neovim navigation
+-- if you are *NOT* lazy-loading smart-splits.nvim (recommended)
+local function is_vim(pane)
+  -- this is set by the plugin, and unset on ExitPre in Neovim
+  return pane:get_user_vars().IS_NVIM == "true"
+end
+local direction_keys = {
+  h = "Left",
+  j = "Down",
+  k = "Up",
+  l = "Right",
+}
+local function split_nav(resize_or_move, key)
+  return {
+    key = key,
+    mods = resize_or_move == "resize" and "META" or "CTRL",
+    action = wezterm.action_callback(function(win, pane)
+      if is_vim(pane) then
+        -- pass the keys through to vim/nvim
+        win:perform_action({
+          SendKey = { key = key, mods = resize_or_move == "resize" and "META" or "CTRL" },
+        }, pane)
+      else
+        if resize_or_move == "resize" then
+          win:perform_action({ AdjustPaneSize = { direction_keys[key], 3 } }, pane)
+        else
+          win:perform_action({ ActivatePaneDirection = direction_keys[key] }, pane)
+        end
+      end
+    end),
+  }
+end
+
+-- Keybinds
 config.keys = {
+  -- Disables
   {
     key = "d",
     mods = "CTRL",
@@ -65,87 +95,7 @@ config.keys = {
     mods = "CTRL|SHIFT",
     action = action.DisableDefaultAssignment,
   },
-  {
-    key = "k",
-    mods = "CTRL|SHIFT",
-    action = action.ClearScrollback("ScrollbackAndViewport"),
-  },
-  {
-    key = "w",
-    mods = "CTRL|SHIFT",
-    action = action.CloseCurrentTab({ confirm = false }),
-  },
-  {
-    key = "RightArrow",
-    mods = "CTRL|SHIFT",
-    action = action.ActivateTabRelative(1),
-  },
-  {
-    key = "LeftArrow",
-    mods = "CTRL|SHIFT",
-    action = action.ActivateTabRelative(-1),
-  },
-  -- Multiplexing
-  {
-    key = "v",
-    mods = "LEADER",
-    action = action.SplitVertical({ domain = "CurrentPaneDomain" }),
-  },
-  {
-    key = "b",
-    mods = "LEADER",
-    action = action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
-  },
-  {
-    key = "x",
-    mods = "LEADER",
-    action = action.CloseCurrentPane({ confirm = false }),
-  },
-  {
-    key = "h",
-    mods = "LEADER",
-    action = action.ActivatePaneDirection("Left"),
-  },
-  {
-    key = "l",
-    mods = "LEADER",
-    action = action.ActivatePaneDirection("Right"),
-  },
-  {
-    key = "j",
-    mods = "LEADER",
-    action = action.ActivatePaneDirection("Down"),
-  },
-  {
-    key = "k",
-    mods = "LEADER",
-    action = action.ActivatePaneDirection("Up"),
-  },
-  {
-    key = "h",
-    mods = "LEADER|CTRL",
-    action = action.AdjustPaneSize({ "Left", 5 }),
-  },
-  {
-    key = "l",
-    mods = "LEADER|CTRL",
-    action = action.AdjustPaneSize({ "Right", 5 }),
-  },
-  {
-    key = "j",
-    mods = "LEADER|CTRL",
-    action = action.AdjustPaneSize({ "Down", 5 }),
-  },
-  {
-    key = "k",
-    mods = "LEADER|CTRL",
-    action = action.AdjustPaneSize({ "Up", 5 }),
-  },
-  {
-    key = "c",
-    mods = "LEADER",
-    action = action.SpawnTab("CurrentPaneDomain"),
-  },
+  -- Rename Tab
   {
     key = "t",
     mods = "CTRL|SHIFT",
@@ -158,6 +108,44 @@ config.keys = {
       end),
     }),
   },
+  -- Vi mode
+  {
+    key = "c",
+    mods = "CTRL|SHIFT",
+    action = action.ActivateCopyMode,
+  },
+  -- Multiplexing
+  {
+    key = "b",
+    mods = "LEADER",
+    action = action.SplitVertical({ domain = "CurrentPaneDomain" }),
+  },
+  {
+    key = "v",
+    mods = "LEADER",
+    action = action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+  },
+  {
+    key = "x",
+    mods = "LEADER",
+    action = action.CloseCurrentPane({ confirm = false }),
+  },
+  split_nav("move", "h"),
+  split_nav("move", "j"),
+  split_nav("move", "k"),
+  split_nav("move", "l"),
+  -- TODO resize panes like kitty
+  {
+    key = "c",
+    mods = "LEADER",
+    action = action.SpawnTab("CurrentPaneDomain"),
+  },
+  -- TODO activate last tab
+  -- {
+  --   key="t",
+  --   mods="LEADER",
+  --   action= action.
+  -- }
   {
     key = "1",
     mods = "LEADER",
@@ -213,11 +201,6 @@ config.keys = {
     mods = "LEADER",
     action = action.ActivateTabRelative(-1),
   },
-  {
-    key = "z",
-    mods = "LEADER",
-    action = action.ActivateCopyMode,
-  },
 }
 
 config.window_decorations = "RESIZE"
@@ -265,7 +248,36 @@ config.ssh_domains = {
     remote_address = "192.168.86.4",
     username = "neonvoid",
   },
+  {
+    name = "proxmox",
+    remote_address = "192.168.86.2",
+    username = "root",
+  },
 }
 
 config.color_scheme = "Eldritch"
+
+-- ####### PLUGINS #######
+-- Quick Domains
+local domains = wezterm.plugin.require("https://github.com/DavidRR-F/quick_domains.wezterm")
+domains.apply_to_config(config, {
+  keys = {
+    attach = {
+      key = "d",
+      mods = "LEADER",
+      tbl = "",
+    },
+    hsplit = { key = "]", mods = "LEADER" },
+    vsplit = { key = "[", mods = "LEADER" },
+  },
+})
+
+-- Broadcast input
+local cmd_sender = wezterm.plugin.require("https://github.com/aureolebigben/wezterm-cmd-sender")
+cmd_sender.apply_to_config(config, {
+  key = "mapped:i",
+  mods = "LEADER",
+  description = "Broadcast Input",
+})
+
 return config
