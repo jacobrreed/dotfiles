@@ -201,18 +201,12 @@ fi
 if command -v wslu &> /dev/null; then
   export BROWSER=wslview
 fi
-# Yabai Sudo Reset
-if command -v yabai &> /dev/null; then
-  function suyabai() {
-    local sha256
-    sha256=$(shasum -a 256 "$(which yabai)" | awk "{print \$1;}")
-    if [ -f "/private/etc/sudoers.d/yabai" ]; then
-      sudo sed -i '' -e 's/sha256:[[:alnum:]]*/sha256:'"${sha256}"'/' /private/etc/sudoers.d/yabai
-    else
-      echo "sudoers file does not exist yet. creating one now"
-      echo "$(whoami) ALL=(root) NOPASSWD: sha256:${sha256} $(which yabai) --load-sa" | sudo tee /private/etc/sudoers.d/yabai
-    fi
-  }
+# Copilot
+COPILOT_CLI=~/.local/share/gh/extensions/gh-copilot/gh-copilot
+if [ -f "$COPILOT_CLI" ]; then
+  eval "$(gh copilot alias -- zsh)"
+else
+  gh extension install github/gh-copilot
 fi
 ### END Aliases and functions
 
@@ -248,4 +242,3 @@ ZSH_TAB_TITLE_ONLY_FOLDER=true
 ZSH_TAB_TITLE_CONCAT_FOLDER_PROCESS=true
 
 eval "$(starship init zsh)"
-eval "$(gh copilot alias -- zsh)"
