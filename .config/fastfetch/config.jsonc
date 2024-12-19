@@ -5,7 +5,7 @@
     "source": "~/.config/fastfetch/anime-chafa.txt",
     "padding": {
       "right": 10,
-      "top": 6
+      "top": 5
     }
   },
   "general": {
