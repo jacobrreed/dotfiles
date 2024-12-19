@@ -1,3 +1,4 @@
+# zmodload zsh/zprof
 # Add deno completions to search path
 if [[ ":$FPATH:" != *":/Users/jrreed/.zsh/completions:"* ]]; then export FPATH="/Users/jrreed/.zsh/completions:$FPATH"; fi
 # Homebrew
@@ -7,29 +8,23 @@ if [[ -f "/opt/homebrew/bin/brew" ]] then
 fi
 
 # Zinit
-ZSH_CACHE_DIR="${XDG_CACHE_HOME:-${HOME}/.local/share}/zinit"
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 [ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
 [ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
-declare -A ZINIT
-ZINIT[BIN_DIR]="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/bin"
-ZINIT[HOME_DIR]="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit"
-ZINIT[MAN_DIR]="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/man"
-ZINIT[PLUGINS_DIR]="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/plugins"
-ZINIT[COMPLETIONS]="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/completions"
-ZINIT[SNIPPETS]="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/snippets"
 source "${ZINIT_HOME}/zinit.zsh"
+# Zinit Packages
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
-zinit light zsh-users/zsh-completions
+# zinit light zsh-users/zsh-completions
 zinit light Aloxaf/fzf-tab
-# zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
-# zinit light sindresorhus/pure
+zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
+zinit light sindresorhus/pure
 zinit ice depth=1
 zinit light jeffreytse/zsh-vi-mode
 zinit light trystan2k/zsh-tab-title
 
-autoload -Uz compinit && compinit
+autoload -Uz compinit
+compinit
 zinit cdreplay -q
 
 # History
@@ -79,7 +74,7 @@ zmodload zsh/nearcolor
 # User Configuration
 # Exports
 export ZSH_DISABLE_COMPFIX="true"
-# Node memory limit
+# NodeJS memory limit
 export NODE_OPTIONS=--max-old-space-size=8192
 # PATHS
 export PATH=$PATH:$(pyenv root)/shims
@@ -90,13 +85,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="/home/USER/.pyenv/bin:$PATH"
 export PATH="$PATH:$HOME/dev/bin"
 export PATH="$PATH:/Users/jrreed/.local/bin"
-
-# XDG
-#if on mac, use ~/dev for XDG for nvim
-#if [[ "$OSTYPE" == "darwin"* ]]; then
-#  export XDG_DATA_HOME="$HOME/dev/.local/share"
-#  export XDG_STATE_HOME="$HOME/dev/.local/state"
-#fi
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -112,10 +100,14 @@ fi
 ########
 alias findsyms="find . -type l -ls"
 alias findhere="find . -name"
+# Deletes all files/folders with a given name recursively
+# Usage: deleteall node_modules
+function deleteall() {
+  find . -name $1 -exec rm -rf {} \;
+}
 alias e="nvim"
 alias vim="nvim"
 alias vi="nvim"
-alias oil="~/.local/bin/oil-ssh.sh"
 if command -v lazygit &> /dev/null; then
   alias l="lazygit"
   if command -v yadm &> /dev/null; then
@@ -138,11 +130,10 @@ if [[ "$TERM" == "xterm-kitty" ]]; then
   alias icat="kitten icat"
   alias ssh="kitten ssh"
   alias d="kitten diff"
-  function k() {
+  function kcd() {
     kitten @ send-text --match-tab state:focused cd $1 && kitten @ send-key --match-tab state:focused Enter
   }
 fi
-# Workspaces aliases
 alias dev="cd ~/dev"
 if command -v lsd &> /dev/null; then
   alias ls="lsd "
@@ -154,7 +145,7 @@ fi
 if command -v btop &> /dev/null; then
   alias htop="btop"
 fi
-# Update system
+# Update Brew packages
 if command -v brew &> /dev/null; then
   alias brewup="brew upgrade && cd ~/.config/brew && ./brewbackup.sh"
 fi
@@ -169,17 +160,6 @@ reload-ssh() {
       echo "Failed to remove previous card"
   fi
   ssh-add -s /usr/local/lib/opensc-pkcs11.so
-}
-# Refresh Gov Access
-ssh-gov() {
-  reload-ssh
-  ssh -v -t -L 127.0.0.1:9090:ingress-proxy.svc.ad1.us-langley-1:8080 bastion-ad1.us-langley-1.oraclegoviaas.com watch -n 90 date
-  ssh -v -t -L 127.0.0.1:7070:ingress-proxy.svc.ad1.us-gov-ashburn-1:8080 bastion-ad1.us-gov-ashburn-1.oraclegoviaas.com watch -n 90 date
-}
-# Deletes all files/folders with a given name recursively
-# Usage: deleteall node_modules
-deleteall() {
-  find . -name $1 -exec rm -rf {} \;
 }
 # Check ZSH plugin load times
 timezsh() {
@@ -241,4 +221,5 @@ ZSH_TAB_TITLE_DISABLE_AUTO_TITLE=false
 ZSH_TAB_TITLE_ONLY_FOLDER=true
 ZSH_TAB_TITLE_CONCAT_FOLDER_PROCESS=true
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
+# zprof
