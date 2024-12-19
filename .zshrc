@@ -110,7 +110,6 @@ fi
 ########
 # Alias Functions
 ########
-alias copilot="gh copilot"
 alias findsyms="find . -type l -ls"
 alias findhere="find . -name"
 alias e="nvim"
@@ -249,3 +248,4 @@ ZSH_TAB_TITLE_ONLY_FOLDER=true
 ZSH_TAB_TITLE_CONCAT_FOLDER_PROCESS=true
 
 eval "$(starship init zsh)"
+eval "$(gh copilot alias -- zsh)"

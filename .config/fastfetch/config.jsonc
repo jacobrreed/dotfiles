@@ -1,8 +1,8 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "type": "kitty-direct",
-    "source": "~/.config/fastfetch/eldritch.png",
+    "type": "auto",
+    "source": "~/pics/anime-girl-eye.jpg",
     "padding": {
       "right": 10,
       "top": 6
