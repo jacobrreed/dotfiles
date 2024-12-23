@@ -1,7 +1,7 @@
 ## Wofi Config
 ## General
 show=drun
-prompt=The Void Hunders
+prompt=The Void Hungers
 normal_window=true
 layer=top
 

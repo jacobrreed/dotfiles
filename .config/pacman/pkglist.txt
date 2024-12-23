@@ -1,9 +1,7 @@
-amd-ucode
 base
 base-devel
 bat
 betterdiscordctl
-bitwarden
 bluez
 bluez-utils
 btop
@@ -19,9 +17,6 @@ docker-rootless-extras
 dosfstools
 dunst
 easyeffects
-efibootmgr
-efitools
-efivar
 exercism
 eza
 fastfetch
@@ -38,11 +33,6 @@ godot
 greetd
 greetd-tuigreet
 grim
-helix
-hyprcursor
-hypridle
-hyprland
-hyprpicker
 imagemagick
 inotify-tools
 iwd
@@ -51,8 +41,6 @@ kitty
 lazygit
 libu2f-server
 libva-utils
-linux
-linux-firmware
 lsof
 ltunify
 man-db
@@ -68,8 +56,6 @@ opensc
 openssh
 os-prober
 paccache-hook
-paru
-paru-debug
 pavucontrol
 pipewire
 pipewire-alsa
@@ -107,14 +93,10 @@ ttf-nerd-fonts-symbols-mono
 ttf-roboto
 ttyper
 udiskie
-unityhub
 unrar
 usbutils
-vi
-vim
 vivaldi
 vivaldi-ffmpeg-codecs
-vulkan-radeon
 waybar-module-pacman-updates-git
 webkit2gtk
 wev
@@ -124,7 +106,6 @@ wlogout
 wofi
 wofi-calc
 wofi-emoji
-xdg-desktop-portal-hyprland-git
 xorg-server
 yadm
 yazi

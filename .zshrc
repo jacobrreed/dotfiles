@@ -1,4 +1,8 @@
 # zmodload zsh/zprof
+# UWSM start hyprland
+if uwsm check may-start; then
+    exec uwsm start hyprland.desktop
+fi
 # Add deno completions to search path
 if [[ ":$FPATH:" != *":/Users/jrreed/.zsh/completions:"* ]]; then export FPATH="/Users/jrreed/.zsh/completions:$FPATH"; fi
 # Homebrew
