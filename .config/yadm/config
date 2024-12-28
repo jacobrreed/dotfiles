@@ -4,3 +4,6 @@
 	cipher = openssl
 [http]
 	postBuffer = 524288000
+[user]
+	email = jacob.russell.reed@gmail.com\n\n
+	name = jacobrreed

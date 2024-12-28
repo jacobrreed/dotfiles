@@ -38,10 +38,10 @@
       "memory",
       "custom/separator",
       "cpu",
-      "custom/separator",
-      "battery",
-      "custom/separator",
-      "backlight",
+      // "custom/separator",
+      // "battery",
+      // "custom/separator",
+      // "backlight",
       "custom/separator",
       "clock"
     ]

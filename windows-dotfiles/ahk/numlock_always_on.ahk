@@ -1,3 +1,0 @@
-#NoEnv
-#InstallKeybdHook
-SetNumLockState, AlwaysOn
