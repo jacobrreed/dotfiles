@@ -1,0 +1,20 @@
+font-family = "IosevkaCustom Nerd Font"
+# font-size doesn't change on config reload
+font-size = 16
+theme = "Eldritch"
+cursor-style="bar"
+background-opacity=0.95
+background-blur-radius=20
+class="ghostty"
+window-padding-x=0,0
+window-padding-y=0,0
+window-vsync=true
+window-inherit-working-directory=false
+window-decoration=false
+macos-titlebar-style=hidden
+window-theme=dark
+window-save-state=always
+clipboard-write=allow
+copy-on-select=true
+confirm-close-surface=false
+

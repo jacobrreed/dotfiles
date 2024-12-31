@@ -109,6 +109,7 @@ fi
 alias hypr="cd ~/.config/hypr"
 alias findsyms="find . -type l -ls"
 alias findhere="find . -name"
+alias yay="paru"
 # Deletes all files/folders with a given name recursively
 # Usage: deleteall node_modules
 function deleteall() {
