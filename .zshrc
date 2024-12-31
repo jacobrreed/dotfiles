@@ -1,8 +1,12 @@
 # zmodload zsh/zprof
-# UWSM start hyprland
-if uwsm check may-start; then
+
+# If using TTY1 login UWSM hyprland
+if tty="/dev/tty1"; then
+  if uwsm check may-start; then
     exec uwsm start hyprland.desktop
+  fi
 fi
+
 # Add deno completions to search path
 if [[ ":$FPATH:" != *":/Users/jrreed/.zsh/completions:"* ]]; then export FPATH="/Users/jrreed/.zsh/completions:$FPATH"; fi
 # Homebrew
@@ -102,6 +106,7 @@ fi
 ########
 # Alias Functions
 ########
+alias hypr="cd ~/.config/hypr"
 alias findsyms="find . -type l -ls"
 alias findhere="find . -name"
 # Deletes all files/folders with a given name recursively

@@ -1,26 +1,28 @@
 {
   "layer": "top",
-  "output": "DP-1",
+  "output": [
+    "DP-1",
+    "DP-2"
+  ],
   "modules-left": [
-    "custom/icon",
+    // "custom/icon",
     "custom/blank",
     "hyprland/workspaces",
     "custom/blank",
-    "hyprland/submap",
-    "hyprland/window"
+    "hyprland/submap"
   ],
   "modules-center": [
-    "tray"
+    "hyprland/window"
+    // "custom/notification"
   ],
   "modules-right": [
     "group/network",
-    "group/system"
+    "group/system",
+    "tray"
   ],
   "group/network": {
     "orientation": "horizontal",
     "modules": [
-      "bluetooth",
-      "custom/separator",
       "network",
       "custom/separator",
       "idle_inhibitor"
@@ -36,7 +38,7 @@
       "pulseaudio",
       "custom/separator",
       "memory",
-      "custom/separator",
+      // "custom/separator",
       "cpu",
       // "custom/separator",
       // "battery",
@@ -60,27 +62,32 @@
     "format": "󰣇",
     "on-click": "wlogout --protocol layer-shell -b 5 -s -c 50  -T 400 -B 400"
   },
-  "bluetooth": {
-    "format": "",
-    "format-disabled": ""
-  },
+  // "bluetooth": {
+  //   "format": "",
+  //   "format-disabled": "",
+  //   "on-click": "blueman-manager"
+  // },
   "hyprland/workspaces": {
     "format": "{icon}",
     "format-icons": {
-      "1": "󰞷",
-      "2": "󰖟",
-      "96": " ",
-      "97": "",
-      "98": "󱞁",
-      "99": "󰙯"
+      // "1": "󰞷",
+      // "2": "󰖟",
+      // "3": "󰙯  ",
+      // "10": " "
     }
   },
   "hyprland/window": {
-    "format": "{class}  {title}",
+    "format": "{class} {title}",
     "rewrite": {
-      "Vivaldi-stable(.*)(.*- Vivaldi)": "  $1"
+      "Vivaldi-stable(.*)(.*- Vivaldi)": "  $1",
+      "firefox-developer-edition (.*)— Firefox.*": " $1",
+      "kitty (.*)": "󰄛 $1",
+      "vesktop • Discord(.*)": "󰙯 $1",
+      "spotify_player (.*)": "󰓇 $1",
+      "Spotify (.*)": "󰓇 $1",
+      "steam (.*)": " $1"
     },
-    "max-length": 300
+    "max-length": 50
   },
   "hyprland/submap": {
     "max-length": 8,
@@ -124,6 +131,7 @@
     },
     "scroll-step": 1,
     "on-click": "pavucontrol",
+    "on-click-right": "easyeffects",
     "ignored-sinks": [
       "Easy Effects Sink"
     ]

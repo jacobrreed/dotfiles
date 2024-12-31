@@ -10,10 +10,14 @@
 @define-color yellow #f1fc79;
 @define-color orange #f7c67f;
 
+* {
+   padding: 0;
+}
 window#waybar {
   background-color: transparent;
   color: @purple;
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "IosevkaCustom Nerd Font";
+  font-weight: 500;
   font-size: 16px;
 }
 
@@ -26,7 +30,9 @@ window#waybar {
 }
 
 #workspaces button {
-  font-size: 20px;
+  font-size: 16px;
+  font-family: "IosevkaCustom Nerd Font";
+  font-weight: 600;
   color: @fg;
   margin-right: 5px;
   margin-left: 5px;
@@ -38,11 +44,8 @@ window#waybar {
 }
 
 #workspaces button.active {
-  background: @green;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding-right: 15px;
-  color: @bg;
+  background: transparent;
+  color: @green;
 }
 
 #window {
@@ -187,4 +190,5 @@ box#network {
   border-color: @pink;
   padding-right: 10px;
   padding-left: 10px;
+  margin-right:10px;
 }

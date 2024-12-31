@@ -1,0 +1,129 @@
+20:17:40.422: Platform: Wayland
+20:17:40.422: CPU Name: Intel(R) Core(TM) i7-10700K CPU @ 3.80GHz
+20:17:40.422: CPU Speed: 4700.016MHz
+20:17:40.423: Physical Cores: 8, Logical Cores: 16
+20:17:40.423: Physical Memory: 31990MB Total, 18457MB Free
+20:17:40.423: Kernel Version: Linux 6.12.7-arch1-1
+20:17:40.423: Distribution: "Arch Linux" Unknown
+20:17:40.423: Desktop Environment: Hyprland (Hyprland)
+20:17:40.423: Session Type: wayland
+20:17:40.426: Qt Version: 6.8.1 (runtime), 6.8.1 (compiled)
+20:17:40.426: Portable mode: false
+20:17:40.469: OBS 31.0.0 (linux)
+20:17:40.469: ---------------------------------
+20:17:40.470: ---------------------------------
+20:17:40.470: audio settings reset:
+20:17:40.470: 	samples per sec: 48000
+20:17:40.470: 	speakers:        2
+20:17:40.470: 	max buffering:   960 milliseconds
+20:17:40.470: 	buffering type:  dynamically increasing
+20:17:40.472: ---------------------------------
+20:17:40.472: Initializing OpenGL...
+20:17:40.472: Using EGL/Wayland
+20:17:40.546: Initialized EGL 1.5
+20:17:40.620: Loading up OpenGL on adapter NVIDIA Corporation NVIDIA GeForce RTX 3080 Ti/PCIe/SSE2
+20:17:40.620: OpenGL loaded successfully, version 3.3.0 NVIDIA 565.77, shading language 3.30 NVIDIA via Cg compiler
+20:17:40.653: ---------------------------------
+20:17:40.653: video settings reset:
+20:17:40.653: 	base resolution:   3440x1440
+20:17:40.653: 	output resolution: 1716x720
+20:17:40.653: 	downscale filter:  Bicubic
+20:17:40.653: 	fps:               60/1
+20:17:40.653: 	format:            NV12
+20:17:40.653: 	YUV mode:          Rec. 709/Partial
+20:17:40.653: NV12 texture support enabled
+20:17:40.653: P010 texture support not available
+20:17:40.710: Audio monitoring device:
+20:17:40.710: 	name: Default
+20:17:40.710: 	id: default
+20:17:40.711: ---------------------------------
+20:17:40.723: Failed to load 'en-US' text for module: 'decklink-captions.so'
+20:17:40.737: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+20:17:40.751: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+20:17:40.751: Failed to initialize module 'decklink.so'
+20:17:40.996: [pipewire] Available capture sources:
+20:17:40.996: [pipewire]     - Monitor source
+20:17:40.996: [pipewire]     - Window source
+20:17:41.034: v4l2loopback not installed, virtual camera not registered
+20:17:41.125: LIBVA_DRIVER_NAME variable is set, this could prevent FFmpeg VAAPI from working correctly
+20:17:41.284: VAAPI: API version 1.22
+20:17:41.426: FFmpeg VAAPI H264 encoding supported
+20:17:41.673: FFmpeg VAAPI AV1 encoding supported
+20:17:41.978: FFmpeg VAAPI HEVC encoding supported
+20:17:42.550: [obs-nvenc] NVENC version: 12.1 (compiled) / 12.2 (driver), CUDA driver version: 12.70, AV1 supported: false
+20:17:43.376: ---------------------------------
+20:17:43.376:   Loaded Modules:
+20:17:43.376:     wlrobs.so
+20:17:43.376:     text-freetype2.so
+20:17:43.376:     rtmp-services.so
+20:17:43.376:     obs-x264.so
+20:17:43.376:     obs-webrtc.so
+20:17:43.376:     obs-vst.so
+20:17:43.376:     obs-transitions.so
+20:17:43.376:     obs-qsv11.so
+20:17:43.376:     obs-outputs.so
+20:17:43.376:     obs-nvenc.so
+20:17:43.376:     obs-libfdk.so
+20:17:43.376:     obs-filters.so
+20:17:43.376:     obs-ffmpeg.so
+20:17:43.376:     linux-v4l2.so
+20:17:43.376:     linux-pulseaudio.so
+20:17:43.376:     linux-pipewire.so
+20:17:43.376:     linux-jack.so
+20:17:43.376:     linux-capture.so
+20:17:43.376:     linux-alsa.so
+20:17:43.376:     image-source.so
+20:17:43.376:     frontend-tools.so
+20:17:43.376:     decklink-output-ui.so
+20:17:43.376:     decklink-captions.so
+20:17:43.376: ---------------------------------
+20:17:43.376: ---------------------------------
+20:17:43.376: Available Encoders:
+20:17:43.376:   Video Encoders:
+20:17:43.376: 	- ffmpeg_svt_av1 (SVT-AV1)
+20:17:43.376: 	- ffmpeg_aom_av1 (AOM AV1)
+20:17:43.376: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+20:17:43.376: 	- av1_ffmpeg_vaapi_tex (FFmpeg VAAPI AV1)
+20:17:43.376: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+20:17:43.376: 	- obs_nvenc_h264_tex (NVIDIA NVENC H.264)
+20:17:43.376: 	- obs_nvenc_hevc_tex (NVIDIA NVENC HEVC)
+20:17:43.376: 	- obs_x264 (x264)
+20:17:43.376:   Audio Encoders:
+20:17:43.376: 	- ffmpeg_aac (FFmpeg AAC)
+20:17:43.376: 	- ffmpeg_opus (FFmpeg Opus)
+20:17:43.376: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+20:17:43.376: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+20:17:43.376: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+20:17:43.376: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+20:17:43.376: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+20:17:43.376: 	- libfdk_aac (libfdk AAC)
+20:17:43.377: ==== Startup complete ===============================================
+20:17:43.418: All scene data cleared
+20:17:43.418: ------------------------------------------------
+20:17:43.426: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.7) 15.0.0'
+20:17:43.426: pulse-input: Audio format: s24le, 48000 Hz, 2 channels
+20:17:43.426: pulse-input: Sample format s24le not supported by OBS,using float32le instead for recording
+20:17:43.426: pulse-input: Started recording from 'alsa_output.usb-Schiit_Audio_Schiit_Unison_Modius_ES-00.analog-stereo.monitor' (default)
+20:17:43.426: [Loaded global audio device]: 'Desktop Audio'
+20:17:43.427: pulse-input: Server name: 'PulseAudio (on PipeWire 1.2.7) 15.0.0'
+20:17:43.427: pulse-input: Audio format: s24le, 48000 Hz, 1 channels
+20:17:43.427: pulse-input: Sample format s24le not supported by OBS,using float32le instead for recording
+20:17:43.427: pulse-input: Started recording from 'alsa_input.usb-R__DE_Microphones_R__DE_NT-USB_Mini_F5DF5DCC-00.mono-fallback' (default)
+20:17:43.427: [Loaded global audio device]: 'Mic/Aux'
+20:17:43.428: obs-data.c: [obs_data_create_from_json] Failed reading json string (1): '[' or '{' expected near end of file
+20:17:43.428: obs-data.c: [obs_data_create_from_json] Failed reading json string (1): '[' or '{' expected near end of file
+20:17:43.430: Switched to scene 'Scene'
+20:17:43.430: ------------------------------------------------
+20:17:43.430: Loaded scenes:
+20:17:43.430: - scene 'Scene':
+20:17:43.430:     - source: 'Video Capture Device (PipeWire) (BETA)' (pipewire-camera-source)
+20:17:43.430: ------------------------------------------------
+20:17:43.502: [camera-portal] Error accessing camera: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Camera” on object at path /org/freedesktop/portal/desktop
+20:17:43.991: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+20:17:43.991: 
+20:17:46.257: [camera-portal] Selected resolution for ''
+20:17:46.257: [camera-portal] Selected format for ''
+20:17:46.257: [camera-portal] selected camera ''
+20:17:52.154: [camera-portal] Updating device 
+20:18:15.044: User Removed source 'Video Capture Device (PipeWire) (BETA)' (pipewire-camera-source) from scene 'Scene'
+20:18:20.022: User added source 'Wayland output(dmabuf)' (wlrobs-dmabuf) to scene 'Scene'

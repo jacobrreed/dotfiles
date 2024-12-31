@@ -1,15 +1,14 @@
 lastupdatecheck: 0
 recentrepos:
-- /home/neonvoid/dev/lily58-zmk
-- /home/neonvoid/dev/siyuan
-- /home/neonvoid/dev/codecrafters-http-server-rust
-- /home/neonvoid/dev/codecrafters-http-server-go
+    - /home/neonvoid/pics
+    - /home/neonvoid/dev/eldritch-workspace/eldritch.nvim
 startuppopupversion: 5
-lastversion: 0.41.0
+lastversion: 0.44.1
 customcommandshistory: []
 hidecommandlog: false
 ignorewhitespaceindiffview: false
 diffcontextsize: 1
+renamesimilaritythreshold: 50
 localbranchsortorder: recency
 remotebranchsortorder: alphabetical
 gitlogorder: topo-order
