@@ -26,7 +26,17 @@ while true; do
     done |
     sort -n | cut -d':' -f2- |
     while read -r img; do
+      # swww img -o "DP-1" "$img"
       swww img "$img"
       sleep $INTERVAL
     done
+  # find "$HOME/pics/" -type f -exec file {} \; | awk -F: '{ if ($2 ~/[Ii]mage|EPS/) print $1}' |
+  #   while read -r img; do
+  #     echo "$((RANDOM % 1000)):$img"
+  #   done |
+  #   sort -n | cut -d':' -f2- |
+  #   while read -r img; do
+  #     swww img -o "DP-2" "$img"
+  #     sleep $INTERVAL
+  #   done
 done
