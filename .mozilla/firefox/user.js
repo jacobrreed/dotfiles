@@ -231,6 +231,12 @@ user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
 user_pref("browser.newtabpage.activity-stream.showSponsored", false); // Sponsored Stories
 user_pref("browser.newtabpage.activity-stream.showWeather", false);
 user_pref("browser.search.suggest.enabled", true);
+// Firefox NVidia VAAPI https://github.com/elFarto/nvidia-vaapi-driver?tab=readme-ov-file#firefox
+user_pref("media.ffmpeg.vaapi.enabled", true);
+user_pref("media.rdd-ffmpeg.enabled", true);
+user_pref("media.av1.enabled", false);
+user_pref("gfx.x11-egl.force-enabled", true);
+user_pref("widget.dmabuf.force-enabled", true);
 
 
 /****************************************************************************
