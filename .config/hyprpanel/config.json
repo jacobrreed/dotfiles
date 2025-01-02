@@ -188,8 +188,8 @@
     }
   ],
   "bar.customModules.updates.pollingInterval": 1440000,
-  "theme.font.name": "IosevkaCustom Nerd Font",
-  "theme.font.label": "IosevkaCustom Nerd Font Bold",
+  "theme.font.name": "JetBrainsMonoNL Nerd Font",
+  "theme.font.label": "JetBrainsMonoNL Nerd Font",
   "theme.font.weight": 700,
   "theme.bar.buttons.enableBorders": true,
   "theme.bar.floating": false,
@@ -651,5 +651,6 @@
   "theme.bar.buttons.modules.submap.enableBorder": false,
   "bar.customModules.submap.enabledText": "Resize",
   "bar.customModules.submap.disabledText": "Norm",
-  "bar.customModules.submap.enabledIcon": "󰩨"
+  "bar.customModules.submap.enabledIcon": "󰩨",
+  "theme.font.size": "1rem"
 }
