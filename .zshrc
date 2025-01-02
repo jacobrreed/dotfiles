@@ -92,7 +92,11 @@ export PATH=$PATH:~/.rd/bin # Rancher
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="/home/USER/.pyenv/bin:$PATH"
 export PATH="$PATH:$HOME/dev/bin"
-export PATH="$PATH:~/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/go/bin"
+
+# Source .env file
+set -a; source ~/.env; set +a
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then

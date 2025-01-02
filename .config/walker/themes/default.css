@@ -1,10 +1,12 @@
+/* AUTO GENERATED. DO NOT EDIT. CHANGES WILL BE OVERWRITTEN. */
+
 @define-color main_color rgba(255, 255, 255, 0.8);
-@define-color main_border_color #37f499;
-@define-color gradient_start hsla(234.55, 25%, 17.25%, 1);
-@define-color gradient_end hsla(234.55, 25%, 17.25%, 0.90);
-@define-color search_background rgb(50, 52, 73);
+@define-color main_border_color #232d3f;
+@define-color gradient_start hsla(240, 12.7%, 13.9%, 0.98);
+@define-color gradient_end hsla(219, 28.6%, 19.2%, 0.96);
+@define-color search_background hsla(219, 28.6%, 19.2%, 0.8);
 @define-color search_icon_color rgba(255, 255, 255, 0.8);
-@define-color typeahead_color hsl(189.8, 96.84%, 49.61%);
+@define-color typeahead_color hsl(174, 89.7%, 32.7%);
 @define-color selected_background hsla(172, 100%, 25.3%, 0.6);
 @define-color ai_color rgba(255, 255, 255, 0.8);
 @define-color ai_response_background hsla(219, 28.6%, 19.2%, 0.8);
@@ -30,11 +32,6 @@ slider,
 #sub,
 #activationlabel {
   all: unset;
-}
-
-#text {
-  font-family: "Iosevka Custom,";
-  font-weight: 900;
 }
 
 #window {

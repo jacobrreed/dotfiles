@@ -1,5 +1,6 @@
 lastupdatecheck: 0
 recentrepos:
+    - /home/neonvoid/.config/nvim
     - /home/neonvoid/dev/eldritch-workspace/eldritch
     - /home/neonvoid/pics
     - /home/neonvoid/dev/eldritch-workspace/eldritch.nvim
