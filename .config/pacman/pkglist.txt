@@ -98,7 +98,8 @@ pyenv
 python-pywal
 qt5-wayland
 qt6-wayland
-rust
+ripgrep
+rustup
 sbctl
 slurp
 smartmontools

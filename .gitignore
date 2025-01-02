@@ -4,6 +4,7 @@
 
 # But not these files
 !.zshrc
+!.bashrc
 !.gitignore
 !.gitconfig
 !.p10k.zsh
