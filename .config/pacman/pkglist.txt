@@ -101,6 +101,7 @@ qt6-wayland
 ripgrep
 rustup
 sbctl
+shellcheck
 slurp
 smartmontools
 steam
