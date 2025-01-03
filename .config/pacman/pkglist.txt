@@ -151,6 +151,7 @@ hyprpolkitagent
 keyd-git
 libdeep_filter_ladspa-bin
 ltunify
+luajit-tiktoken-bin
 mkinitcpio-colors-git
 paccache-hook
 paru-debug

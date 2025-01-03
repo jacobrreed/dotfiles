@@ -36,31 +36,15 @@ ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 [ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 source "${ZINIT_HOME}/zinit.zsh"
 # Zinit Packages
-# !0 reloads prompt
-zinit ice wait"!0" pick"async.sh" src"pure.zsh" 
-zinit light sindresorhus/pure
-zinit ice lucid wait
-zinit light zsh-users/zsh-syntax-highlighting
-zinit ice lucid wait
-zinit light zsh-users/zsh-autosuggestions
-zinit ice lucid wait
-zinit light zsh-users/zsh-completions
-zinit ice lucid wait
-zinit light Aloxaf/fzf-tab
-zinit ice lucid wait
-zinit light jeffreytse/zsh-vi-mode
-zinit ice lucid wait
-zinit light trystan2k/zsh-tab-title
-zi for \
-  atload"zicompinit; zicdreplay" \
-  blockf \
-  lucid \
-  wait \
- zsh-users/zsh-completions
-# # Compinit
-# autoload -Uz compinit
-# compinit
-# zinit cdreplay -q
+zinit wait lucid light-mode for \
+  pick"async.sh" src"pure.zsh" wait"!0" sindresorhus/pure \
+  zsh-users/zsh-syntax-highlighting \
+  zsh-users/zsh-autosuggestions \
+  zsh-users/zsh-completions \
+  Aloxaf/fzf-tab \
+  jeffreytse/zsh-vi-mode \
+  trystan2k/zsh-tab-title 
+  # blockf atload"zicompinit; zicdreplay"  zsh-users/zsh-completions
 
 #  _   _ _     _                   
 # | | | (_)___| |_ ___  _ __ _   _ 
@@ -103,6 +87,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'lsd $realpath'
 zmodload zsh/nearcolor
 # Pure Prompt
 export PURE_PROMPT_SYMBOL=""
+export PURE_CMD_MAX_EXEC_TIME=0
 zstyle :prompt:pure:git:arrow color "#f16c75"
 zstyle :prompt:pure:git:branch color "#04d1f9"
 zstyle :prompt:pure:path color "#37f499"

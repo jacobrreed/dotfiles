@@ -1,9 +1,9 @@
 lastupdatecheck: 0
 recentrepos:
+    - /home/neonvoid/dev/eldritch-workspace/eldritch.nvim
     - /home/neonvoid/.config/nvim
     - /home/neonvoid/dev/eldritch-workspace/eldritch
     - /home/neonvoid/pics
-    - /home/neonvoid/dev/eldritch-workspace/eldritch.nvim
 startuppopupversion: 5
 lastversion: 0.44.1
 customcommandshistory: []
