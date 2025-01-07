@@ -163,15 +163,6 @@ alias yay="paru" #replace yay with paru incase we copy paste commands from onlin
 alias dev="cd ~/dev"
 alias findsyms="find . -type l -ls"
 alias findhere="find . -name"
-function squash() {
-    if [[ "$PWD" == "$HOME" ]]; then
-      # Yadm
-      yadm rebase --root -i
-    else
-      # Git
-      git rebase --root -i
-    fi
-}
 # Deletes all files/folders with a given name recursively
 # Usage: deleteall node_modules
 function deleteall() {
