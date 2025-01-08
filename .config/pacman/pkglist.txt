@@ -135,7 +135,6 @@ sqlmap
 steam
 steamcmd
 swappy
-swww
 terminus-font
 termshark
 thefuck
@@ -146,6 +145,7 @@ thunar-vcs-plugin
 thunar-volman
 thunderbird
 tldr
+tmux
 toilet
 toilet-fonts
 ttf-jetbrains-mono
@@ -167,6 +167,7 @@ wireless_tools
 wireplumber
 wireshark-qt
 wlogout
+wlr-randr-git
 wlrobs-hg
 wordlistctl
 wowup-cf-bin
@@ -192,16 +193,15 @@ keyd-git
 libdeep_filter_ladspa-bin
 ltunify
 luajit-tiktoken-bin
-mkinitcpio-colors-git
 nexusmods-app-bin
 paccache-hook
 paru-debug
 protonup-rs
 python-gpustat
 sgdboop-bin
-steamgrid
 streamcontroller
 sweet-cursors-hyprcursor-git
+swww-git
 tofi
 vencord-installer-bin
 vial-appimage
