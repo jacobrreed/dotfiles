@@ -1,0 +1,9 @@
+[Desktop Entry]
+Categories=AudioVideo;Player;Audio;
+Comment=YouTube Music Desktop App
+Exec=youtube-music-desktop-app %U
+GenericName=YouTube Music Desktop App
+Icon=youtube-music-desktop-app
+Name=YouTube Music Desktop App
+StartupNotify=true
+Type=Application

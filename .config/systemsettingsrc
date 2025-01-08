@@ -1,0 +1,10 @@
+[FileDialogSize]
+3 screens: Height=576
+3 screens: Width=1024
+
+[KFileDialog Settings]
+detailViewIconSize=32
+iconViewIconSize=128
+
+[MainWindow]
+ToolBarsMovable=Disabled

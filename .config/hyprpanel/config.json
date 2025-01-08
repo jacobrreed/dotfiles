@@ -197,7 +197,7 @@
   "bar.workspaces.show_icons": false,
   "bar.workspaces.show_numbered": false,
   "bar.workspaces.showWsIcons": true,
-  "bar.workspaces.monitorSpecific": false,
+  "bar.workspaces.monitorSpecific": true,
   "bar.workspaces.workspaceMask": false,
   "theme.bar.buttons.windowtitle.enableBorder": false,
   "bar.windowtitle.class_name": false,
@@ -647,11 +647,11 @@
   "theme.bar.buttons.notifications.icon_background": "#7081d0",
   "bar.workspaces.workspaces": 1,
   "bar.workspaces.hideUnoccupied": true,
-  "bar.workspaces.showApplicationIcons": true,
+  "bar.workspaces.showApplicationIcons": false,
   "theme.bar.buttons.modules.submap.enableBorder": false,
   "bar.customModules.submap.enabledText": "Resize",
   "bar.customModules.submap.disabledText": "Norm",
   "bar.customModules.submap.enabledIcon": "󰩨",
   "theme.font.size": "1.2rem",
-  "bar.workspaces.applicationIconOncePerWorkspace": true
+  "bar.workspaces.applicationIconOncePerWorkspace": false
 }

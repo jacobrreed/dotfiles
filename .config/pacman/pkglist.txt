@@ -55,6 +55,7 @@ hashcat
 htb-toolkit
 htop
 hwinfo
+hyprcursor-git
 imagemagick
 inotify-tools
 intel-ucode
@@ -115,7 +116,9 @@ plasma-meta
 plocate
 plymouth
 plymouth-theme-dark-planet-git
+proton-ge-custom
 proton-vpn-gtk-app
+protontricks-git
 pyenv
 python-pywal
 qt5-wayland
@@ -159,6 +162,7 @@ webkit2gtk
 wev
 wget
 wine-staging
+winetricks-git
 wireless_tools
 wireplumber
 wireshark-qt
@@ -189,6 +193,7 @@ libdeep_filter_ladspa-bin
 ltunify
 luajit-tiktoken-bin
 mkinitcpio-colors-git
+nexusmods-app-bin
 paccache-hook
 paru-debug
 protonup-rs
@@ -196,6 +201,7 @@ python-gpustat
 sgdboop-bin
 steamgrid
 streamcontroller
+sweet-cursors-hyprcursor-git
 tofi
 vencord-installer-bin
 vial-appimage
