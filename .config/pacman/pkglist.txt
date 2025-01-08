@@ -124,6 +124,7 @@ ripgrep
 rsync
 rustup
 sbctl
+sddm-git
 shellcheck
 slurp
 smartmontools
