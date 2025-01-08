@@ -1,24 +1,38 @@
-user: 81 # cyan
-group: 231 # foreground
+user: 6
+group: 8
 permission:
-  read: 105 # dark purple
-  write: 63 # purple
-  exec: 81 # cyan
-  exec-sticky: 81 # cyan
-  no-access: 203 # red
+  read: 120
+  write: 11
+  exec: 9
+  exec-sticky: 5
+  no-access: 59
+  octal: 120
+  acl: 120
+  context: 120
 date:
-  hour-old: 104 # comment 20% lighter
-  day-old: 105 # comment
-  older: 59 # current line
+  hour-old: 63
+  day-old: 62
+  older: 61
 size:
-  none: 59 # current line
-  small: 120 # green
-  medium: 222 # orange
-  large: 203 # red
+  none: 59
+  small: 227
+  medium: 222
+  large: 203
 inode:
-  valid: 231 # foreground
-  invalid: 203 # red
+  valid: 59
+  invalid: 52
 links:
-  valid: 81 # cyan
-  invalid: 203 # red
-tree-edge: 105 # dark purple
+  valid: 120
+  invalid: 203
+tree-edge: 105
+git-status:
+  default: 59
+  unmodified: 236
+  ignored: 59
+  new-in-index: 120
+  new-in-workdir: 120
+  typechange: 222
+  deleted: 203
+  renamed: 222
+  modified: 120
+  conflicted: 203

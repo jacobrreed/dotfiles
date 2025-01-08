@@ -4,7 +4,6 @@ base
 base-devel
 bat
 bind
-birdtray
 blueman
 bluez
 bluez-utils
@@ -169,7 +168,6 @@ wowup-cf-bin
 wpa_supplicant
 xdg-desktop-portal-hyprland-git
 xdg-utils
-xone-dongle-firmware
 xorg-server
 xorg-xinit
 yadm

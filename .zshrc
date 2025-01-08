@@ -197,8 +197,9 @@ if [[ "$TERM" == "xterm-kitty" ]]; then
 fi
 # if lsd, replace ls
 if command -v lsd &> /dev/null; then
-  alias ls="lsd "
-  alias lsa="lsd -al"
+  alias ls="lsd"
+  alias l="ls -Al;"
+  alias lt="ls --tree"
 fi
 # if bat, replace cat
 if command -v bat &> /dev/null; then
