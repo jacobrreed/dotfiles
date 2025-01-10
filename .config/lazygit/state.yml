@@ -1,9 +1,7 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/neonvoid
-    - /home/neonvoid/dev/eldritch-workspace/eldritch.nvim
     - /home/neonvoid/.config/nvim
-    - /home/neonvoid/dev/eldritch-workspace/eldritch
     - /home/neonvoid/pics
 startuppopupversion: 5
 lastversion: 0.44.1

@@ -9,6 +9,6 @@
   branch=master
 
 [submodule ".config/vivaldi"]
-  path = .config/vivaldi
-  url = git@github.com:jacobrreed/vivaldi.git
+	path = .config/vivaldi
+	url = git@github.com:jacobrreed/vivaldi.git
   branch=master

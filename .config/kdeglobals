@@ -90,7 +90,12 @@ ForegroundNormal=248,248,242
 ForegroundPositive=80,250,122
 ForegroundVisited=68,71,90
 
+[DirSelect Dialog]
+DirSelectDialog Size=864,960
+History Items[$e]=file:$HOME/dev/vivaldi
+
 [General]
+BrowserApplication=vivaldi-stable.desktop
 ColorSchemeHash=e44c8d483c47a28c7d0e32e6b41dd227803affe5
 TerminalApplication=kitty
 TerminalService=kitty.desktop
@@ -120,13 +125,13 @@ Show Full Path=false
 Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
-Show hidden files=false
+Show hidden files=true
 Sort by=Name
 Sort directories first=true
 Sort hidden files last=false
 Sort reversed=false
 Speedbar Width=154
-View Style=Simple
+View Style=Detail
 
 [WM]
 activeBackground=47,52,63

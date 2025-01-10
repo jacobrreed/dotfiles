@@ -26,6 +26,8 @@ immutability=1
 lastScreen=0
 location=4
 plugin=org.kde.plasma.private.systemtray
+popupHeight=432
+popupWidth=432
 wallpaperplugin=org.kde.image
 
 [Containments][10][Applets][11]
@@ -64,6 +66,9 @@ plugin=org.kde.plasma.keyboardlayout
 immutability=1
 plugin=org.kde.plasma.volume
 
+[Containments][10][Applets][19][Configuration]
+PreloadWeight=55
+
 [Containments][10][Applets][19][Configuration][General]
 migrated=true
 
@@ -88,13 +93,20 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][10][Applets][26][Configuration]
-PreloadWeight=42
+PreloadWeight=26
 
 [Containments][10][Applets][27]
 immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][10][Applets][27][Configuration]
+PreloadWeight=26
+
+[Containments][10][Applets][78]
+immutability=1
+plugin=org.kde.plasma.mediacontroller
+
+[Containments][10][Applets][78][Configuration]
 PreloadWeight=42
 
 [Containments][10][General]
@@ -238,9 +250,15 @@ plugin=org.kde.plasma.printmanager
 immutability=1
 plugin=org.kde.plasma.battery
 
+[Containments][36][Applets][50][Configuration]
+PreloadWeight=34
+
 [Containments][36][Applets][51]
 immutability=1
 plugin=org.kde.plasma.brightness
+
+[Containments][36][Applets][51][Configuration]
+PreloadWeight=34
 
 [Containments][36][Applets][52]
 immutability=1
@@ -249,6 +267,13 @@ plugin=org.kde.plasma.bluetooth
 [Containments][36][Applets][53]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
+
+[Containments][36][Applets][77]
+immutability=1
+plugin=org.kde.plasma.mediacontroller
+
+[Containments][36][Applets][77][Configuration]
+PreloadWeight=42
 
 [Containments][36][General]
 extraItems=org.kde.plasma.bluetooth,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.keyboardindicator,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.vault,org.kde.plasma.printmanager
@@ -303,6 +328,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][4][Applets][9][Configuration]
+PreloadWeight=55
 SystrayContainmentId=10
 
 [Containments][4][General]
@@ -414,13 +440,22 @@ plugin=org.kde.plasma.printmanager
 immutability=1
 plugin=org.kde.plasma.battery
 
+[Containments][60][Applets][74][Configuration]
+PreloadWeight=34
+
 [Containments][60][Applets][75]
 immutability=1
 plugin=org.kde.plasma.brightness
 
+[Containments][60][Applets][75][Configuration]
+PreloadWeight=34
+
 [Containments][60][Applets][76]
 immutability=1
-plugin=org.kde.plasma.bluetooth
+plugin=org.kde.plasma.mediacontroller
+
+[Containments][60][Applets][76][Configuration]
+PreloadWeight=42
 
 [Containments][60][Applets][77]
 immutability=1
@@ -432,4 +467,4 @@ knownItems=org.kde.plasma.bluetooth,org.kde.plasma.cameraindicator,org.kde.plasm
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/README.md,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/GamescopeSession,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/steam-presence,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/privkey.pem,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/dev,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/videos,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/vault,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/cert.pem,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/Pictures,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/steamgridsync.py,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/-template,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/windows-dotfiles,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/xone,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/go,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/pics,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/antigen.zsh,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/neonvoid.png,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/Downloads,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/nonexistent,0,8b54256a-88bf-48bb-b144-689dcb0bf687
+screenMapping=desktop:/README.md,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/steam-presence,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/neonvoid.png,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/nonexistent,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/privkey.pem,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/windows-dotfiles,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/go,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/antigen.zsh,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/cert.pem,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/xone,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/-template,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/dev,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/videos,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/dotfiles,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/pics,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/vault,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/GamescopeSession,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/steam.desktop,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/Downloads,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/Pictures,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/steamgridsync.py,0,8b54256a-88bf-48bb-b144-689dcb0bf687,desktop:/paru,0,8b54256a-88bf-48bb-b144-689dcb0bf687
