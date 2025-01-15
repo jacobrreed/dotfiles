@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ "$1" = "1" ]; then
-  sketchybar --set $NAME label=" "
+  sketchybar --set $NAME label=" 󰖟 "
 elif [ "$1" = "2" ]; then
   sketchybar --set $NAME label=" "
 elif [ "$1" = "3" ]; then

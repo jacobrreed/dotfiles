@@ -170,7 +170,7 @@ function deleteall() {
 }
 alias e="nvim"
 if command -v lazygit &> /dev/null; then
-  alias l="lazygit"
+  alias lg="lazygit"
   if command -v yadm &> /dev/null; then
     alias ly='lazygit --use-config-file "$HOME/.config/yadm/lazygit.yml" --work-tree ~ --git-dir ~/.local/share/yadm/repo.git'
   fi

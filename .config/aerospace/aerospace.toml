@@ -145,7 +145,7 @@ esc = ['mode main']
 # Window Rules
 [[on-window-detected]]
 check-further-callbacks = true
-if.app-name-regex-substring = 'Firefox'
+if.app-name-regex-substring = 'Vivaldi'
 run = ['move-node-to-workspace 1']
 [[on-window-detected]]
 check-further-callbacks = true
