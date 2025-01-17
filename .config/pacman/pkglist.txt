@@ -3,6 +3,7 @@ base
 base-devel
 bat
 bind
+bitwarden
 blueman
 bluez
 bluez-utils
@@ -232,4 +233,5 @@ dracula-cursors-git
 dracula-gtk-theme-full
 hyprland-meta-git
 paru-debug
+python-gpustat
 walker-bin
