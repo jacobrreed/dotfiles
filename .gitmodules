@@ -7,8 +7,3 @@
   path = .config/nvim
   url = git@github.com:jacobrreed/nvim.git
   branch=master
-
-[submodule ".config/vivaldi"]
-	path = .config/vivaldi
-	url = git@github.com:jacobrreed/vivaldi.git
-  branch=master
