@@ -15,8 +15,10 @@ after-login-command = []
 after-startup-command = ['exec-and-forget sketchybar --reload']
 
 # Notify Sketchybar about workspace change
-exec-on-workspace-change = ['/bin/bash', '-c',
-    'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
+exec-on-workspace-change = [
+  '/bin/bash',
+  '-c',
+  'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE',
 ]
 
 # Start AeroSpace at login
@@ -58,12 +60,12 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
 inner.horizontal = 10
-inner.vertical =   10
-outer.left =       5
-outer.bottom =     5
+inner.vertical = 10
+outer.left = 5
+outer.bottom = 5
 # Main monitor has a bigger gap at the top
-outer.top =       [{monitor.main=28}, 5]
-outer.right =      5
+outer.top = [{ monitor.main = 35 }, 5]
+outer.right = 5
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -82,9 +84,8 @@ outer.right =      5
 # - Arrows.         left, down, up, right
 # All possible modifiers: cmd, alt, ctrl, shift
 cmd-alt-r = "reload-config"
-cmd-shift-r = 'mode resize'      # 1. Define a binding to switch to 'resize' mode
+cmd-shift-r = 'mode resize'                                   # 1. Define a binding to switch to 'resize' mode
 cmd-enter = 'exec-and-forget open -n /Applications/kitty.app'
-cmd-b = 'exec-and-forget open -n /Applications/Firefox\ Developer\ Edition.app/'
 # Close
 alt-cmd-ctrl-q = "close"
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
@@ -116,11 +117,11 @@ cmd-s = 'workspace s'
 cmd-shift-f = 'fullscreen'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-cmd-shift-1 = ['move-node-to-workspace 1','workspace 1']
-cmd-shift-2 = ['move-node-to-workspace 2','workspace 2']
-cmd-shift-3 = ['move-node-to-workspace 3','workspace 3']
-cmd-shift-4 = ['move-node-to-workspace 4','workspace 4']
-cmd-shift-s = ['move-node-to-workspace s','workspace s']
+cmd-shift-1 = ['move-node-to-workspace 1', 'workspace 1']
+cmd-shift-2 = ['move-node-to-workspace 2', 'workspace 2']
+cmd-shift-3 = ['move-node-to-workspace 3', 'workspace 3']
+cmd-shift-4 = ['move-node-to-workspace 4', 'workspace 4']
+cmd-shift-s = ['move-node-to-workspace s', 'workspace s']
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 cmd-shift-semicolon = 'mode service'
@@ -130,14 +131,17 @@ cmd-shift-semicolon = 'mode service'
 esc = ['reload-config', 'mode main']
 r = ['flatten-workspace-tree', 'mode main'] # reset layout
 #s = ['layout sticky tiling', 'mode main'] # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
-f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
+f = [
+  'layout floating tiling',
+  'mode main',
+] # Toggle between floating and tiling layout
 backspace = ['close-all-windows-but-current', 'mode main']
 cmd-shift-h = ['join-with left', 'mode main']
 cmd-shift-j = ['join-with down', 'mode main']
 cmd-shift-k = ['join-with up', 'mode main']
 cmd-shift-l = ['join-with right', 'mode main']
 
-[mode.resize.binding]      # 2. Declare 'resize' binding mode
+[mode.resize.binding] # 2. Declare 'resize' binding mode
 l = 'resize smart -50'
 h = 'resize smart +50'
 esc = ['mode main']
@@ -145,7 +149,7 @@ esc = ['mode main']
 # Window Rules
 [[on-window-detected]]
 check-further-callbacks = true
-if.app-name-regex-substring = 'Vivaldi'
+if.app-name-regex-substring = 'Firefox'
 run = ['move-node-to-workspace 1']
 [[on-window-detected]]
 check-further-callbacks = true
@@ -166,8 +170,8 @@ run = ['move-node-to-workspace 3']
 [[on-window-detected]]
 check-further-callbacks = true
 if.app-name-regex-substring = 'Microsoft Outlook'
-if.window-title-regex-substring = 'reminders'# Outlook reminders
-run = ['layout floating', 'move-node-to-workspace 1'] 
+if.window-title-regex-substring = 'reminders'         # Outlook reminders
+run = ['layout floating', 'move-node-to-workspace 1']
 [[on-window-detected]]
 check-further-callbacks = true
 if.app-name-regex-substring = 'Zoom'

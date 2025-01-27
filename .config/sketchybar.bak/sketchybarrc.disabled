@@ -1,0 +1,69 @@
+PLUGIN_DIR="$CONFIG_DIR/plugins"
+
+sketchybar --bar position=top height=25 blur_radius=30 color=0xFF212337 sticky=on
+
+default=(
+  padding_left=6
+  padding_right=6
+  icon.font="JetBrainsMono Nerd Font:Bold:20.0"
+  label.font="JetBrainsMono Nerd Font:Bold:17.0"
+  icon.color=0xff37f499
+  label.color=0xff04d1f9
+  icon.padding_left=4
+  icon.padding_right=4
+  label.padding_left=4
+  label.padding_right=4
+)
+sketchybar --default "${default[@]}"
+
+##### Adding Left Items #####
+# We add some regular items to the left side of the bar, where
+# only the properties deviating from the current defaults need to be set
+SPACE_ICONS=("󰞷 " " " "󰇮 " " " " ")
+for i in "${!SPACE_ICONS[@]}"; do
+  sid="$(($i+1))"
+  space=(
+    space="$sid"
+    icon="${SPACE_ICONS[i]}"
+    icon.padding_left=5
+    icon.padding_right=10
+    background.color=0x40323449
+    background.corner_radius=5
+    background.height=20
+    label.drawing=off
+    script="$PLUGIN_DIR/space.sh"
+  )
+  sketchybar --add space space."$sid" left --set space."$sid" "${space[@]}"
+done
+
+##### Adding Center Items #####
+# Focused App
+sketchybar --add item front_app center \
+  --set front_app icon.drawing=on script="$PLUGIN_DIR/front_app.sh" \
+  --subscribe front_app front_app_switched
+# Window title of focused app
+sketchybar -m --add event window_focus \
+  --add event title_change
+## Window title subscriptions
+sketchybar -m --add item title center \
+  --set title script="$PLUGIN_DIR/window.sh" \
+  --subscribe title window_focus front_app_switched space_change title_change
+
+##### Adding Right Items #####
+sketchybar --add item clock right \
+  --set clock update_freq=1 icon= script="$PLUGIN_DIR/clock.sh" \
+  --add item volume right \
+  --set volume script="$PLUGIN_DIR/volume.sh" \
+  --subscribe volume volume_change \
+  --add item battery right \
+  --set battery update_freq=120 script="$PLUGIN_DIR/battery.sh" \
+  --subscribe battery system_woke power_source_change
+
+sketchybar -m --add item packages right \
+  --set packages update_freq=120 \
+  --set packages script="$PLUGIN_DIR/package_monitor.sh" \
+  --set packages label=" ( )" \
+  --subscribe packages mouse.clicked
+
+##### Force all scripts to run the first time (never do this in a script) #####
+sketchybar --update
