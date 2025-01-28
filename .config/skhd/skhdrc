@@ -23,6 +23,9 @@ cmd + shift - 0x27: yabai -m space --focus 6
 cmd - l : yabai -m window --focus east
 cmd - h : yabai -m window --focus west
 
+# Close window
+cmd - x0C : yabai -m window --close
+
 # Full screen window
 cmd + shift - f: yabai -m window --toggle zoom-parent
 

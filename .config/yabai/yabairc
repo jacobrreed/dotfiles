@@ -27,21 +27,15 @@ yabai -m config window_gap 10
 setup_space() {
   idx="$1"
   name="$2"
-  space=
+  display="$3"
 
   space=$(yabai -m query --spaces --space "$idx")
   if [ -z "$space" ]; then
-    yabai -m space --create
+    yabai -m space --create "$display"
   fi
 
   yabai -m space "$idx" --label "$name"
-  if [ "$idx" -lt "4" ]; then
-    yabai -m space "$idx" --display 1
-  elif [ "$idx" -eq "5" ]; then
-    yabai -m space "$idx" --display 2
-  else
-    yabai -m space "$idx" --display 1
-  fi
+  yabai -m space "$idx" --display "$display"
 }
 
 # Setup or destroy spaces as needed to match 6
@@ -50,12 +44,12 @@ for i in $(yabai -m query --spaces | jq '.[].index | select(. > 6)'); do
 done
 
 # Set Up Spaces
-setup_space 1 dev
-setup_space 2 email
-setup_space 3 zoom
-setup_space 4 notes
-setup_space 5 slack
-setup_space 6 hide
+setup_space 1 dev 1
+setup_space 2 email 1
+setup_space 3 zoom 1
+setup_space 4 notes 1
+setup_space 6 hide 1
+setup_space 5 slack 2
 
 # Rules
 # No Manage
@@ -64,7 +58,7 @@ yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Cisco Secure Client$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Bitwarden$" manage=off
-yabai -m rule --add app=".*Slack.*" manage=on space=^5
+yabai -m rule --add app=".*Slack.*" manage=on space=5
 yabai -m rule --add app=".*Authenticator.*" manage=off
 yabai -m rule --add app=".*Oracle Backup.*" manage=off
 # Managed
