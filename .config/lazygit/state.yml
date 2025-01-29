@@ -4,7 +4,7 @@ recentrepos:
     - /home/neonvoid/.config/nvim
     - /home/neonvoid/pics
 startuppopupversion: 5
-lastversion: 0.44.1
+lastversion: 0.45.0
 customcommandshistory: []
 hidecommandlog: false
 ignorewhitespaceindiffview: false
