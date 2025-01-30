@@ -61,6 +61,7 @@ yabai -m rule --add app="^Bitwarden$" manage=off
 yabai -m rule --add app=".*Slack.*" manage=on space=5
 yabai -m rule --add app=".*Authenticator.*" manage=off
 yabai -m rule --add app=".*Oracle Backup.*" manage=off
+yabai -m rule --add app=".*Chromium.*" manage=off
 # Managed
 yabai -m rule --add title=".*Reminder" sticky=on
 yabai -m rule --add app=".*zoom.*" manage=on space=space=3
