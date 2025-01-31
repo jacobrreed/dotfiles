@@ -28,6 +28,8 @@ docker
 docker-compose
 docker-rootless-extras
 dosfstools
+dracula-cursors-git
+dracula-gtk-theme-full
 dunst
 easyeffects
 efibootmgr
@@ -117,6 +119,7 @@ paccache-hook
 parole
 paru
 paru-debug
+paru-debug
 pavucontrol
 pipewire
 pipewire-alsa
@@ -130,6 +133,7 @@ polkit-kde-agent
 proton-vpn-gtk-app
 protontricks-git
 pyenv
+python-gpustat
 python-pip
 python-pywal
 qmk
@@ -176,6 +180,7 @@ ttf-nerd-fonts-symbols-mono
 ttf-roboto
 ttyper
 tumbler
+udis86-git
 udiskie
 unityhub
 unrar
@@ -188,6 +193,7 @@ vim
 vivaldi
 vivaldi-ffmpeg-codecs
 vulkan-radeon
+walker-bin
 walker-bin
 waybar-module-pacman-updates-git
 webkit2gtk
