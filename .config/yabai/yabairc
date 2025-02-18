@@ -3,7 +3,7 @@ yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 sudo yabai --load-sa
 
 # global settings
-yabai -m config focus_follows_mouse autofocus
+yabai -m config focus_follows_mouse off
 yabai -m config window_shadow off
 yabai -m config window_opacity on
 yabai -m config window_opacity_duration 0.0
@@ -53,18 +53,19 @@ setup_space 5 slack 2
 
 # Rules
 # No Manage
-yabai -m rule --add app="^System Preferences$" manage=off
-yabai -m rule --add app="^System Settings$" manage=off
-yabai -m rule --add app="^Cisco Secure Client$" manage=off
+yabai -m rule --add app="^System Preferences$" manage=off grid=6:4:1:1:2:4
+yabai -m rule --add app="^System Settings$" manage=off grid=6:4:1:1:2:4
+yabai -m rule --add app="^Cisco Secure Client$" manage=off grid=6:4:1:1:2:4
 yabai -m rule --add app="^Calculator$" manage=off
-yabai -m rule --add app="^Bitwarden$" manage=off
-yabai -m rule --add app=".*Slack.*" manage=on space=5
+yabai -m rule --add app="^Bitwarden$" manage=off grid=6:4:1:1:2:4
+yabai -m rule --add app="^Finder$" manage=off grid=6:4:1:1:2:4
 yabai -m rule --add app=".*Authenticator.*" manage=off
 yabai -m rule --add app=".*Oracle Backup.*" manage=off
 yabai -m rule --add app=".*Chromium.*" manage=off
+yabai -m rule --add app=".*Slack.*" manage=on space=5
 # Managed
-yabai -m rule --add title=".*Reminder" sticky=on
-yabai -m rule --add app=".*zoom.*" manage=on space=space=3
+yabai -m rule --add title=".*Reminder" sticky=on grid=1:1:0:0:1:1
+yabai -m rule --add app=".*zoom.*" manage=on space=3
 yabai -m rule --add app=".*Outlook.*" manage=on space=2
 yabai -m rule --add app=".*Obsidian.*" manage=on space=4
 # Apply Rules

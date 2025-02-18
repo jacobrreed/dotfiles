@@ -9,6 +9,7 @@
                 "rules": [
                     {
                         "description": "Remap CMD+Q to HYPER+Q",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
