@@ -1,3 +1,5 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
+
 /**
  * Dynamic Horizontal Tabs Toolbar (with animations)
  * sidebar.verticalTabs: false (with native horizontal tabs)
@@ -52,4 +54,9 @@
   width: 14px !important;
   height: 14px !important;
   opacity: 0.6 !important;
+}
+
+/* hide icons for bookmark folders */
+#personal-bookmarks .bookmark-item[container="true"] .toolbarbutton-icon {
+  display: none !important;
 }
