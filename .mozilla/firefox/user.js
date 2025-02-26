@@ -234,6 +234,9 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 // visit https://github.com/yokoffing/Betterfox/wiki/Common-Overrides
 // visit https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening
 // Enter your personal overrides below this line:
+user_pref("browser.tabs.groups.enabled", true);
+user_pref("browser.tabs.groups.smart.enabled", true);
+user_pref("browser.cache.memory.capacity", 512000);
 // Dont close on last tab close
 user_pref("browser.tabs.closeWindowWithLastTab", false);
 // PREF: improve font rendering by using DirectWrite everywhere like Chrome [WINDOWS]
