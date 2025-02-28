@@ -24,10 +24,10 @@ if status is-interactive
         set EDITOR vim
         set VISUAL vim
     end
-    # SSH agent start if necessary
-    if test -z "$SSH_AGENT_PID" -a -z "$SSH_TTY" # if no agent & not in ssh
-        eval (ssh-agent -c) >/dev/null
-    end
+    # # SSH agent start if necessary
+    # if test -z "$SSH_AGENT_PID" -a -z "$SSH_TTY" # if no agent & not in ssh
+    #     eval (ssh-agent -c) >/dev/null
+    # end
 
     #     _    _     _                    _       _   _                 
     #    / \  | |__ | |__  _ __ _____   _(_) __ _| |_(_) ___  _ __  ___ 
@@ -158,4 +158,22 @@ if status is-interactive
     set fish_cursor_insert line
     # MOTD for fish 
     set fish_greeting
+
+    #                                  _   
+    #  _ __  _ __ ___  _ __ ___  _ __ | |_ 
+    # | '_ \| '__/ _ \| '_ ` _ \| '_ \| __|
+    # | |_) | | | (_) | | | | | | |_) | |_ 
+    # | .__/|_|  \___/|_| |_| |_| .__/ \__|
+    # |_|                       |_|        
+    # Pure Prompt
+    set --universal pure_check_for_new_release false
+    set --universal pure_symbol_prompt ""
+    set --universal pure_threshold_command_duration 0
+    set --universal pure_show_subsecond_command_duration true
+    set --universal pure_reverse_prompt_symbol_in_vimode true # Reverse prompt char in vi mode
+    set --universal pure_symbol_ssh_prefix "󰣀 "
+    set --universal pure_symbol_git_stash "󰘓 "
+    set --universal pure_symbol_git_unpulled_commits " "
+    set --universal pure_symbol_git_unpushed_commits " "
+    set --universal pure_symbol_git_dirty " "
 end
