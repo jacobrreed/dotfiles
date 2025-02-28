@@ -156,4 +156,6 @@ if status is-interactive
     set -g fish_key_bindings fish_vi_key_bindings
     set fish_cursor_default block
     set fish_cursor_insert line
+    # MOTD for fish 
+    set fish_greeting
 end
