@@ -63,7 +63,7 @@ SETUVAR pure_color_current_directory:pure_color_primary
 SETUVAR pure_color_danger:red
 SETUVAR pure_color_dark:black
 SETUVAR pure_color_git_branch:pure_color_mute
-SETUVAR pure_color_git_dirty:pure_color_mute
+SETUVAR pure_color_git_dirty:green
 SETUVAR pure_color_git_stash:pure_color_info
 SETUVAR pure_color_git_unpulled_commits:pure_color_info
 SETUVAR pure_color_git_unpushed_commits:pure_color_info
@@ -96,7 +96,7 @@ SETUVAR pure_enable_nixdevshell:false
 SETUVAR pure_enable_single_line_prompt:false
 SETUVAR pure_enable_virtualenv:true
 SETUVAR pure_reverse_prompt_symbol_in_vimode:true
-SETUVAR pure_separate_prompt_on_error:true
+SETUVAR pure_separate_prompt_on_error:false
 SETUVAR pure_shorten_prompt_current_directory_length:0
 SETUVAR pure_shorten_window_title_current_directory_length:0
 SETUVAR pure_show_jobs:false
@@ -105,7 +105,7 @@ SETUVAR pure_show_subsecond_command_duration:true
 SETUVAR pure_show_system_time:false
 SETUVAR pure_symbol_aws_profile_prefix:
 SETUVAR pure_symbol_container_prefix:
-SETUVAR pure_symbol_git_dirty:\ueb43\x20
+SETUVAR pure_symbol_git_dirty:\x20\ueb43\x20
 SETUVAR pure_symbol_git_stash:\U000f0613\x20
 SETUVAR pure_symbol_git_unpulled_commits:\uf019\x20
 SETUVAR pure_symbol_git_unpushed_commits:\uf093\x20

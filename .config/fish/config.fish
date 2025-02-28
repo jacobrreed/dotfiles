@@ -168,6 +168,7 @@ if status is-interactive
     # Pure Prompt
     set --universal pure_check_for_new_release false
     set --universal pure_symbol_prompt ""
+    set --universal pure_separate_prompt_on_error false
     set --universal pure_threshold_command_duration 0
     set --universal pure_show_subsecond_command_duration true
     set --universal pure_reverse_prompt_symbol_in_vimode true # Reverse prompt char in vi mode
@@ -175,5 +176,6 @@ if status is-interactive
     set --universal pure_symbol_git_stash "󰘓 "
     set --universal pure_symbol_git_unpulled_commits " "
     set --universal pure_symbol_git_unpushed_commits " "
-    set --universal pure_symbol_git_dirty " "
+    set --universal pure_symbol_git_dirty "  "
+    set --universal pure_color_git_dirty green
 end
