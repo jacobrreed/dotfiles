@@ -234,6 +234,7 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 // visit https://github.com/yokoffing/Betterfox/wiki/Common-Overrides
 // visit https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening
 // Enter your personal overrides below this line:
+user_pref("extensions.webextensions.restrictedDomains", ""); // Remove extension restrictions
 user_pref("browser.tabs.groups.enabled", true);
 user_pref("browser.tabs.groups.smart.enabled", true);
 user_pref("browser.cache.memory.capacity", 512000);
