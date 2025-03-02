@@ -234,6 +234,14 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 // visit https://github.com/yokoffing/Betterfox/wiki/Common-Overrides
 // visit https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening
 // Enter your personal overrides below this line:
+user_pref("sidebar.verticalTabs", true);
+user_pref("media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled", true);
+user_pref("browser.toolbars.bookmarks.visibility", true);
+user_pref("services.sync.prefs.sync-seen.browser.urlbar.showSearchSuggestionsFirst", false);
+user_pref("browser.search.separatePrivateDefault", false);
+user_pref("browser.search.separatePrivateDefault.ui.enabled", true);
+user_pref("browser.search.suggest.enabled.private", true);
+user_pref("extensions.activeThemeID", "{f2bcd203-646c-4f72-8da5-092a671277cc}");
 user_pref("extensions.webextensions.restrictedDomains", ""); // Remove extension restrictions
 user_pref("browser.tabs.groups.enabled", true);
 user_pref("browser.tabs.groups.smart.enabled", true);
