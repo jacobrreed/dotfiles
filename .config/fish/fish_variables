@@ -1,6 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR __fish_initialized:3800
+SETUVAR __fish_initialized:3400
 SETUVAR _fisher_danhper_2F_fish_2D_ssh_2D_agent_files:\x7e/\x2econfig/fish/functions/__ssh_agent_is_started\x2efish\x1e\x7e/\x2econfig/fish/functions/__ssh_agent_start\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/fish\x2dssh\x2dagent\x2efish
 SETUVAR _fisher_eldritch_2D_theme_2F_fish_files:\x7e/\x2econfig/fish/themes/eldritch\x2etheme
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
@@ -52,7 +52,7 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3d76639e
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/opt/homebrew/bin\x1e/Users/jrreed/go/bin\x1e/Users/jrreed/\x2elocal/bin\x1e/Users/jrreed/\x2ecargo/bin\x1e/Users/jrreed/\x2epyenv/shims
+SETUVAR fish_user_paths:/home/neonvoid/go/bin\x1e/home/neonvoid/\x2elocal/bin\x1e/home/neonvoid/\x2ecargo/bin\x1e/home/neonvoid/\x2eyarn/bin\x1e/home/neonvoid/\x2epyenv/shims\x1e/opt/homebrew/bin\x1e/Users/jrreed/go/bin\x1e/Users/jrreed/\x2elocal/bin\x1e/Users/jrreed/\x2ecargo/bin\x1e/Users/jrreed/\x2epyenv/shims
 SETUVAR pisces_pairs:\x28\x2c\x29\x1e\x5b\x2c\x5d\x1e\x7b\x2c\x7d\x1e\x22\x2c\x22\x1e\x27\x2c\x27
 SETUVAR pure_begin_prompt_with_current_directory:true
 SETUVAR pure_check_for_new_release:false
