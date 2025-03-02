@@ -1,4 +1,23 @@
 if status is-interactive
+    #                               
+    #  _   ___      _____ _ __ ___  
+    # | | | \ \ /\ / / __| '_ ` _ \ 
+    # | |_| |\ V  V /\__ \ | | | | |
+    #  \__,_| \_/\_/ |___/_| |_| |_|
+    #                               
+    # For a DE/WM selector instead use below
+    set -l os (uname)
+    if test "$os" = Linux
+        if type -q uwsm
+            set -l tty (tty)
+            if test "$tty" = /dev/tty1
+                set -l may-start (uwsm check may-start)
+                if test "$may-start"
+                    exec uwsm start hyprland.desktop
+                end
+            end
+        end
+    end
     #  ____   _  _____ _   _ 
     # |  _ \ / \|_   _| | | |
     # | |_) / _ \ | | | |_| |
@@ -123,13 +142,13 @@ if status is-interactive
     # GH CLI Copilot Chat
     set -l COPILOT_CLI ~/.local/share/gh/extensions/gh-copilot/gh-copilot
     if not test -e "$COPILOT_CLI"
-        gh extension install github/gh-copilot
+        gh extension install github/gh-copilot --force
     end
     # GH CLI gh-clone-org
     # gh clone-org ORGNAME
     set -l CLONE_ORG ~/.local/share/gh/extensions/gh-clone-org/gh-clone-org
     if not test -e "$CLONE_ORG"
-        gh extension install matt-bartel/gh-clone-org
+        gh extension install matt-bartel/gh-clone-org --force
     end
     # If fastfetch then call on profile load
     if type -q fastfetch

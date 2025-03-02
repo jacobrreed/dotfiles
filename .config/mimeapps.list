@@ -26,3 +26,4 @@ x-scheme-handler/unknown=firefox-developer-edition.desktop
 x-scheme-handler/webcal=userapp-Thunderbird-QBB1Z2.desktop
 x-scheme-handler/webcals=userapp-Thunderbird-QBB1Z2.desktop
 x-scheme-handler/ytmd=YouTube Music Desktop App.desktop
+x-scheme-handler/discord=vesktop.desktop
