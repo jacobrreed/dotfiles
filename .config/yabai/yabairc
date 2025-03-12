@@ -76,5 +76,10 @@ yabai -m config external_bar all:35:0
 yabai -m signal --add event=window_focused action="sketchybar -m --trigger window_focus &> /dev/null"
 yabai -m signal --add event=window_title_changed action="sketchybar -m --trigger title_change &> /dev/null"
 
+# Window List Caching
+yabai -m signal --add event=window_created action="~/.config/yabai/refresh_window_list.sh"
+yabai -m signal --add event=window_destroyed action="~/.config/yabai/refresh_window_list.sh"
+yabai -m signal --add event=window_title_changed action="~/.config/yabai/refresh_window_list.sh"
+
 killall sketchybar
 sketchybar

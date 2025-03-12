@@ -25,12 +25,12 @@ if status is-interactive
     # |_| /_/   \_\_| |_| |_|
     #                        
     fish_add_path /opt/homebrew/bin/
-    fish_add_path $(pyenv root)/shims
+    # fish_add_path $(pyenv root)/shims
     fish_add_path $HOME/.yarn/bin #yarn
     fish_add_path $HOME/.cargo/bin # Rust
     fish_add_path $HOME/.rd/bin # Rancher
     fish_add_path $HOME/.cargo/bin
-    fish_add_path $HOME/.pyenv/bin
+    # fish_add_path $HOME/.pyenv/bin
     fish_add_path $HOME/dev/bin
     fish_add_path $HOME/.local/bin
     fish_add_path $HOME/go/bin
@@ -162,7 +162,7 @@ if status is-interactive
     # |_____| \_/ \__,_|_|
     #                     
     thefuck --alias | source
-    direnv hook fish | source
+    # direnv hook fish | source
     fnm env --shell fish | source
 
     #  _____ _     _       ____                  _  __ _      

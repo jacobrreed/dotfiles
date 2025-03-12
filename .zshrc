@@ -235,6 +235,12 @@ timezsh() {
   shell=${1-$SHELL}
   for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
 }
+# Convert high res .mov files to smaller file size to retain quality
+movconvert() {
+  local output="${1%.*}"
+  ffmpeg -i "$1" -c:v libx264 -c:a copy -crf 20 "${output}-small.mov"
+}
+
 # Yazi file manager
 if command -v yazi &> /dev/null; then
   function yy() {
