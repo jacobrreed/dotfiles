@@ -141,6 +141,7 @@ sbctl
 shellcheck
 slurp
 smartmontools
+spotify
 sqlmap
 steam
 steamcmd

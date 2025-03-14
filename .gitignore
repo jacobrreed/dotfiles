@@ -20,3 +20,5 @@ systemd/
 .zshenv
 **/*.DS_Store
 vesktop/
+.config/spicetify/Backup/xpui.spa
+.config/spicetify/Backup/login.spa
