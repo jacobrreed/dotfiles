@@ -65,9 +65,7 @@ hyprlang-git
 hyprlock-git
 hyprpaper-git
 hyprpicker-git
-hyprpolkitagent
 hyprshot
-hyprsunset
 hyprutils-git
 hyprwayland-scanner-git
 imagemagick
@@ -141,6 +139,7 @@ sbctl
 shellcheck
 slurp
 smartmontools
+spicetify-cli
 spotify
 sqlmap
 steam
