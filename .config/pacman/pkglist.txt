@@ -16,8 +16,6 @@ cpio
 deno
 dhcpcd
 dkms
-docker
-docker-compose
 docker-rootless-extras
 dosfstools
 easyeffects
@@ -197,6 +195,7 @@ zsh
 ags-hyprpanel-git
 dracula-cursors-git
 dracula-gtk-theme-full
+hyprland-meta-git
 paru-debug
 proton-ge-custom
 python-gpustat

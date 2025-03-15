@@ -8,15 +8,15 @@
 #  \__,_| \_/\_/ |___/_| |_| |_|
 #                               
 # For a DE/WM selector instead use below
-# if [[ $(uname) = "Linux" ]]; then
-#   if command -v uwsm &> /dev/null; then
-#     if tty="/dev/tty1"; then
-#       if uwsm check may-start && uwsm select; then
-#         exec uwsm start default
-#       fi
-#     fi
-#   fi
-# fi
+ if [[ $(uname) = "Linux" ]]; then
+   if command -v uwsm &> /dev/null; then
+     if tty="/dev/tty1"; then
+       if uwsm check may-start && uwsm select; then
+         exec uwsm start default
+       fi
+     fi
+   fi
+ fi
 
 #  _                          _                       
 # | |__   ___  _ __ ___   ___| |__  _ __ _____      __
