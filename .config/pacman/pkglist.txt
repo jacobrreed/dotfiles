@@ -91,6 +91,7 @@ nikto
 nmap
 noto-fonts-cjk
 ntfs-3g
+nwg-displays
 nwg-look
 obs-studio
 obsidian
