@@ -1,5 +1,58 @@
 {
-  "Gestures": [],
+  "Gestures": [
+    {
+      "pattern": [
+        [
+          -2,
+          380
+        ]
+      ],
+      "command": {
+        "name": "TogglePin"
+      }
+    },
+    {
+      "pattern": [
+        [
+          -13,
+          -320
+        ]
+      ],
+      "command": {
+        "name": "CloseTab",
+        "settings": {
+          "nextFocus": "default",
+          "closePinned": true
+        }
+      }
+    },
+    {
+      "pattern": [
+        [
+          178,
+          2
+        ]
+      ],
+      "command": {
+        "name": "OpenImageInNewTab",
+        "settings": {
+          "position": "default",
+          "focus": true
+        }
+      }
+    },
+    {
+      "pattern": [
+        [
+          -303,
+          3
+        ]
+      ],
+      "command": {
+        "name": "CopyTabURL"
+      }
+    }
+  ],
   "Settings": {
     "General": {
       "theme": "dark"
