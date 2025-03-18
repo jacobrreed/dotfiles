@@ -238,6 +238,8 @@ user_pref("browser.uiCustomization.state",{"placements":{"widget-overflow-fixed-
 user_pref("network.trr.mode", 5);
 user_pref("sidebar.verticalTabs", true);
 user_pref("sidebar.visibility", "show");
+user_pref("sidebar.expandOnHover", true);
+user_pref("browser.engagement.sidebar-button.has-used", true)
 user_pref("media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled", true);
 user_pref("browser.toolbars.bookmarks.visibility", "always");
 user_pref("services.sync.prefs.sync-seen.browser.urlbar.showSearchSuggestionsFirst", false);
