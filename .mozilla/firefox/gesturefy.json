@@ -58,7 +58,7 @@
       "theme": "dark"
     },
     "Rocker": {
-      "active": true
+      "active": false
     },
     "Wheel": {
       "active": true,
@@ -75,7 +75,8 @@
           "cycling": true,
           "excludeDiscarded": false
         }
-      }
+      },
+      "mouseButton": "2"
     }
   }
 }
