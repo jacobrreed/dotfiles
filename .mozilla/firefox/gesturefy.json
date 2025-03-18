@@ -58,7 +58,7 @@
       "theme": "dark"
     },
     "Rocker": {
-      "active": false
+      "active": true
     },
     "Wheel": {
       "active": true,
