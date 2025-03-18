@@ -15,6 +15,7 @@ chaotic-mirrorlist
 cpio
 deno
 dhcpcd
+discord
 dkms
 docker-rootless-extras
 dolphin
@@ -222,8 +223,8 @@ zoxide
 zram-generator
 zsh
 ags-hyprpanel-git
-grub2-theme-fallout-git
 hyprland-meta-git
 paru-debug
 sweet-cursors-hyprcursor-git
+vencord-installer
 walker-bin
