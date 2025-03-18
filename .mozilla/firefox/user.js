@@ -236,6 +236,7 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 // Enter your personal overrides below this line:
 user_pref("network.trr.mode", 5);
 user_pref("sidebar.verticalTabs", true);
+user_pref("sidebar.visibility", "show");
 user_pref("media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled", true);
 user_pref("browser.toolbars.bookmarks.visibility", "always");
 user_pref("services.sync.prefs.sync-seen.browser.urlbar.showSearchSuggestionsFirst", false);
