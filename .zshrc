@@ -12,7 +12,8 @@
    if command -v uwsm &> /dev/null; then
      if tty="/dev/tty1"; then
        if uwsm check may-start && uwsm select; then
-         exec uwsm start default
+         # exec uwsm start default
+         exec uwsm start hyprland.desktop
        fi
      fi
    fi

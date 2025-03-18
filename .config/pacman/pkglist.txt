@@ -10,7 +10,6 @@ bluez-utils
 btop
 btrfs-progs
 burpsuite
-candy-icons-git
 chaotic-keyring
 chaotic-mirrorlist
 cpio
@@ -223,6 +222,7 @@ zoxide
 zram-generator
 zsh
 ags-hyprpanel-git
+grub2-theme-fallout-git
 hyprland-meta-git
 paru-debug
 sweet-cursors-hyprcursor-git
