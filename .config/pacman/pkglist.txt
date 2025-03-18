@@ -10,6 +10,7 @@ bluez-utils
 btop
 btrfs-progs
 burpsuite
+candy-icons-git
 chaotic-keyring
 chaotic-mirrorlist
 cpio
@@ -129,6 +130,8 @@ sqlmap
 steam
 steamcmd
 swappy
+sweet-folders-icons-git
+sweet-gtk-theme-dark
 swww
 terminus-font
 termshark
@@ -219,6 +222,8 @@ yubico-authenticator-bin
 zoxide
 zram-generator
 zsh
+ags-hyprpanel-git
 hyprland-meta-git
 paru-debug
+sweet-cursors-hyprcursor-git
 walker-bin

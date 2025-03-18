@@ -669,5 +669,9 @@
   "bar.customModules.submap.disabledText": "Norm",
   "bar.customModules.submap.enabledIcon": "󰩨",
   "theme.font.size": "1.2rem",
-  "bar.workspaces.applicationIconOncePerWorkspace": false
+  "bar.workspaces.applicationIconOncePerWorkspace": false,
+  "theme.bar.buttons.systray.enableBorder": false,
+  "bar.battery.label": false,
+  "bar.battery.hideLabelWhenFull": false,
+  "menus.power.showLabel": true
 }
