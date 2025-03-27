@@ -55,6 +55,7 @@ M.sections = {
   apple = eldritch.grey,
   media = { label = eldritch.red },
   calendar = { label = eldritch.dark_purple },
+  front_app = { label = eldritch.blue, border = eldritch.magenta },
   spaces = {
     icon = {
       color = eldritch.white,
