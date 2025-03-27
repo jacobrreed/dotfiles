@@ -1,9 +1,16 @@
-local colors = require("colors")
+local colors = require("colors").sections.bar
 
--- Equivalent to the --bar domain
-sbar.bar({
-	height = 30,
-	color = colors.bar.bg,
-	padding_right = 2,
-	padding_left = 2,
-})
+sbar.bar {
+  topmost = "window",
+  height = 30,
+  notch_display_height = 41,
+  padding_right = 12,
+  padding_left = 12,
+  margin = -1,
+  corner_radius = 5,
+  y_offset = -1,
+  blur_radius = 25,
+  border_color = colors.border,
+  border_width = 0,
+  color = colors.bg,
+}

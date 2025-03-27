@@ -1,7 +1,13 @@
-require("items.apple")
-require("items.menus")
-require("items.spaces")
-require("items.front_app")
-require("items.calendar")
-require("items.widgets")
-require("items.media")
+--left
+require "items.apple"
+require "items.spaces"
+require "items.menus"
+
+--center
+require "items.notifications"
+
+--right (reverse order)
+require "items.calendar"
+require "items.widgets"
+require "items.wifi"
+-- require("items.media")
