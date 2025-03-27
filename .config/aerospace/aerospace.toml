@@ -169,7 +169,11 @@ run = ['move-node-to-workspace 3']
 [[on-window-detected]]
 check-further-callbacks = true
 if.app-name-regex-substring = 'Microsoft Outlook'
-if.window-title-regex-substring = 'reminders'         # Outlook reminders
+if.window-title-regex-substring = 'Reminder'          # Outlook reminders
+run = ['layout floating', 'move-node-to-workspace 1']
+[[on-window-detected]]
+check-further-callbacks = true
+if.app-name-regex-substring = 'Finder'
 run = ['layout floating', 'move-node-to-workspace 1']
 [[on-window-detected]]
 check-further-callbacks = true

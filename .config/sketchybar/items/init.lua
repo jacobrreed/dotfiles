@@ -5,6 +5,7 @@ require "items.menus"
 
 --center
 require "items.notifications"
+require "items.front_app"
 
 --right (reverse order)
 require "items.calendar"
