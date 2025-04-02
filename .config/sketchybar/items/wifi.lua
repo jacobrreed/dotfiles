@@ -1,9 +1,7 @@
 local icons = require "icons"
 local colors = require("colors").sections.widgets.wifi
 
-sbar.exec(
-  "killall network_load >/dev/null; $CONFIG_DIR/helpers/event_providers/network_load/bin/network_load en0 network_update 2.0"
-)
+sbar.exec "killall network_load >/dev/null; $CONFIG_DIR/helpers/event_providers/network_load/bin/network_load en0 network_update 2.0"
 
 local popup_width = 250
 
@@ -13,7 +11,7 @@ local wifi = sbar.add("item", "widgets.wifi", {
   padding_left = 0,
   icon = {
     color = colors.icon,
-    padding_left = 8
+    padding_left = 8,
   },
   label = {
     padding_right = 8,
@@ -63,8 +61,8 @@ wifi:subscribe({ "wifi_change", "system_woke", "forced" }, function()
         string = is_connected and icons.wifi.connected or icons.wifi.disconnected,
       },
       label = {
-        string = is_connected and wifi_name or "",
-      }
+        string = is_connected and "Wifi" or "",
+      },
     }
 
     sbar.exec([[sleep 2; scutil --nwi | grep -m1 'utun' | awk '{ print $1 }']], function(vpn)
@@ -103,7 +101,7 @@ end
 
 wifi:subscribe("mouse.clicked", function()
   sbar.animate("tanh", 8, function()
-    wifi:set({
+    wifi:set {
       background = {
         shadow = {
           distance = 0,
@@ -112,8 +110,8 @@ wifi:subscribe("mouse.clicked", function()
       y_offset = -4,
       padding_left = 4,
       padding_right = 4,
-    })
-    wifi:set({
+    }
+    wifi:set {
       background = {
         shadow = {
           distance = 4,
@@ -122,7 +120,7 @@ wifi:subscribe("mouse.clicked", function()
       y_offset = 0,
       padding_left = 0,
       padding_right = 8,
-    })
+    }
   end)
   toggle_details()
 end)
