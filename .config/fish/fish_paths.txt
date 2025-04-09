@@ -1,1 +1,0 @@
-/home/neonvoid/go/bin /home/neonvoid/.local/bin /home/neonvoid/.cargo/bin /home/neonvoid/.yarn/bin /home/neonvoid/.pyenv/shims /opt/homebrew/bin /Users/jrreed/go/bin /Users/jrreed/.local/bin /Users/jrreed/.cargo/bin /Users/jrreed/.pyenv/shims
