@@ -61,6 +61,7 @@ if status is-interactive
     abbr --add findsyms "find . -type l -ls"
     abbr --add findhere "find . -name"
     abbr --add cd z
+    abbr --add ys "yarn start"
 
     #  _____      
     # |  ___| __  
@@ -162,7 +163,7 @@ if status is-interactive
     # |_____| \_/ \__,_|_|
     #                     
     thefuck --alias | source
-    # direnv hook fish | source
+    direnv hook fish | source
     fnm env --shell fish | source
 
     #  _____ _     _       ____                  _  __ _      
