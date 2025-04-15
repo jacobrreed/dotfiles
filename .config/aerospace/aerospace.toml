@@ -86,7 +86,7 @@ cmd-alt-r = "reload-config"
 cmd-shift-r = 'mode resize'                                   # 1. Define a binding to switch to 'resize' mode
 cmd-enter = 'exec-and-forget open -n /Applications/kitty.app'
 # Close
-alt-cmd-ctrl-q = "close"
+alt-cmd-ctrl-q = "close --quit-if-last-window"
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
 cmd-slash = 'layout tiles horizontal vertical'
 
