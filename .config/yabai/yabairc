@@ -39,9 +39,12 @@ setup_space() {
   yabai -m space "$idx" --display "$display"
 }
 
-# Setup or destroy spaces as needed to match 6
-for i in $(yabai -m query --spaces | jq '.[].index | select(. > 6)'); do
-  yabai -m space --destroy "$i"
+# Setup or destroy spaces as needed to match 5
+existing_spaces=$(yabai -m query --spaces | jq '.[] | .index')
+for i in $existing_spaces; do
+  if [ "$i" -gt 5 ]; then
+    yabai -m space "$i" --destroy
+  fi
 done
 
 # Set Up Spaces
@@ -49,7 +52,6 @@ setup_space 1 dev 1
 setup_space 2 email 1
 setup_space 3 zoom 1
 setup_space 4 notes 1
-setup_space 6 hide 1
 setup_space 5 slack 2
 
 # Rules

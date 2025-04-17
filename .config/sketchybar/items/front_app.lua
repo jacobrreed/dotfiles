@@ -20,15 +20,6 @@ local front_app = sbar.add("item", "front_app", {
 })
 
 front_app:subscribe("front_app_switched", function(env)
-  sbar.exec()
-  sbar.exec([[aerospace list-windows --focused --format "%{window-title}"]], function(app_name)
-    front_app:set {
-      label = {
-        string = app_name or env.INFO,
-      },
-    }
-  end)
-
   front_app:set { label = { string = env.INFO } }
 end)
 
