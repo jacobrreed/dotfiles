@@ -181,6 +181,21 @@ if.app-name-regex-substring = 'Zoom'
 run = ['move-node-to-workspace 2']
 [[on-window-detected]]
 check-further-callbacks = true
+if.app-name-regex-substring = 'Zoom'
+if.window-title-regex-substring = 'zoom share statusbar window' # Zoom meeting
+run = ['layout floating']
+[[on-window-detected]]
+check-further-callbacks = true
+if.app-name-regex-substring = 'Zoom'
+if.window-title-regex-substring = 'zoom share toolbar window' # Zoom meeting
+run = ['layout floating']
+[[on-window-detected]]
+check-further-callbacks = true
+if.app-name-regex-substring = 'Zoom'
+if.window-title-regex-substring = 'zoom share toolbar window' # Zoom meeting
+run = ['layout floating']
+[[on-window-detected]]
+check-further-callbacks = true
 if.app-name-regex-substring = 'settings'
 run = 'layout floating'
 [[on-window-detected]]
