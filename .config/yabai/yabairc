@@ -67,7 +67,7 @@ yabai -m rule --add app=".*Oracle Backup.*" manage=off
 yabai -m rule --add app=".*Chromium.*" manage=off
 yabai -m rule --add app=".*Slack.*" manage=on space=5
 # Managed
-yabai -m rule --add title=".*Reminder" sticky=on grid=1:1:0:0:1:1
+yabai -m rule --add title=".*Reminder" sticky=on grid=1:1:1:1:1:1
 yabai -m rule --add app=".*zoom.*" manage=on space=3
 yabai -m rule --add app=".*Outlook.*" manage=on space=2
 yabai -m rule --add app=".*Obsidian.*" manage=on space=4
@@ -78,6 +78,7 @@ yabai -m rule --apply
 yabai -m config external_bar all:35:0
 yabai -m signal --add event=window_focused action="sketchybar -m --trigger window_focus &> /dev/null"
 yabai -m signal --add event=window_title_changed action="sketchybar -m --trigger title_change &> /dev/null"
+yabai -m signal --add event=system_woke action="sh -c 'sleep 1; sketchybar --reload'"
 
 # Window List Caching
 yabai -m signal --add event=window_created action="~/.config/yabai/refresh_window_list.sh"
