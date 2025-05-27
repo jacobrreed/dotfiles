@@ -22,3 +22,9 @@
   squash = "!f(){ git reset $(git commit-tree \"HEAD^{tree}\" \"$@\");};f"
 [rerere]
   enabled = true
+[column]
+  ui = auto
+[branch]
+  sort=-committerdate
+[maintenance]
+	repo = /Users/jrreed/dev/eldritch-workspace/bat

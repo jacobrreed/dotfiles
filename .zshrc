@@ -101,7 +101,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'lsd $realpath'
 zmodload zsh/nearcolor
 # Pure Prompt
 export PURE_PROMPT_SYMBOL=""
-export PURE_COMMAND_DURATION=0
+export PURE_CMD_MAX_EXEC_TIME=0
 zstyle :prompt:pure:git:arrow color "#f16c75"
 zstyle :prompt:pure:git:branch color "#04d1f9"
 zstyle :prompt:pure:path color "#37f499"
@@ -162,7 +162,10 @@ fi
 alias hypr="e ~/.config/hypr/hyprland.conf"
 alias yay="paru" #replace yay with paru incase we copy paste commands from onlines sources using yay
 alias dev="cd ~/dev"
-alias findsyms="find . -type l -ls"
+function findsyms() {
+    local search_path="${1:-.}"
+    find "$search_path" -type l -ls
+}
 alias findhere="find . -name"
 # Deletes all files/folders with a given name recursively
 # Usage: deleteall node_modules
@@ -199,8 +202,8 @@ fi
 # if lsd, replace ls
 if command -v lsd &> /dev/null; then
   alias ls="lsd"
-  alias l="ls -Al;"
-  alias lt="ls --tree"
+  alias l="ls -Al"
+  alias lt="ls --tree --ignore-glob=node_modules"
 fi
 # if bat, replace cat
 if command -v bat &> /dev/null; then
