@@ -88,6 +88,7 @@ update_check_interval 6
 clipboard_max_size 512
 allow_hyperlinks yes
 shell_integration no-title
+# shell /opt/homebrew/bin/nu --config ~/.config/nu/config.nu --env-config ~/.config/nu/env.nu
 term xterm-kitty
 ## OS Specific Tweaks
 ### Wayland

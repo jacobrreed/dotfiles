@@ -44,10 +44,12 @@ ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 source "${ZINIT_HOME}/zinit.zsh"
 # Zinit Packages
 setopt promptsubst
+
+# pick"async.sh" src"pure.zsh" wait"!0" sindresorhus/pure \
+# sindresorhus/pure \
+# zinit ice lucid
+# zinit load starship/starship
 zinit wait lucid light-mode for \
-    pick"async.sh" src"pure.zsh" wait"!0" sindresorhus/pure \
-    sindresorhus/pure \
-    zsh-users/zsh-syntax-highlighting \
     zsh-users/zsh-autosuggestions \
     Aloxaf/fzf-tab \
     jeffreytse/zsh-vi-mode \
@@ -60,6 +62,10 @@ zinit wait lucid light-mode for \
     zsh-users/zsh-autosuggestions \
   blockf atpull'zinit creinstall -q .' \
     zsh-users/zsh-completions
+
+zinit ice wait lucid light-mode
+zinit load starship/starship
+
 #  _   _ _     _                   
 # | | | (_)___| |_ ___  _ __ _   _ 
 # | |_| | / __| __/ _ \| '__| | | |
@@ -307,6 +313,6 @@ if [ -z $SSH_AGENT_PID ] && [ -z $SSH_TTY ]; then  # if no agent & not in ssh
   eval `ssh-agent -s` > /dev/null
 fi
 
-source ~/.KAGI.env
+eval "$(starship init zsh)"
 # Uncomment to profile
 # zprof
