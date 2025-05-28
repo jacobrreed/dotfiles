@@ -134,8 +134,8 @@ format = "[$localipv4]($style)\n"
 style = "italic yellow"
 
 [cmd_duration]
-min_time = 0
-show_milliseconds = true
+min_time = 1_000
+show_milliseconds = false
 format = "[$duration  ]($style)"
 
 [package]
