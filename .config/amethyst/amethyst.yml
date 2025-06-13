@@ -1,0 +1,208 @@
+# Mods
+mod1:
+  - command
+mod2:
+  - command
+  - shift
+mod3:
+  - option
+  - shift
+mod4:
+  - option
+  - shift
+  - control
+
+# General
+ignore-menu-bar: false
+new-windows-to-main: false
+follow-space-thrown-windows: false
+hide-menu-bar-icon: false
+window-margins: true
+smart_window_margins: true
+window-margin-size: 5
+disable-padding-on-builtin-display: true
+
+# Layouts
+restore-layouts-on-launch: true
+window-resize-step: 5
+layouts:
+  - tall
+  - fullscreen
+
+# Shortcuts
+cycle-layout:
+  mod: mod3
+  key: space
+cycle-layout-backwards:
+  mod: mod4
+  key: space
+shrink-main:
+  mod: <NONE>
+  key: <NONE>
+expand-main:
+  mod: <NONE>
+  key: <NONE>
+increase-main:
+  mod: <NONE>
+  key: <NONE>
+decrease-main:
+  mod: <NONE>
+  key: <NONE>
+command1:
+  mod: <NONE>
+  key: <NONE>
+command2:
+  mod: <NONE>
+  key: <NONE>
+command3:
+  mod: <NONE>
+  key: <NONE>
+command3:
+  mod: <NONE>
+  key: <NONE>
+focus-cw:
+  mod: mod1
+  key: l
+focus-ccw:
+  mod: mod1
+  key: h
+focus-main:
+  mod: <NONE>
+  key: <NONE>
+focus-screen-ccw:
+  mod: <NONE>
+  key: <NONE>
+focus-screen-cw:
+  mod: <NONE>
+  key: <NONE>
+swap-screen-ccw:
+  mod: <NONE>
+  key: <NONE>
+swap-screen-cw:
+  mod: <NONE>
+  key: <NONE>
+swap-ccw:
+  mod: mod2
+  key: h
+swap-cw:
+  mod: mod2
+  key: l
+swap-main:
+  mod: <NONE>
+  key: <NONE>
+focus-screen-1:
+  mod: <NONE>
+  key: <NONE>
+focus-screen-2:
+  mod: <NONE>
+  key: <NONE>
+focus-screen-3:
+  mod: <NONE>
+  key: <NONE>
+focus-screen-4:
+  mod: <NONE>
+  key: <NONE>
+focus-screen-5:
+  mod: <NONE>
+  key: <NONE>
+focus-screen-6:
+  mod: <NONE>
+  key: <NONE>
+throw-space-1:
+  mod: mod2
+  key: 1
+throw-space-2:
+  mod: mod2
+  key: 2
+throw-space-3:
+  mod: mod2
+  key: 3
+throw-space-4:
+  mod: mod2
+  key: 4
+throw-space-5:
+  mod: mod2
+  key: 5
+throw-space-6:
+  mod: <NONE>
+  key: <NONE>
+throw-space-7:
+  mod: <NONE>
+  key: <NONE>
+throw-space-8:
+  mod: <NONE>
+  key: <NONE>
+throw-space-9:
+  mod: <NONE>
+  key: <NONE>
+throw-space-10:
+  mod: <NONE>
+  key: <NONE>
+throw-space-11:
+  mod: <NONE>
+  key: <NONE>
+throw-space-12:
+  mod: <NONE>
+  key: <NONE>
+throw-space-left:
+  mod: <NONE>
+  key: <NONE>
+throw-space-right:
+  mod: <NONE>
+  key: <NONE>
+throw-screen-1:
+  mod: <NONE>
+  key: <NONE>
+throw-screen-2:
+  mod: <NONE>
+  key: <NONE>
+throw-screen-3:
+  mod: <NONE>
+  key: <NONE>
+throw-screen-4:
+  mod: <NONE>
+  key: <NONE>
+relaunch-amethyst:
+  mod: mod2
+  key: r
+toggle-float:
+  mod: <NONE>
+  key: <NONE>
+display-current-layout:
+  mod: <NONE>
+  key: <NONE>
+toggle-tiling:
+  mod: <NONE>
+  key: <NONE>
+reevaluate-windows:
+  mod: <NONE>
+  key: <NONE>
+toggle-focus-follows-mouse:
+  mod: <NONE>
+  key: <NONE>
+select-tall-layout:
+  mod: <NONE>
+  key: <NONE>
+select-fullscreen-layout:
+  mod: <NONE>
+  key: <NONE>
+select-column-layout:
+  mod: <NONE>
+  key: <NONE>
+select-wide-layout:
+  mod: <NONE>
+  key: <NONE>
+
+# Mouse
+mouse-follows-focus: false
+focus-follows-mouse: false
+mouse-swaps-windows: true
+mouse-resizes-windows: true
+
+# Floating
+floating:
+  [
+    com.apple.systempreferences,
+    com.bitwarden.desktop,
+    com.tinyspec.slackmacgap,
+  ]

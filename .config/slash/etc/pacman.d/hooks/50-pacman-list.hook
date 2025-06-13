@@ -1,0 +1,12 @@
+#/etc/pacman.d/hooks/50-pacman-list.hook
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Target = *
+
+[Action]
+Description = Create a backup list of all installed packages
+When = PreTransaction
+Exec = /bin/sh -c 'pacman -Qqe > /home/neonvoid/.config/pacman/pkglist.txt; echo "Package lists backed up!"; exit'

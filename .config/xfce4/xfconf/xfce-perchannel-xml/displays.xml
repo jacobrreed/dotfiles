@@ -1,0 +1,48 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<channel name="displays" version="1.0">
+  <property name="ActiveProfile" type="string" value="Default"/>
+  <property name="Notify" type="int" value="1"/>
+  <property name="AutoEnableProfiles" type="int" value="3"/>
+  <property name="Default" type="empty">
+    <property name="DP-2" type="string" value="LG Electronics LG ULTRAGEAR 204NTUW62262 (DP-2)">
+      <property name="EDID" type="string" value="053497d5a197cb4ca3a86a7547394b86e5bfc67a"/>
+      <property name="Active" type="bool" value="true"/>
+      <property name="Resolution" type="string" value="3440x1440"/>
+      <property name="RefreshRate" type="double" value="143.923"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Scale" type="double" value="1"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="1440"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="DP-1" type="string" value="LG Electronics LG ULTRAGEAR 111NTFAKK203 (DP-1)">
+      <property name="EDID" type="string" value="5683a7e3fbb62f604012fbac87c23acbde36d661"/>
+      <property name="Active" type="bool" value="true"/>
+      <property name="Resolution" type="string" value="3440x1440"/>
+      <property name="RefreshRate" type="double" value="143.923"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Scale" type="double" value="1"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="1440"/>
+        <property name="Y" type="int" value="1440"/>
+      </property>
+    </property>
+    <property name="HDMI-A-1" type="string" value="ASUSTek COMPUTER INC ROG PG278QR K2LMQS047751 (HDMI-A-1)">
+      <property name="EDID" type="string" value="6ccba1b750c504e49d02d422649b8b51ba660b61"/>
+      <property name="Active" type="bool" value="true"/>
+      <property name="Resolution" type="string" value="2560x1440"/>
+      <property name="RefreshRate" type="double" value="59.951000000000001"/>
+      <property name="Rotation" type="int" value="90"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Scale" type="double" value="1"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="666"/>
+      </property>
+    </property>
+  </property>
+</channel>

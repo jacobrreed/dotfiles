@@ -1,0 +1,35 @@
+/**
+ * @name Eldritch
+ * @description A theme for the Ancient Ones! BetterDiscord
+ * @author jacobrreed
+ * @version 1.0.0
+ * @website https://github.com/eldritch-theme/betterdiscord
+ * @source https://raw.githubusercontent.com/eldritch-theme/betterdiscord/master/eldritch.theme.css
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css');
+
+:root {
+  --accentcolor: 55,244,153;
+  --accentcolor2: 4,209,249;
+  --linkcolor: 164,140,242;
+  --mentioncolor: 250,166,26;
+  --textbrightest: 235,250,250;
+  --textbrighter: 211,225,225;
+  --textbright: 188,200,200;
+  --textdark: 164,175,175;
+  --textdarker: 141,150,150;
+  --textdarkest: 117,125,125;
+  --backgroundaccent: 55,244,153;
+  --backgroundprimary: 33,35,55;
+  --backgroundsecondary: 29,31,49;
+  --backgroundsecondaryalt: 33,35,55;
+  --backgroundtertiary: 50,52,73;
+  --backgroundfloating: 50,52,73;
+  --settingsicons: 1;
+  --channeltextarea-background: #323449 !important;
+  --background-modifier-selected: #37f499 !important;
+  --interactive-normal: #37f499 !important;
+  --channels-default: #04d1f9 !important;
+}

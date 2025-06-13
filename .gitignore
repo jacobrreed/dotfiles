@@ -1,0 +1,26 @@
+# ignore everything
+/*
+/*/
+
+# But not these files
+!.zshrc
+!.bashrc
+!.gitignore
+!.gitconfig
+!.p10k.zsh
+!/.themes/
+!/.local/
+!README.md
+!/.config/
+!/.gitconfig#*
+!/vivaldi-dracula-theme
+!/pics/
+!/.mozilla/
+# But these
+systemd/
+.zshenv
+**/*.DS_Store
+vesktop/
+.config/spicetify/Backup/xpui.spa
+.config/spicetify/Backup/login.spa
+.config/vivaldi
