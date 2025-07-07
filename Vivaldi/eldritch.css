@@ -36,14 +36,16 @@ TABS
   padding-bottom: 5px !important;
 }
 /* Pinned tabs */
-.tab .pinned .favicon:before {
-  content: "📌";
-  font-size: 10px;
-  position: absolute;
-  top: 8px;
-  left: -1px;
-  z-index: 1;
+.tab.pinned {
+  border-left-color: red;
 }
+/* .tab.pinned:after {
+  content: "📌";
+  font-size: 12px;
+  position: absolute;
+  left: -1px;
+  z-index: 99;
+} */
 #tabs-tabbar-container .separator hr {
   border-color: rgb(0, 255, 255) !important;
   opacity: unset;
@@ -75,10 +77,15 @@ TABS
 #tabs-container .tab.isdiscarded:hover .favicon {
   filter: none !important;
 }
+
 /* background for tab bar */
 #tabs-tabbar-container {
   background-color: #292e42 !important;
   padding-right: 3px;
+}
+
+.tab-small span.tab-audio {
+  display: none !important;
 }
 
 /*
