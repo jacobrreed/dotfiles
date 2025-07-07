@@ -322,3 +322,7 @@ fi
 # eval "$(starship init zsh)"
 # Uncomment to profile
 # zprof
+
+
+alias scm-ssh='/Users/jrreed/.ssh/scm-script.sh'
+scm-ssh start_agent
