@@ -1,8 +1,9 @@
 lastupdatecheck: 0
 recentrepos:
     - /Users/jrreed
+    - /Users/jrreed/dev/maui-core
 startuppopupversion: 5
-didshowhunkstaginghint: false
+didshowhunkstaginghint: true
 lastversion: 0.54.2
 customcommandshistory: []
 hidecommandlog: false

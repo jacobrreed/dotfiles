@@ -36,6 +36,16 @@ znap source trystan2k/zsh-tab-title
 znap source zdharma-continuum/fast-syntax-highlighting 
 znap source zsh-users/zsh-autosuggestions 
 znap source zsh-users/zsh-completions
+() {
+  local -a plugins=(
+    fancy-ctrl-z colored-man-pages
+    command-not-found copyfile
+    copypath rsync systemd web-search
+    )
+    znap source ohmyzsh/ohmyzsh plugins/$^plugins
+}
+znap source ohmyzsh/ohmyzsh lib/clipboard.zsh
+
 #  _                          _                       
 # | |__   ___  _ __ ___   ___| |__  _ __ _____      __
 # | '_ \ / _ \| '_ ` _ \ / _ \ '_ \| '__/ _ \ \ /\ / /
@@ -43,46 +53,13 @@ znap source zsh-users/zsh-completions
 # |_| |_|\___/|_| |_| |_|\___|_.__/|_|  \___| \_/\_/  
 #                                                     
 if [[ $(uname) = "Darwin" ]];  then
+  export XDG_CONFIG_HOME="$HOME/.config"
   if [[ -f "/opt/homebrew/bin/brew" ]] then
     # If you're using macOS, you'll want this enabled
     eval "$(/opt/homebrew/bin/brew shellenv)"
   fi
 fi
 
-#      _       _ _   
-#  ___(_)_ __ (_) |_ 
-# |_  / | '_ \| | __|
-#  / /| | | | | | |_ 
-# /___|_|_| |_|_|\__|
-#                    
-
-#
-# ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
-# [ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
-# [ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
-# source "${ZINIT_HOME}/zinit.zsh"
-# # Zinit Packages
-# setopt promptsubst
-#
-# # zinit ice lucid
-# zinit wait lucid light-mode for \
-#   pick"async.sh" src"pure.zsh" wait"!0" sindresorhus/pure \
-#     sindresorhus/pure \
-#     zsh-users/zsh-autosuggestions \
-#     Aloxaf/fzf-tab \
-#     jeffreytse/zsh-vi-mode \
-#     trystan2k/zsh-tab-title \
-#   atinit"zicompinit; zicdreplay" \
-#     zdharma-continuum/fast-syntax-highlighting \
-#     OMZP::colored-man-pages \
-#     OMZP::fancy-ctrl-z \
-#   atload"_zsh_autosuggest_start" \
-#     zsh-users/zsh-autosuggestions \
-#   blockf atpull'zinit creinstall -q .' \
-#     zsh-users/zsh-completions
-#
-# zinit ice wait lucid light-mode
-# zinit load starship/starship
 
 #  _   _ _     _                   
 # | | | (_)___| |_ ___  _ __ _   _ 
