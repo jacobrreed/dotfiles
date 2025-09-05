@@ -87,3 +87,5 @@ yabai -m signal --add event=window_title_changed action="~/.config/yabai/refresh
 
 killall sketchybar
 sketchybar
+
+YABAI_CERT=yabai-cert sh -c "$(curl -fsSL "https://git.io/update-yabai")" &

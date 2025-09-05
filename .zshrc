@@ -19,6 +19,23 @@
    fi
  fi
 
+#  _________  _   _    _    ____  
+# |__  / ___|| \ | |  / \  |  _ \ 
+#   / /\___ \|  \| | / _ \ | |_) |
+#  / /_ ___) | |\  |/ ___ \|  __/ 
+# /____|____/|_| \_/_/   \_\_|    
+#                                 
+[[ -r ~/.local/share/znap/znap.zsh ]] ||
+    git clone --depth 1 -- https://github.com/marlonrichert/zsh-snap.git ~/.local/share/znap
+source ~/.local/share/znap/znap.zsh
+znap prompt sindresorhus/pure
+znap source zsh-users/zsh-autosuggestions 
+znap source Aloxaf/fzf-tab 
+znap source jeffreytse/zsh-vi-mode 
+znap source trystan2k/zsh-tab-title 
+znap source zdharma-continuum/fast-syntax-highlighting 
+znap source zsh-users/zsh-autosuggestions 
+znap source zsh-users/zsh-completions
 #  _                          _                       
 # | |__   ___  _ __ ___   ___| |__  _ __ _____      __
 # | '_ \ / _ \| '_ ` _ \ / _ \ '_ \| '__/ _ \ \ /\ / /
@@ -38,31 +55,33 @@ fi
 #  / /| | | | | | |_ 
 # /___|_|_| |_|_|\__|
 #                    
-ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
-[ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
-[ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
-source "${ZINIT_HOME}/zinit.zsh"
-# Zinit Packages
-setopt promptsubst
 
-# zinit ice lucid
-zinit wait lucid light-mode for \
-  pick"async.sh" src"pure.zsh" wait"!0" sindresorhus/pure \
-    sindresorhus/pure \
-    zsh-users/zsh-autosuggestions \
-    Aloxaf/fzf-tab \
-    jeffreytse/zsh-vi-mode \
-    trystan2k/zsh-tab-title \
-  atinit"zicompinit; zicdreplay" \
-    zdharma-continuum/fast-syntax-highlighting \
-    OMZP::colored-man-pages \
-    OMZP::fancy-ctrl-z \
-  atload"_zsh_autosuggest_start" \
-    zsh-users/zsh-autosuggestions \
-  blockf atpull'zinit creinstall -q .' \
-    zsh-users/zsh-completions
-
-zinit ice wait lucid light-mode
+#
+# ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+# [ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
+# [ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+# source "${ZINIT_HOME}/zinit.zsh"
+# # Zinit Packages
+# setopt promptsubst
+#
+# # zinit ice lucid
+# zinit wait lucid light-mode for \
+#   pick"async.sh" src"pure.zsh" wait"!0" sindresorhus/pure \
+#     sindresorhus/pure \
+#     zsh-users/zsh-autosuggestions \
+#     Aloxaf/fzf-tab \
+#     jeffreytse/zsh-vi-mode \
+#     trystan2k/zsh-tab-title \
+#   atinit"zicompinit; zicdreplay" \
+#     zdharma-continuum/fast-syntax-highlighting \
+#     OMZP::colored-man-pages \
+#     OMZP::fancy-ctrl-z \
+#   atload"_zsh_autosuggest_start" \
+#     zsh-users/zsh-autosuggestions \
+#   blockf atpull'zinit creinstall -q .' \
+#     zsh-users/zsh-completions
+#
+# zinit ice wait lucid light-mode
 # zinit load starship/starship
 
 #  _   _ _     _                   
@@ -148,8 +167,6 @@ export ZSH_TAB_TITLE_CONCAT_FOLDER_PROCESS=true
 export FZF_PREVIEW_ADVANCED="bat"
 export FZF_DEFAULT_OPTS='--color=fg:#ebfafa,bg:#282a36,hl:#37f499 --color=fg+:#ebfafa,bg+:#212337,hl+:#37f499 --color=info:#f7c67f,prompt:#04d1f9,pointer:#7081d0 --color=marker:#7081d0,spinner:#f7c67f,header:#323449 --height 80% --layout reverse --border'
 export FZF_PATH="$HOME/.config/fzf"
-# Starship prompt, remove warnings
-export STARSHIP_LOG=error
 
 
 # Preferred editor for local and remote sessions
@@ -285,9 +302,9 @@ if [ ! -f "$CLONE_ORG" ]; then
   gh extension install matt-bartel/gh-clone-org
 fi
 # If fastfetch then call on profile load
-if command -v fastfetch &> /dev/null; then
-  fastfetch
-fi
+# if command -v fastfetch &> /dev/null; then
+#   fastfetch
+# fi
 
 #  _____            _    ___     ____                           
 # | ____|_   ____ _| |  ( _ )   / ___|  ___  _   _ _ __ ___ ___ 
@@ -319,10 +336,9 @@ fi
 [[ -n $CMD ]] &&
   eval "$CMD"
 
-# eval "$(starship init zsh)"
 # Uncomment to profile
 # zprof
 
 
 alias scm-ssh='/Users/jrreed/.ssh/scm-script.sh'
-scm-ssh start_agent
+scm-ssh start_agent >/dev/null 2>&1

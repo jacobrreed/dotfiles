@@ -3,7 +3,7 @@ local icons = require "icons"
 local icon_map = require "helpers.icon_map"
 
 local function add_windows(space, space_name)
-  sbar.exec("aerospace list-windows --format %{app-name} --workspace " .. space_name, function(windows)
+  sbar.exec("aerospace list-windows --format %{app-name} --workspace " .. space_name .. " | uniq", function(windows)
     local icon_line = ""
     for app in windows:gmatch "[^\r\n]+" do
       local lookup = icon_map[app]

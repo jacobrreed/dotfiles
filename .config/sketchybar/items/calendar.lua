@@ -1,6 +1,6 @@
-local icons = require("icons")
+local icons = require "icons"
 local colors = require("colors").sections.calendar
-local settings = require("settings")
+local settings = require "settings"
 
 local cal = sbar.add("item", {
   icon = {
@@ -49,5 +49,5 @@ end)
 
 -- english date
 cal:subscribe({ "forced", "routine", "system_woke" }, function()
-  cal:set { icon = os.date "%H:%M", label = icons.calendar }
+  cal:set { icon = string.upper(os.date "%d %b %Y %H:%M"), label = icons.calendar }
 end)
