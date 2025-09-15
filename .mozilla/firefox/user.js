@@ -226,9 +226,11 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 // visit https://github.com/yokoffing/Betterfox/wiki/Common-Overrides
 // visit https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening
 // Enter your personal overrides below this line:
+user_pref("privacy.resistFingerprinting.block_mozAddonManager", true);
+user_pref("extensions.webextensions.restrictedDomains", "");
 user_pref(
   "media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled",
-  true
+  false
 );
 user_pref("media.videocontrols.picture-in-picture.enabled", true);
 user_pref("media.videocontrols.picture-in-picture.video-toggle.enabled", true);
@@ -245,10 +247,12 @@ user_pref(
   "browser.uiCustomization.state",
   '{"placements":{"widget-overflow-fixed-list":[],"unified-extensions-area":["_506e023c-7f2b-40a3-8066-bc5deb40aebe_-browser-action","_react-devtools-browser-action","_f60d7183-d8f1-4a2b-891b-f2de614ada9e_-browser-action","_15bdb1ce-fa9d-4a00-b859-66c214263ac0_-browser-action","search_kagi_com-browser-action"],"nav-bar":["sidebar-button","back-button","forward-button","stop-reload-button","vertical-spacer","urlbar-container","save-to-pocket-button","jid0-bnmfwww2w2w4e4edvcddbnmhdvg_jetpack-browser-action","ublock0_raymondhill_net-browser-action","_446900e4-71c2-419f-a6a7-df9c091e268b_-browser-action","_aecec67f-0d10-4fa7-b7c7-609a2db280cf_-browser-action","_7a7a4a92-a2a0-41d1-9fd7-1e92480d612d_-browser-action","_a4cc20af-d30a-4758-a799-2089ce45f452_-browser-action","downloads-button","fxa-toolbar-menu-button","developer-button","preferences-button","unified-extensions-button","firefox-view-button","reset-pbm-toolbar-button"],"toolbar-menubar":["menubar-items"],"vertical-tabs":["tabbrowser-tabs"],"PersonalToolbar":["personal-bookmarks"]},"seen":["save-to-pocket-button","developer-button","profiler-button","_react-devtools-browser-action","_f60d7183-d8f1-4a2b-891b-f2de614ada9e_-browser-action","_a4cc20af-d30a-4758-a799-2089ce45f452_-browser-action","_15bdb1ce-fa9d-4a00-b859-66c214263ac0_-browser-action","_7a7a4a92-a2a0-41d1-9fd7-1e92480d612d_-browser-action","search_kagi_com-browser-action","jid0-bnmfwww2w2w4e4edvcddbnmhdvg_jetpack-browser-action","_aecec67f-0d10-4fa7-b7c7-609a2db280cf_-browser-action","ublock0_raymondhill_net-browser-action","_446900e4-71c2-419f-a6a7-df9c091e268b_-browser-action","_506e023c-7f2b-40a3-8066-bc5deb40aebe_-browser-action","reset-pbm-toolbar-button"],"dirtyAreaCache":["nav-bar","vertical-tabs","PersonalToolbar","unified-extensions-area","toolbar-menubar","TabsToolbar"],"currentVersion":21,"newElementCount":5}'
 );
+user_pref("devtools.debugger.prompt-connection", false);
 user_pref("browser.startup.page", 3); // Restore session
 user_pref("network.trr.mode", 5);
+user_pref("sidebar.revamp", true);
 user_pref("sidebar.verticalTabs", true);
-user_pref("sidebar.visibility", "show");
+user_pref("sidebar.visibility", "always-show");
 user_pref("sidebar.expandOnHover", false);
 user_pref("browser.engagement.sidebar-button.has-used", true);
 user_pref("browser.toolbars.bookmarks.visibility", "always");
