@@ -3,23 +3,26 @@ local icons = require "icons"
 local icon_map = require "helpers.icon_map"
 
 local function add_windows(space, space_name)
-  sbar.exec("yabai -m query --windows --space " .. space_name .. " | jq -r '.[].app'", function(windows)
-    local icon_line = ""
-    for app in windows:gmatch "[^\r\n]+" do
-      local lookup = icon_map[app]
-      local icon = ((lookup == nil) and icon_map["Default"] or lookup)
-      icon_line = icon_line .. " " .. icon
-    end
+  sbar.exec(
+    "yabai -m query --windows --space " .. space_name .. " | jq -r '.[] | select(.\"is-minimized\" == false) | .app'",
+    function(windows)
+      local icon_line = ""
+      for app in windows:gmatch "[^\r\n]+" do
+        local lookup = icon_map[app]
+        local icon = ((lookup == nil) and icon_map["Default"] or lookup)
+        icon_line = icon_line .. " " .. icon
+      end
 
-    sbar.animate("tanh", 10, function()
-      space:set {
-        label = {
-          string = icon_line == "" and "—" or icon_line,
-          padding_right = icon_line == "" and 8 or 12,
-        },
-      }
-    end)
-  end)
+      sbar.animate("tanh", 10, function()
+        space:set {
+          label = {
+            string = icon_line == "" and "—" or icon_line,
+            padding_right = icon_line == "" and 8 or 12,
+          },
+        }
+      end)
+    end
+  )
 end
 
 sbar.exec("yabai -m query --spaces | jq -r '.[].index'", function(spaces)
