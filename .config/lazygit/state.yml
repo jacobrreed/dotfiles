@@ -2,8 +2,10 @@ lastupdatecheck: 0
 recentrepos:
     - /Users/jrreed
     - /Users/jrreed/dev/maui-core
+    - /Users/jrreed/dev/maui-types
+    - /Users/jrreed/dev/cloud-guard-maui-plugin
 startuppopupversion: 5
 didshowhunkstaginghint: true
-lastversion: 0.54.2
+lastversion: 0.55.0
 customcommandshistory: []
 hidecommandlog: false

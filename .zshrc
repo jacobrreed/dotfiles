@@ -28,7 +28,9 @@
 [[ -r ~/.local/share/znap/znap.zsh ]] ||
     git clone --depth 1 -- https://github.com/marlonrichert/zsh-snap.git ~/.local/share/znap
 source ~/.local/share/znap/znap.zsh
-znap prompt sindresorhus/pure
+# znap prompt sindresorhus/pure
+znap eval starship 'starship init zsh --print-full-init'
+znap prompt
 znap source zsh-users/zsh-autosuggestions 
 znap source Aloxaf/fzf-tab 
 znap source jeffreytse/zsh-vi-mode 
@@ -44,7 +46,12 @@ znap source zsh-users/zsh-completions
     )
     znap source ohmyzsh/ohmyzsh plugins/$^plugins
 }
-znap source ohmyzsh/ohmyzsh lib/clipboard.zsh
+() {
+  local -a libs=(
+    functions.zsh clipboard.zsh
+    )
+    znap source ohmyzsh/ohmyzsh lib/$^libs
+}
 
 #  _                          _                       
 # | |__   ___  _ __ ___   ___| |__  _ __ _____      __

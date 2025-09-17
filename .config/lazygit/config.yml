@@ -1,6 +1,8 @@
 keybinding:
   files:
     commitChangesWithEditor: "<disabled>"
+git:
+  skipHookPrefix: WIP
 customCommands:
   - key: "C"
     command: |
