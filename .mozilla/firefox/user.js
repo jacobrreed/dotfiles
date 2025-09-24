@@ -226,11 +226,14 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 // visit https://github.com/yokoffing/Betterfox/wiki/Common-Overrides
 // visit https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening
 // Enter your personal overrides below this line:
+user_pref("places.frecency.bookmarkVisitBonus", 2000);
+user_pref("places.frecency.unvisitedBookmarkBonus", 2000);
+user_pref("browser.urlbar.showSearchSuggestionsFirst", false);
 user_pref("privacy.resistFingerprinting.block_mozAddonManager", true);
 user_pref("extensions.webextensions.restrictedDomains", "");
 user_pref(
   "media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled",
-  false
+  true
 );
 user_pref("media.videocontrols.picture-in-picture.enabled", true);
 user_pref("media.videocontrols.picture-in-picture.video-toggle.enabled", true);
