@@ -285,10 +285,6 @@ CLONE_ORG=~/.local/share/gh/extensions/gh-clone-org/gh-clone-org
 if [ ! -f "$CLONE_ORG" ]; then
   gh extension install matt-bartel/gh-clone-org
 fi
-# If fastfetch then call on profile load
-# if command -v fastfetch &> /dev/null; then
-#   fastfetch
-# fi
 
 #  _____            _    ___     ____                           
 # | ____|_   ____ _| |  ( _ )   / ___|  ___  _   _ _ __ ___ ___ 
@@ -323,6 +319,7 @@ fi
 # Uncomment to profile
 # zprof
 
-
-alias scm-ssh='/Users/jrreed/.ssh/scm-script.sh'
-scm-ssh start_agent >/dev/null 2>&1
+# if [ -f ~/.ssh/scm-script.sh ]; then
+#   alias scm-ssh='zsh ~/.ssh/scm-script.sh'
+#   scm-ssh start_agent >/dev/null 2>&1
+# fi
