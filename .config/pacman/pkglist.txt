@@ -1,3 +1,4 @@
+ags-hyprpanel-git
 amd-ucode
 ark
 base
@@ -15,6 +16,7 @@ chaotic-mirrorlist
 cpio
 deno
 dhcpcd
+direnv
 discord
 dkms
 docker-rootless-extras
@@ -223,7 +225,6 @@ yubico-authenticator-bin
 zoxide
 zram-generator
 zsh
-ags-hyprpanel-git
 hyprland-meta-git
 paru-debug
 rate-mirrors-bin
