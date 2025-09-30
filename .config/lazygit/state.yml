@@ -1,14 +1,6 @@
 lastupdatecheck: 0
 recentrepos:
-    - /Users/jrreed
-    - /Users/jrreed/dev/container-instances-plugin
-    - /Users/jrreed/dev/eldritch-workspace/eldritch.nvim
-    - /Users/jrreed/.config/nvim
-    - /Users/jrreed/vault
-    - /Users/jrreed/dev/presenting.nvim
-    - /Users/jrreed/dev/maui-core
-    - /Users/jrreed/dev/maui-types
-    - /Users/jrreed/dev/cloud-guard-maui-plugin
+    - /home/neonvoid
 startuppopupversion: 5
 didshowhunkstaginghint: true
 lastversion: 0.55.1

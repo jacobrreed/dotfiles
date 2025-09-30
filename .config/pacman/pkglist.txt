@@ -51,7 +51,6 @@ godot
 goverlay
 gptfdisk
 grim
-grimblast-git
 grub
 gst-plugin-pipewire
 gvfs
@@ -130,6 +129,7 @@ smartmontools
 spicetify-cli
 spotify
 sqlmap
+starship
 steam
 steamcmd
 swappy
@@ -149,6 +149,7 @@ tldr
 tmux
 toilet
 toilet-fonts
+tree-sitter-cli
 ttf-jetbrains-mono
 ttf-nerd-fonts-symbols-mono
 ttf-roboto
@@ -225,8 +226,19 @@ yubico-authenticator-bin
 zoxide
 zram-generator
 zsh
-hyprland-meta-git
+elephant-archlinuxpkgs-bin
+elephant-bin
+elephant-desktopapplications-bin
+elephant-files-bin
+elephant-menus-bin
+elephant-providerlist-bin
+elephant-runner-bin
+elephant-symbols-bin
+elephant-todo-bin
+elephant-unicode-bin
+elephant-websearch-bin
 paru-debug
 rate-mirrors-bin
 sweet-cursors-hyprcursor-git
+vencord-hook
 walker-bin

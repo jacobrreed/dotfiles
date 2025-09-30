@@ -28,16 +28,16 @@
 [[ -r ~/.local/share/znap/znap.zsh ]] ||
     git clone --depth 1 -- https://github.com/marlonrichert/zsh-snap.git ~/.local/share/znap
 source ~/.local/share/znap/znap.zsh
-# znap prompt sindresorhus/pure
-znap eval starship 'starship init zsh --print-full-init'
-znap prompt
+znap prompt sindresorhus/pure
+# znap eval starship 'starship init zsh --print-full-init'
+# znap prompt
 znap source zsh-users/zsh-autosuggestions 
 znap source Aloxaf/fzf-tab 
 znap source jeffreytse/zsh-vi-mode 
 znap source trystan2k/zsh-tab-title 
-znap source zdharma-continuum/fast-syntax-highlighting 
-znap source zsh-users/zsh-autosuggestions 
-znap source zsh-users/zsh-completions
+# znap source zdharma-continuum/fast-syntax-highlighting 
+# znap source zsh-users/zsh-autosuggestions 
+# znap source zsh-users/zsh-completions
 () {
   local -a plugins=(
     fancy-ctrl-z colored-man-pages
