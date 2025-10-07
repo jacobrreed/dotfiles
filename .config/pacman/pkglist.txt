@@ -190,7 +190,6 @@ winetricks-git
 wireless_tools
 wireplumber
 wireshark-qt
-wlogout
 wlr-randr-git
 wlrobs-hg
 wowup-cf-bin
@@ -210,6 +209,7 @@ zsh
 cliphist-debug
 dmenu-bluetooth
 dms-shell-git
+hyprcursor-dracula-kde-git
 hyprland-meta-git
 hyprlock-git-debug
 hyprutils-git-debug

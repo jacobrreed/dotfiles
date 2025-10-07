@@ -1,4 +1,5 @@
 [ExtractDialog]
+2 screens: Window-Maximized=true
 3 screens: Window-Maximized=true
 DirHistory[$e]=$HOME/Downloads/
 
