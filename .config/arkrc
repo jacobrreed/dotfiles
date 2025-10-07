@@ -1,0 +1,10 @@
+[ExtractDialog]
+3 screens: Window-Maximized=true
+DirHistory[$e]=$HOME/Downloads/
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[MainWindow]
+StatusBar=Disabled

@@ -59,7 +59,7 @@
         "clock": {
             "fixedPosition": false,
             "scale": 1,
-            "show": true,
+            "show": false,
             "style": "cookie",
             "x": -500,
             "y": -500
@@ -88,7 +88,7 @@
         },
         "borderless": false,
         "bottom": false,
-        "cornerStyle": 0,
+        "cornerStyle": 1,
         "resources": {
             "alwaysShowCpu": true,
             "alwaysShowSwap": true,
@@ -111,7 +111,7 @@
             "showColorPicker": true,
             "showDarkModeToggle": true,
             "showKeyboardToggle": true,
-            "showMicToggle": false,
+            "showMicToggle": true,
             "showPerformanceProfileToggle": false,
             "showScreenSnip": true
         },
@@ -275,7 +275,7 @@
             "valueScroll": true,
             "visualize": false
         },
-        "keepRightSidebarLoaded": true,
+        "keepRightSidebarLoaded": false,
         "translator": {
             "delay": 300
         }

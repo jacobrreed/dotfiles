@@ -11,7 +11,7 @@
  if [[ $(uname) = "Linux" ]]; then
    if command -v uwsm &> /dev/null; then
      if tty="/dev/tty1"; then
-       if uwsm check may-start && uwsm select; then
+       if uwsm check may-start; then
          # exec uwsm start default
          exec uwsm start hyprland-uwsm.desktop
        fi
