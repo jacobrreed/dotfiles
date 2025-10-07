@@ -41,7 +41,7 @@
       "id": "panel0",
       "edge": "EDGE_RIGHT",
       "size": 64,
-      "monitor": "",
+      "monitor": "*",
       "modules": [
         {
           "pager": {
@@ -195,8 +195,8 @@
   "theme.bar.floating": false,
   "theme.bar.buttons.workspaces.enableBorder": false,
   "bar.workspaces.show_icons": false,
-  "bar.workspaces.show_numbered": false,
-  "bar.workspaces.showWsIcons": true,
+  "bar.workspaces.show_numbered": true,
+  "bar.workspaces.showWsIcons": false,
   "bar.workspaces.monitorSpecific": true,
   "bar.workspaces.workspaceMask": false,
   "theme.bar.buttons.windowtitle.enableBorder": false,
@@ -220,34 +220,56 @@
     "0": {
       "left": [
         "dashboard",
+        "separator",
+        "submap",
         "workspaces",
         "windowtitle"
       ],
       "middle": [
-        "media"
+        "media",
+        "separator"
       ],
       "right": [
         "volume",
         "network",
         "bluetooth",
+        "cpu",
+        "ram",
+        "netstat",
         "battery",
         "systray",
         "clock",
+        "separator",
+        "hypridle",
+        "updates",
         "notifications"
       ]
     },
     "1": {
       "left": [
         "dashboard",
+        "separator",
+        "submap",
         "workspaces",
         "windowtitle"
       ],
       "middle": [
-        "media"
+        "media",
+        "separator"
       ],
       "right": [
         "volume",
+        "network",
+        "bluetooth",
+        "cpu",
+        "ram",
+        "netstat",
+        "battery",
+        "systray",
         "clock",
+        "separator",
+        "hypridle",
+        "updates",
         "notifications"
       ]
     },
@@ -296,7 +318,7 @@
   ],
   "bar.network.rightClick": "nm-connection-editor",
   "theme.bar.buttons.clock.enableBorder": false,
-  "bar.clock.format": "%d %b %R:%S",
+  "bar.clock.format": "%d %b %y %R",
   "bar.media.show_label": true,
   "bar.media.truncation": true,
   "bar.media.truncation_size": 50,
@@ -318,13 +340,13 @@
   "menus.dashboard.shortcuts.right.shortcut3.command": "bash -c \"~/.config/ags/snapshot.sh\"",
   "menus.dashboard.directories.left.directory2.command": "bash -c \"xdg-open /games\"",
   "menus.dashboard.directories.left.directory2.label": "󰸿 Games",
-  "bar.customModules.netstat.dynamicIcon": false,
+  "bar.customModules.netstat.dynamicIcon": true,
   "bar.customModules.ram.labelType": "percentage",
   "bar.customModules.ram.pollingInterval": 100,
   "theme.bar.buttons.modules.cpu.enableBorder": false,
   "bar.customModules.cpu.pollingInterval": 3000,
   "bar.customModules.netstat.label": true,
-  "bar.customModules.netstat.rateUnit": "auto",
+  "bar.customModules.netstat.rateUnit": "MiB",
   "bar.customModules.netstat.labelType": "full",
   "bar.customModules.netstat.pollingInterval": 1000,
   "bar.customModules.netstat.icon": "",
@@ -669,12 +691,15 @@
   "bar.customModules.submap.disabledText": "Norm",
   "bar.customModules.submap.enabledIcon": "󰩨",
   "theme.font.size": "1.2rem",
-  "bar.workspaces.applicationIconOncePerWorkspace": false,
+  "bar.workspaces.applicationIconOncePerWorkspace": true,
   "theme.bar.buttons.systray.enableBorder": false,
   "bar.battery.label": false,
   "bar.battery.hideLabelWhenFull": false,
   "menus.power.showLabel": true,
   "bar.customModules.storage.paths": [
     "/"
-  ]
+  ],
+  "menus.power.lowBatteryNotification": false,
+  "theme.bar.buttons.modules.worldclock.enableBorder": false,
+  "bar.network.truncation_size": 7
 }

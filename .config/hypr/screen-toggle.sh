@@ -1,7 +1,7 @@
 #!/bin/bash
-INTERNAL_MONITOR="DP-1"
-EXTERNAL_MONITOR="DP-2"
-WORKSPACES_TO_MOVE=(1 10 11)
+INTERNAL_MONITOR="DP-2"
+EXTERNAL_MONITOR="DP-3"
+WORKSPACES_TO_MOVE=(1 2 4 5 6 7 8 9 10 11)
 
 move_all_workspaces_to_monitor() {
   for workspace in "${WORKSPACES_TO_MOVE[@]}"; do
@@ -12,11 +12,11 @@ move_all_workspaces_to_monitor() {
 }
 
 disable_monitor() {
-  hyprctl keyword monitor "DP-1, disable"
+  hyprctl keyword monitor "DP-2, disable"
 }
 
 enable_monitor() {
-  hyprctl keyword monitor "DP-1,3440x1440@143.92,1440x1440,1.0"
+  hyprctl keyword monitor "DP-2,3440x1440@143.92,4880x1440,1.0,bitdepth,10, cm, hdr, sdrbrightness, 1.3, sdrsaturation, 1.0"
 }
 
 if [ "$1" = "on" ]; then
