@@ -30,6 +30,7 @@ evtest
 exo
 eza
 fastfetch
+fd
 figlet
 figlet-fonts
 firefox-developer-edition
@@ -92,6 +93,7 @@ man-db
 man-pages
 mangohud-git
 masscan
+matugen-git
 mbuffer
 mkinitcpio-firmware
 mousepad
@@ -243,17 +245,6 @@ zoxide
 zram-generator
 zsh
 cliphist-debug
-elephant-archlinuxpkgs-bin
-elephant-bin
-elephant-desktopapplications-bin
-elephant-files-bin
-elephant-menus-bin
-elephant-providerlist-bin
-elephant-runner-bin
-elephant-symbols-bin
-elephant-todo-bin
-elephant-unicode-bin
-elephant-websearch-bin
 hyprland-meta-git
 hyprlock-git-debug
 hyprutils-git-debug
@@ -262,4 +253,3 @@ paru-debug
 rate-mirrors-bin
 sweet-cursors-hyprcursor-git
 vencord-hook
-walker-bin

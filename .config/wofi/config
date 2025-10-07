@@ -6,29 +6,32 @@ normal_window=true
 layer=top
 
 ## Geometry
-location=0
+width=600
+height=500
+location=center
 orientation=vertical
-halign=fill
 line_wrap=off
-dynamic_lines=false
+dynamic_lines=true
 
 ## Images
 allow_markup=true
 allow_images=true
-image_size=50
+image_size=35
 
 ## Search
-exec_search=false
+exec_search=true
 hide_search=false
 parse_search=false
 insensitive=false
+hide_scroll=true
 
 ## Other
-hide_scroll=false
 no_actions=true
 sort_order=default
 gtk_dark=true
 filter_rate=100
+content_halign=fill
+term=kitty
 
 ## Keys
 key_expand=Tab
