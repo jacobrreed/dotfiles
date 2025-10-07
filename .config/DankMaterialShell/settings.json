@@ -77,7 +77,7 @@
   ],
   "showWorkspaceIndex": true,
   "showWorkspacePadding": false,
-  "showWorkspaceApps": false,
+  "showWorkspaceApps": true,
   "maxWorkspaceIcons": 5,
   "workspacesPerMonitor": true,
   "workspaceNameIcons": {},
@@ -171,7 +171,7 @@
   "fontFamily": "Roboto",
   "monoFontFamily": "JetBrains Mono",
   "fontWeight": 500,
-  "fontScale": 1,
+  "fontScale": 1.1,
   "dankBarFontScale": 1,
   "notepadUseMonospace": true,
   "notepadFontFamily": "",
@@ -212,10 +212,16 @@
   "osdAlwaysShowValue": true,
   "screenPreferences": {
     "dankBar": [
-      "all"
+      "DP-3"
     ],
     "dock": [],
-    "wallpaper": []
+    "wallpaper": [],
+    "notepad": [
+      "all"
+    ],
+    "systemTray": [
+      "all"
+    ]
   },
   "animationSpeed": 2
 }
