@@ -197,6 +197,7 @@ winetricks-git
 wireless_tools
 wireplumber
 wireshark-qt
+wlogout
 wlr-randr-git
 wlrobs-hg
 wowup-cf-bin
@@ -222,6 +223,7 @@ hyprland-meta-git
 hyprlock-git-debug
 hyprutils-git-debug
 morewaita-icon-theme
+nemo-copypath
 noctalia-shell-git
 noisetorch-debug
 paru-debug
