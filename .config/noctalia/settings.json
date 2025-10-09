@@ -1,270 +1,31 @@
 {
-    "appLauncher": {
-        "backgroundOpacity": 1,
-        "enableClipboardHistory": true,
-        "pinnedExecs": [
-        ],
-        "position": "center",
-        "sortByMostUsed": true,
-        "terminalCommand": "kitty -e",
-        "useApp2Unit": false
-    },
-    "audio": {
-        "cavaFrameRate": 60,
-        "mprisBlacklist": [
-        ],
-        "preferredPlayer": "spotify",
-        "visualizerType": "linear",
-        "volumeOverdrive": false,
-        "volumeStep": 5
-    },
-    "bar": {
-        "backgroundOpacity": 1,
-        "density": "comfortable",
-        "floating": true,
-        "marginHorizontal": 0.16,
-        "marginVertical": 0.13,
-        "monitors": [
-            "DP-2",
-            "DP-3"
-        ],
-        "position": "top",
-        "showCapsule": true,
-        "widgets": {
-            "center": [
-                {
-                    "autoHide": false,
-                    "id": "ActiveWindow",
-                    "scrollingMode": "always",
-                    "showIcon": true,
-                    "width": 300
-                }
-            ],
-            "left": [
-                {
-                    "customIconPath": "",
-                    "icon": "",
-                    "id": "ControlCenter",
-                    "useDistroLogo": true
-                },
-                {
-                    "hideUnoccupied": false,
-                    "id": "Workspace",
-                    "labelMode": "index"
-                },
-                {
-                    "id": "Taskbar",
-                    "onlyActiveWorkspaces": true,
-                    "onlySameOutput": true
-                },
-                {
-                    "id": "Spacer",
-                    "width": 20
-                },
-                {
-                    "autoHide": true,
-                    "id": "MediaMini",
-                    "scrollingMode": "always",
-                    "showAlbumArt": true,
-                    "showVisualizer": true,
-                    "visualizerType": "linear"
-                }
-            ],
-            "right": [
-                {
-                    "id": "WallpaperSelector"
-                },
-                {
-                    "id": "Tray"
-                },
-                {
-                    "id": "ScreenRecorder"
-                },
-                {
-                    "displayMode": "onhover",
-                    "id": "Microphone"
-                },
-                {
-                    "displayMode": "onhover",
-                    "id": "Volume"
-                },
-                {
-                    "displayMode": "onhover",
-                    "id": "Brightness"
-                },
-                {
-                    "id": "WallpaperSelector"
-                },
-                {
-                    "id": "Spacer",
-                    "width": 20
-                },
-                {
-                    "id": "SystemMonitor",
-                    "showCpuTemp": true,
-                    "showCpuUsage": true,
-                    "showDiskUsage": false,
-                    "showMemoryAsPercent": false,
-                    "showMemoryUsage": true,
-                    "showNetworkStats": false
-                },
-                {
-                    "customFont": "",
-                    "formatHorizontal": "HH:mm ddd, MMM dd",
-                    "formatVertical": "HH mm - dd MM",
-                    "id": "Clock",
-                    "useCustomFont": false,
-                    "usePrimaryColor": true
-                },
-                {
-                    "hideWhenZero": true,
-                    "id": "NotificationHistory",
-                    "showUnreadBadge": true
-                }
-            ]
-        }
-    },
-    "brightness": {
-        "brightnessStep": 5
-    },
-    "colorSchemes": {
-        "darkMode": true,
-        "generateTemplatesForPredefined": false,
-        "matugenSchemeType": "scheme-fruit-salad",
-        "predefinedScheme": "Tokyo Night",
-        "useWallpaperColors": false
-    },
-    "controlCenter": {
-        "position": "close_to_bar_button"
-    },
-    "dock": {
-        "backgroundOpacity": 1,
-        "displayMode": "auto_hide",
-        "floatingRatio": 1,
-        "monitors": [
-        ],
-        "onlySameOutput": true,
-        "pinnedApps": [
-        ]
-    },
-    "general": {
-        "animationDisabled": false,
-        "animationSpeed": 1,
-        "avatarImage": "/home/neonvoid/.face",
-        "dimDesktop": true,
-        "forceBlackScreenCorners": false,
-        "radiusRatio": 1,
-        "screenRadiusRatio": 1,
-        "showScreenCorners": false
-    },
-    "hooks": {
-        "darkModeChange": "",
-        "enabled": false,
-        "wallpaperChange": ""
-    },
-    "location": {
-        "name": "Hooksett, NH",
-        "showWeekNumberInCalendar": false,
-        "use12hourFormat": false,
-        "useFahrenheit": true
-    },
-    "network": {
-        "wifiEnabled": false
-    },
-    "nightLight": {
-        "autoSchedule": true,
-        "dayTemp": "6500",
-        "enabled": false,
-        "forced": false,
-        "manualSunrise": "06:30",
-        "manualSunset": "18:30",
-        "nightTemp": "4000"
-    },
-    "notifications": {
-        "alwaysOnTop": true,
-        "criticalUrgencyDuration": 15,
-        "doNotDisturb": false,
-        "lastSeenTs": 1760013675000,
-        "location": "top_right",
-        "lowUrgencyDuration": 3,
-        "monitors": [
-        ],
-        "normalUrgencyDuration": 8,
-        "respectExpireTimeout": false
-    },
-    "osd": {
-        "autoHideMs": 2000,
-        "enabled": true,
-        "location": "top_right",
-        "monitors": [
-        ]
-    },
-    "screenRecorder": {
-        "audioCodec": "opus",
-        "audioSource": "default_output",
-        "colorRange": "limited",
-        "directory": "/home/neonvoid/Videos",
-        "frameRate": 144,
-        "quality": "high",
-        "showCursor": true,
-        "videoCodec": "h264",
-        "videoSource": "portal"
-    },
-    "settingsVersion": 15,
-    "templates": {
-        "enableUserTemplates": false,
-        "foot": false,
-        "fuzzel": false,
-        "ghostty": false,
-        "gtk": false,
-        "kitty": false,
-        "pywalfox": false,
-        "qt": false,
-        "vesktop": false
-    },
-    "ui": {
-        "fontDefault": "JetBrains Mono",
-        "fontDefaultScale": 1,
-        "fontFixed": "JetBrains Mono",
-        "fontFixedScale": 1,
-        "idleInhibitorEnabled": false,
-        "monitorsScaling": [
-            {
-                "name": "HDMI-A-1",
-                "scale": 1
-            }
-        ],
-        "tooltipsEnabled": true
-    },
-    "wallpaper": {
-        "defaultWallpaper": "/home/neonvoid/.config/quickshell/Assets/Wallpaper/noctalia.png",
-        "directory": "/home/neonvoid/pics",
-        "enableMultiMonitorDirectories": true,
-        "enabled": false,
-        "fillColor": "#000000",
-        "fillMode": "crop",
-        "monitors": [
-            {
-                "directory": "/home/neonvoid/pics/vertical",
-                "name": "HDMI-A-1",
-                "wallpaper": "/home/neonvoid/pics/vertical/prkcx9wxclz31.jpg"
-            },
-            {
-                "directory": "/home/neonvoid/pics",
-                "name": "DP-2",
-                "wallpaper": "/home/neonvoid/pics/eye.png"
-            },
-            {
-                "directory": "/home/neonvoid/pics",
-                "name": "DP-3",
-                "wallpaper": "/home/neonvoid/pics/anime-astronaut.jpg"
-            }
-        ],
-        "randomEnabled": true,
-        "randomIntervalSec": 300,
-        "setWallpaperOnAllMonitors": false,
-        "transitionDuration": 1500,
-        "transitionEdgeSmoothness": 0.05,
-        "transitionType": "random"
-    }
+    "currentWallpaper": "",
+    "dimPanels": true,
+    "dockExclusive": false,
+    "fontSizeMultiplier": 1,
+    "pinnedExecs": [
+    ],
+    "profileImage": "/home/neonvoid/.face",
+    "randomWallpaper": true,
+    "reverseDayMonth": false,
+    "showActiveWindowIcon": true,
+    "showCorners": true,
+    "showDock": true,
+    "showMediaInBar": true,
+    "showSystemInfoInBar": true,
+    "showTaskbar": true,
+    "taskbarIconSize": 24,
+    "transitionDuration": 1.1,
+    "transitionFps": 60,
+    "transitionType": "random",
+    "use12HourClock": false,
+    "useFahrenheit": false,
+    "useSWWW": true,
+    "useWallpaperTheme": true,
+    "videoPath": "~/Videos/",
+    "visualizerType": "radial",
+    "wallpaperFolder": "~/pics",
+    "wallpaperInterval": 300,
+    "wallpaperResize": "crop",
+    "weatherCity": "Hooksett"
 }
