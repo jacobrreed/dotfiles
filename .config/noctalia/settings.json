@@ -72,6 +72,9 @@
             ],
             "right": [
                 {
+                    "id": "WallpaperSelector"
+                },
+                {
                     "id": "Tray"
                 },
                 {
@@ -128,7 +131,7 @@
         "darkMode": true,
         "generateTemplatesForPredefined": false,
         "matugenSchemeType": "scheme-fruit-salad",
-        "predefinedScheme": "Eldritch",
+        "predefinedScheme": "Tokyo Night",
         "useWallpaperColors": false
     },
     "controlCenter": {
@@ -148,7 +151,7 @@
         "animationDisabled": false,
         "animationSpeed": 1,
         "avatarImage": "/home/neonvoid/.face",
-        "dimDesktop": false,
+        "dimDesktop": true,
         "forceBlackScreenCorners": false,
         "radiusRatio": 1,
         "screenRadiusRatio": 1,
@@ -181,7 +184,7 @@
         "alwaysOnTop": true,
         "criticalUrgencyDuration": 15,
         "doNotDisturb": false,
-        "lastSeenTs": 1759802420000,
+        "lastSeenTs": 1760013675000,
         "location": "top_right",
         "lowUrgencyDuration": 3,
         "monitors": [
@@ -237,7 +240,7 @@
         "defaultWallpaper": "/home/neonvoid/.config/quickshell/Assets/Wallpaper/noctalia.png",
         "directory": "/home/neonvoid/pics",
         "enableMultiMonitorDirectories": true,
-        "enabled": true,
+        "enabled": false,
         "fillColor": "#000000",
         "fillMode": "crop",
         "monitors": [

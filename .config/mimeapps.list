@@ -15,7 +15,8 @@ application/x-extension-shtml=firefox-developer-edition.desktop;
 application/xhtml+xml=firefox-developer-edition.desktop;
 application/x-extension-xhtml=firefox-developer-edition.desktop;
 application/x-extension-xht=firefox-developer-edition.desktop;
-video/mp4=vlc.desktop;
+video/mp4=vlc.desktop;com.github.rafostar.Clapper.desktop;
+image/jpeg=org.nomacs.ImageLounge.desktop;
 
 [Default Applications]
 application/x-7z-compressed=userapp-7z x-ZXHIZ2.desktop
@@ -45,4 +46,5 @@ application/x-extension-shtml=firefox-developer-edition.desktop
 application/xhtml+xml=firefox-developer-edition.desktop
 application/x-extension-xhtml=firefox-developer-edition.desktop
 application/x-extension-xht=firefox-developer-edition.desktop
-video/mp4=vlc.desktop
+video/mp4=com.github.rafostar.Clapper.desktop
+image/jpeg=org.nomacs.ImageLounge.desktop

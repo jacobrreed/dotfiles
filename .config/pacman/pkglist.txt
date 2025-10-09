@@ -16,6 +16,8 @@ btrfs-progs
 burpsuite
 chaotic-keyring
 chaotic-mirrorlist
+clapper
+clapper-enhancers
 cliphist
 cmatrix
 cpio
@@ -56,8 +58,8 @@ godot
 goverlay
 gptfdisk
 gpu-screen-recorder-git
-grim
 grub
+gst-libav
 gst-plugin-pipewire
 gtk-doc
 gvfs
@@ -101,12 +103,16 @@ mbuffer
 mkinitcpio-firmware
 mousepad
 nano
+nemo
+nemo-fileroller
+nemo-preview
 neovim
 network-manager-applet
 nfs-utils
 nikto
 nmap
 noisetorch
+nomacs
 noto-fonts-cjk
 ntfs-3g
 nwg-displays
@@ -142,6 +148,7 @@ quickshell-git
 rsync
 rustup
 sbctl
+scdoc
 shellcheck
 slurp
 smartmontools
@@ -209,10 +216,13 @@ zsh
 cliphist-debug
 dmenu-bluetooth
 dms-shell-git
+grim-hyprland-git
 hyprcursor-dracula-kde-git
 hyprland-meta-git
 hyprlock-git-debug
 hyprutils-git-debug
+morewaita-icon-theme
+noctalia-shell-git
 noisetorch-debug
 paru-debug
 rate-mirrors-bin
