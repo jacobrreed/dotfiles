@@ -43,6 +43,7 @@ fnm
 fprintd
 fractal
 fzf
+game-devices-udev
 gamemode
 gamescope
 gi-docgen
@@ -75,6 +76,7 @@ imagemagick
 inotify-tools
 inter-font
 iwd
+joyutils
 jq
 kate
 kitty
@@ -107,7 +109,6 @@ nemo
 nemo-fileroller
 nemo-preview
 neovim
-network-manager-applet
 nfs-utils
 nikto
 nmap
@@ -200,6 +201,7 @@ wireshark-qt
 wlogout
 wlr-randr-git
 wlrobs-hg
+wofi
 wowup-cf-bin
 wpa_supplicant
 xarchiver
@@ -217,6 +219,7 @@ zsh
 cliphist-debug
 dmenu-bluetooth
 dms-shell-git
+dunst-wayland-git
 grim-hyprland-git
 hyprcursor-dracula-kde-git
 hyprland-meta-git
@@ -229,5 +232,7 @@ noisetorch-debug
 paru-debug
 rate-mirrors-bin
 scopebuddy-git
+sgdboop
 sweet-cursors-hyprcursor-git
 vencord-hook
+xorg-xwayland-git

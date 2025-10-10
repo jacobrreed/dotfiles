@@ -1,0 +1,15 @@
+{
+    "id": "dankActions",
+    "name": "Dank Actions",
+    "description": "Execute custom commands with dynamic output display and configurable icons",
+    "version": "1.0.0",
+    "author": "Avenge Media",
+    "icon": "terminal",
+    "firstParty": true,
+    "component": "./DankActionsWidget.qml",
+    "settings": "./DankActionsSettings.qml",
+    "permissions": [
+        "settings_read",
+        "settings_write"
+    ]
+}

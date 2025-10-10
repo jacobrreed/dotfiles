@@ -85,7 +85,7 @@
   "clockCompactMode": false,
   "focusedWindowCompactMode": false,
   "runningAppsCompactMode": true,
-  "runningAppsCurrentWorkspace": false,
+  "runningAppsCurrentWorkspace": true,
   "clockDateFormat": "dd MMM yy",
   "lockDateFormat": "dd MMM yy",
   "mediaSize": 1,
@@ -146,6 +146,10 @@
     },
     {
       "id": "idleInhibitor",
+      "enabled": true
+    },
+    {
+      "id": "dankActions",
       "enabled": true
     },
     {
@@ -212,8 +216,7 @@
   "osdAlwaysShowValue": true,
   "screenPreferences": {
     "dankBar": [
-      "DP-3",
-      "DP-2"
+      "all"
     ],
     "dock": [],
     "wallpaper": [],
