@@ -1,11 +1,11 @@
 {
   "layer": "top",
   "output": [
-    "DP-1",
-    "DP-2"
+    "DP-2",
+    "DP-3"
   ],
   "modules-left": [
-    // "custom/icon",
+    "custom/icon",
     "custom/blank",
     "hyprland/workspaces",
     "custom/blank",

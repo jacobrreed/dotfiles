@@ -1,0 +1,6 @@
+[Unit]
+Description=Watch waybar for changes
+
+[Path]
+PathModified=%h/.config/waybar/style.css
+PathModified=%h/.config/waybar/config.jsonc

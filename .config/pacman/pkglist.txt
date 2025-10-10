@@ -145,7 +145,6 @@ python-pywal
 qt5-wayland
 qt5ct
 qt6ct
-quickshell-git
 rsync
 rustup
 sbctl
@@ -160,6 +159,7 @@ steam
 steamcmd
 streamdeck-ui-git
 swappy
+swaync
 sweet-folders-icons-git
 sweet-gtk-theme-dark
 swww
@@ -190,6 +190,7 @@ ventoy-bin
 vim
 vlc-plugin-ffmpeg
 vulkan-radeon
+waybar-git
 webkit2gtk
 wev
 wget
@@ -218,8 +219,6 @@ zram-generator
 zsh
 cliphist-debug
 dmenu-bluetooth
-dms-shell-git
-dunst-wayland-git
 grim-hyprland-git
 hyprcursor-dracula-kde-git
 hyprland-meta-git
@@ -227,7 +226,6 @@ hyprlock-git-debug
 hyprutils-git-debug
 morewaita-icon-theme
 nemo-copypath
-noctalia-shell-git
 noisetorch-debug
 paru-debug
 rate-mirrors-bin

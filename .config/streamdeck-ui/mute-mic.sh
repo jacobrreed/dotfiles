@@ -26,9 +26,9 @@ if [ "$VOLUME_LINES_COUNT" -eq "1" ]; then
     DUNST_MESSAGE="Microphone unmuted"
   fi
 
-  dunstify -a "Microphone" -u low Microphone "${DUNST_MESSAGE}" -t 1000
+  notify-send -a "Microphone" -u low Microphone "${DUNST_MESSAGE}" -t 1000
 
   exit
 fi
 
-dunstify -a "Microphone" -u critical Microphone "${DUNST_MESSAGE}"
+notify-send -a "Microphone" -u critical Microphone "${DUNST_MESSAGE}"

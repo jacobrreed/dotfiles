@@ -109,14 +109,6 @@
       "enabled": true
     },
     {
-      "id": "notepadButton",
-      "enabled": true
-    },
-    {
-      "id": "clipboard",
-      "enabled": true
-    },
-    {
       "id": "cpuUsage",
       "enabled": true
     },
@@ -134,10 +126,6 @@
     },
     {
       "id": "privacyIndicator",
-      "enabled": true
-    },
-    {
-      "id": "notificationButton",
       "enabled": true
     },
     {
