@@ -1,0 +1,6 @@
+image="$HOME/pics/anime-girl-eye.jpg"
+ignore-empty-password
+show-failed-attempts
+font="JetBrainsMono Nerd Font"
+font-size=18
+indicator-radius=100

@@ -1,69 +1,80 @@
-* {
-  background-image: none;
-}
 window {
-  background-color: rgba(33, 35, 55, 0.8);
-}
-button {
-  color: #323449;
-  font-size: 16px;
-  font-family: "JetBrainsMono Nerd Font";
-  background-color: #a48cf2;
-  border-style: none;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 35%;
-  border-radius: 30px;
-  margin: 182px 5px;
-  text-shadow: 0px 0px;
-  box-shadow: 0px 0px;
+  font-family: JetBrainsMonoNerdFont;
+  font-size: 16pt;
+  color: #cdd6f4; /* text */
+  background-color: rgba(30, 30, 46, 0.6);
 }
 
-button:focus,
-button:active,
+button {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
+  background-color: rgba(200, 220, 255, 0);
+  border-radius: 80px; /* Increased border radius for a more rounded look */
+  margin: 10px;
+  animation: gradient_f 10s ease-in infinite;
+  transition:
+    all 0.3s cubic-bezier(0.55, 0, 0.28, 1.682),
+    box-shadow 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
+}
+
+button:focus {
+  background-size: 25%;
+  border: 0px;
+}
+
 button:hover {
-  background-color: #37f499;
-  outline-style: none;
+  background-color: rgb(145, 215, 227);
+  color: #1e1e2e;
+  background-size: 70%;
+  margin: 5px;
+  border-radius: 80px;
+}
+
+/* Adjust the size of the icon or content inside the button */
+button span {
+  font-size: 1.2em; /* Increase the font size */
 }
 
 #lock {
-  background-image: image(
-    url("/home/neonvoid/.config/wlogout/icons/lock.png"),
-    url("/usr/local/share/wlogout/icons/lock.png")
-  );
+  background-image: image(url("./icons/lock.png"));
+}
+#lock:hover {
+  background-image: image(url("./icons/lock-hover.png"));
 }
 
 #logout {
-  background-image: image(
-    url("/home/neonvoid/.config/wlogout/icons/logout.png"),
-    url("/usr/local/share/wlogout/icons/logout.png")
-  );
+  background-image: image(url("./icons/logout.png"));
+}
+#logout:hover {
+  background-image: image(url("./icons/logout-hover.png"));
 }
 
 #suspend {
-  background-image: image(
-    url("/home/neonvoid/.config/wlogout/icons/suspend.png"),
-    url("/usr/local/share/wlogout/icons/suspend.png")
-  );
+  background-image: image(url("./icons/sleep.png"));
 }
-
-#hibernate {
-  background-image: image(
-    url("/home/neonvoid/.config/wlogout/icons/hibernate.png"),
-    url("/usr/local/share/wlogout/icons/hibernate.png")
-  );
+#suspend:hover {
+  background-image: image(url("./icons/sleep-hover.png"));
 }
 
 #shutdown {
-  background-image: image(
-    url("/home/neonvoid/.config/wlogout/icons/shutdown.png"),
-    url("/usr/local/share/wlogout/icons/shutdown.png")
-  );
+  background-image: image(url("./icons/power.png"));
+}
+#shutdown:hover {
+  background-image: image(url("./icons/power-hover.png"));
 }
 
 #reboot {
-  background-image: image(
-    url("/home/neonvoid/.config/wlogout/icons/reboot.png"),
-    url("/usr/local/share/wlogout/icons/reboot.png")
-  );
+  background-image: image(url("./icons/restart.png"));
+}
+#reboot:hover {
+  background-image: image(url("./icons/restart-hover.png"));
+}
+
+#hibernate {
+  background-image: image(url("./icons/hibernate.png"));
+}
+#hibernate:hover {
+  background-image: image(url("./icons/hibernate-hover.png"));
 }

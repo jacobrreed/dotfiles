@@ -1,10 +1,10 @@
 /* Dracula Theme */
-@define-color foreground rgb(248, 248, 242);
-@define-color background rgb(40, 42, 54);
-@define-color background-alpha rgba(40, 42, 54, 0.8);
-@define-color accent rgba(189, 147, 249, 0.8);
-@define-color current-line rgb(68, 71, 90);
-@define-color comment rgb(98, 114, 164);
+@define-color foreground #e0def4;
+@define-color background #232136;
+@define-color background-alpha rgba(35, 33, 54, 0.8);
+@define-color accent rgba(137, 180, 250, 0.8);
+@define-color current-line #393552;
+@define-color comment #6e6a86;
 
 root {
  --mpris-album-art-icon-size: 96px;

@@ -145,6 +145,7 @@ python-pywal
 qt5-wayland
 qt5ct
 qt6ct
+quickshell-git
 rsync
 rustup
 sbctl
@@ -214,6 +215,7 @@ yadm
 yarn
 yazi
 yubico-authenticator-bin
+zed
 zoxide
 zram-generator
 zsh
@@ -225,12 +227,13 @@ hyprland-meta-git
 hyprlock-git-debug
 hyprutils-git-debug
 morewaita-icon-theme
-nemo-copypath
 noisetorch-debug
 paru-debug
 rate-mirrors-bin
 scopebuddy-git
+selectdefaultapplication-git
 sgdboop
 sweet-cursors-hyprcursor-git
+ttf-font-awesome-5
 vencord-hook
 xorg-xwayland-git
