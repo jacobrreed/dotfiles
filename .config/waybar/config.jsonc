@@ -60,16 +60,16 @@
     }
   },
   "hyprland/window": {
-    "format": "{}",
+    "format": "{class} - {title}",
     "max-length": 60,
     "rewrite": {
-      "(.*) — Firefox": " $1", // Firefox
-      "(.*) — Firefox Developer Edition": " $1", // Firefox Dev
-      "(.*) — Mozilla Thunderbird": " $1", // Firefox Dev
-      "(.*) — kitty": " $1", // Kitty terminal
-      "(.*) — Steam": " $1", // Steam
-      "(.*) — Discord": " $1", // Discord
-      "(.*) — Spotify": " $1" // Spotify
+      "firefox - (.*)": "  $1", // Firefox
+      "firefox-developer-edition - (.*)": "  $1", // Firefox Dev
+      "thunderbird - (.*)": "  $1", // Firefox Dev
+      "kitty - (.*)": "😺️ $1", // Kitty terminal
+      "Steam - (.*)": "  $1", // Steam
+      "discord - (.*)": "  $1", // Discord
+      "spotify - (.*)": "  $1" // Spotify
     },
     "separate-outputs": true
   },
