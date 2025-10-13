@@ -31,7 +31,8 @@
         "widgets": {
             "center": [
                 {
-                    "autoHide": true,
+                    "colorizeIcons": false,
+                    "hideMode": "hidden",
                     "id": "ActiveWindow",
                     "scrollingMode": "always",
                     "showIcon": true,
@@ -51,6 +52,7 @@
                     "labelMode": "index"
                 },
                 {
+                    "colorizeIcons": false,
                     "id": "Taskbar",
                     "onlyActiveWorkspaces": true,
                     "onlySameOutput": true
@@ -60,7 +62,7 @@
                     "width": 20
                 },
                 {
-                    "autoHide": true,
+                    "hideMode": "hidden",
                     "id": "MediaMini",
                     "scrollingMode": "hover",
                     "showAlbumArt": true,
@@ -75,10 +77,11 @@
                 {
                     "blacklist": [
                     ],
+                    "colorizeIcons": false,
                     "id": "Tray"
                 },
                 {
-                    "icon": "heart",
+                    "icon": "screen-share",
                     "id": "CustomButton",
                     "leftClickExec": "~/.config/hypr/screen-toggle.sh on",
                     "middleClickExec": "",
@@ -158,6 +161,7 @@
     },
     "dock": {
         "backgroundOpacity": 1,
+        "colorizeIcons": false,
         "displayMode": "auto_hide",
         "floatingRatio": 1,
         "monitors": [
@@ -170,9 +174,11 @@
         "animationDisabled": false,
         "animationSpeed": 1,
         "avatarImage": "/home/neonvoid/.face",
+        "compactLockScreen": false,
         "dimDesktop": false,
         "forceBlackScreenCorners": false,
         "radiusRatio": 1,
+        "scaleRatio": 1,
         "screenRadiusRatio": 1,
         "showScreenCorners": false
     },
@@ -255,12 +261,6 @@
         "fontFixed": "JetBrains Mono",
         "fontFixedScale": 1.15,
         "idleInhibitorEnabled": false,
-        "monitorsScaling": [
-            {
-                "name": "DP-2",
-                "scale": 1
-            }
-        ],
         "tooltipsEnabled": true
     },
     "wallpaper": {
@@ -274,7 +274,7 @@
             {
                 "directory": "/home/neonvoid/pics/vertical",
                 "name": "HDMI-A-1",
-                "wallpaper": "/home/neonvoid/pics/vertical/yhi2zdknv6741.png"
+                "wallpaper": "/home/neonvoid/pics/vertical/ggdfdxps514c1.jpeg"
             },
             {
                 "directory": "/home/neonvoid/pics",
@@ -284,7 +284,7 @@
             {
                 "directory": "/home/neonvoid/pics",
                 "name": "DP-3",
-                "wallpaper": "/home/neonvoid/pics/evil-anime-girl.png"
+                "wallpaper": "/home/neonvoid/pics/oni.png"
             }
         ],
         "randomEnabled": true,

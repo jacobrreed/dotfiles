@@ -111,6 +111,7 @@ nemo-preview
 neovim
 nfs-utils
 nikto
+niri-git
 nmap
 noisetorch
 nomacs
