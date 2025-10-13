@@ -34,15 +34,15 @@
                     "colorizeIcons": false,
                     "hideMode": "hidden",
                     "id": "ActiveWindow",
-                    "scrollingMode": "always",
+                    "scrollingMode": "hover",
                     "showIcon": true,
-                    "width": 150
+                    "width": 350
                 }
             ],
             "left": [
                 {
                     "customIconPath": "",
-                    "icon": "hyprland",
+                    "icon": "bomb",
                     "id": "ControlCenter",
                     "useDistroLogo": false
                 },
@@ -116,6 +116,15 @@
                     "usePrimaryColor": true
                 },
                 {
+                    "icon": "package",
+                    "id": "CustomButton",
+                    "leftClickExec": "kitty -e paru",
+                    "middleClickExec": "",
+                    "rightClickExec": "",
+                    "textCommand": "pacman -Qu | wc -l | awk '{if($1>0) print $1}'",
+                    "textIntervalMs": 3000
+                },
+                {
                     "hideWhenZero": true,
                     "id": "NotificationHistory",
                     "showUnreadBadge": true
@@ -134,10 +143,10 @@
         "useWallpaperColors": false
     },
     "controlCenter": {
+        "audioControlsEnabled": true,
         "position": "close_to_bar_button",
-        "quickSettingsStyle": "compact",
         "widgets": {
-            "quickSettings": [
+            "left": [
                 {
                     "id": "WiFi"
                 },
@@ -146,7 +155,9 @@
                 },
                 {
                     "id": "Notifications"
-                },
+                }
+            ],
+            "right": [
                 {
                     "id": "ScreenRecorder"
                 },
@@ -209,7 +220,7 @@
         "alwaysOnTop": false,
         "criticalUrgencyDuration": 15,
         "doNotDisturb": false,
-        "lastSeenTs": 1760361864000,
+        "lastSeenTs": 1760382105000,
         "location": "top_right",
         "lowUrgencyDuration": 3,
         "monitors": [
@@ -274,17 +285,17 @@
             {
                 "directory": "/home/neonvoid/pics/vertical",
                 "name": "HDMI-A-1",
-                "wallpaper": "/home/neonvoid/pics/vertical/prkcx9wxclz31.jpg"
+                "wallpaper": "/home/neonvoid/pics/vertical/ggdfdxps514c1.jpeg"
             },
             {
                 "directory": "/home/neonvoid/pics",
                 "name": "DP-2",
-                "wallpaper": "/home/neonvoid/pics/anime-village.png"
+                "wallpaper": "/home/neonvoid/pics/anime-astronaut.jpg"
             },
             {
                 "directory": "/home/neonvoid/pics",
                 "name": "DP-3",
-                "wallpaper": "/home/neonvoid/pics/shadowsoftheerdtree.jpg"
+                "wallpaper": "/home/neonvoid/pics/cosmonaut-in-open-space-art-desktop-wallpaper.jpg"
             }
         ],
         "randomEnabled": true,

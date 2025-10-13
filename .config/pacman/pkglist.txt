@@ -151,7 +151,6 @@ rsync
 rustup
 sbctl
 scdoc
-sddm-git
 shellcheck
 slurp
 smartmontools
@@ -225,12 +224,13 @@ hyprcursor-dracula-kde-git
 hyprland-meta-git
 hyprlock-git-debug
 hyprutils-git-debug
+layer-shell-qt5
 morewaita-icon-theme
+noctalia-shell-git
 noisetorch-debug
 paru-debug
 rate-mirrors-bin
 scopebuddy-git
-sddm-silent-theme
 selectdefaultapplication-git
 sgdboop
 sweet-cursors-hyprcursor-git
