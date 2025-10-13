@@ -150,6 +150,7 @@ rsync
 rustup
 sbctl
 scdoc
+sddm-git
 shellcheck
 slurp
 smartmontools
@@ -162,7 +163,6 @@ streamdeck-ui-git
 swappy
 sweet-folders-icons-git
 sweet-gtk-theme-dark
-swww
 terminus-font
 termshark
 thefuck
@@ -185,11 +185,11 @@ ttf-roboto
 udiskie
 unrar
 usbutils
-uwsm
 ventoy-bin
 vim
 vlc-plugin-ffmpeg
 vulkan-radeon
+waybar
 webkit2gtk
 wev
 wget
@@ -229,6 +229,7 @@ noisetorch-debug
 paru-debug
 rate-mirrors-bin
 scopebuddy-git
+sddm-silent-theme
 selectdefaultapplication-git
 sgdboop
 sweet-cursors-hyprcursor-git

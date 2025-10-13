@@ -7,7 +7,7 @@
         "position": "center",
         "sortByMostUsed": true,
         "terminalCommand": "kitty -e",
-        "useApp2Unit": true
+        "useApp2Unit": false
     },
     "audio": {
         "cavaFrameRate": 60,
@@ -51,6 +51,11 @@
                     "labelMode": "index"
                 },
                 {
+                    "id": "Taskbar",
+                    "onlyActiveWorkspaces": true,
+                    "onlySameOutput": true
+                },
+                {
                     "id": "Spacer",
                     "width": 20
                 },
@@ -71,6 +76,15 @@
                     "blacklist": [
                     ],
                     "id": "Tray"
+                },
+                {
+                    "icon": "heart",
+                    "id": "CustomButton",
+                    "leftClickExec": "~/.config/hypr/screen-toggle.sh on",
+                    "middleClickExec": "",
+                    "rightClickExec": "~/.config/hypr/screen-toggle.sh off",
+                    "textCommand": "",
+                    "textIntervalMs": 3000
                 },
                 {
                     "id": "Bluetooth"
@@ -189,7 +203,7 @@
         "alwaysOnTop": false,
         "criticalUrgencyDuration": 15,
         "doNotDisturb": false,
-        "lastSeenTs": 1760315513000,
+        "lastSeenTs": 1760361864000,
         "location": "top_right",
         "lowUrgencyDuration": 3,
         "monitors": [
@@ -260,17 +274,17 @@
             {
                 "directory": "/home/neonvoid/pics/vertical",
                 "name": "HDMI-A-1",
-                "wallpaper": "/home/neonvoid/pics/vertical/f2ozw9v341j31.png"
+                "wallpaper": "/home/neonvoid/pics/vertical/yhi2zdknv6741.png"
             },
             {
                 "directory": "/home/neonvoid/pics",
                 "name": "DP-2",
-                "wallpaper": "/home/neonvoid/pics/evil-anime-girl.png"
+                "wallpaper": "/home/neonvoid/pics/anime-village.png"
             },
             {
                 "directory": "/home/neonvoid/pics",
                 "name": "DP-3",
-                "wallpaper": "/home/neonvoid/pics/princess.png"
+                "wallpaper": "/home/neonvoid/pics/evil-anime-girl.png"
             }
         ],
         "randomEnabled": true,

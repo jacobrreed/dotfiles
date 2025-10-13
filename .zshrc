@@ -1,24 +1,6 @@
 # Uncomment to profile
 # zmodload zsh/zprof
 
-#                               
-#  _   ___      _____ _ __ ___  
-# | | | \ \ /\ / / __| '_ ` _ \ 
-# | |_| |\ V  V /\__ \ | | | | |
-#  \__,_| \_/\_/ |___/_| |_| |_|
-#                               
-# For a DE/WM selector instead use below
- if [[ $(uname) = "Linux" ]]; then
-   if command -v uwsm &> /dev/null; then
-     if tty="/dev/tty1"; then
-       if uwsm check may-start; then
-         # exec uwsm start default
-         exec uwsm start hyprland-uwsm.desktop
-       fi
-     fi
-   fi
- fi
-
 #  _________  _   _    _    ____  
 # |__  / ___|| \ | |  / \  |  _ \ 
 #   / /\___ \|  \| | / _ \ | |_) |
