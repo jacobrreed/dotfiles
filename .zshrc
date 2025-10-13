@@ -287,8 +287,9 @@ eval "$(zoxide init zsh --cmd cd --hook pwd)"
 export FZF_CTRL_T_COMMAND=""
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # fnm
-export PATH="/home/neonvoid/.local/share/fnm:$PATH"
-eval "$(fnm env --use-on-cd --shell zsh)"
+export PATH="$HOME/.local/share/fnm:$PATH"
+export FNM_DIR="$HOME/.cache/fnm"
+eval "$(fnm env --use-on-cd --shell zsh --fnm-dir ~/.cache/fnm)"
 # SSH agent start if necessary
 if [ -z $SSH_AGENT_PID ] && [ -z $SSH_TTY ]; then  # if no agent & not in ssh
   eval `ssh-agent -s` > /dev/null
