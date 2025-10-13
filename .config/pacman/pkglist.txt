@@ -160,7 +160,6 @@ steam
 steamcmd
 streamdeck-ui-git
 swappy
-swaync
 sweet-folders-icons-git
 sweet-gtk-theme-dark
 swww
@@ -191,7 +190,6 @@ ventoy-bin
 vim
 vlc-plugin-ffmpeg
 vulkan-radeon
-waybar-git
 webkit2gtk
 wev
 wget
@@ -203,7 +201,7 @@ wireshark-qt
 wlogout
 wlr-randr-git
 wlrobs-hg
-wofi
+wlsunset
 wowup-cf-bin
 wpa_supplicant
 xarchiver

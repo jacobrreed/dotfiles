@@ -1,31 +1,283 @@
 {
-    "currentWallpaper": "",
-    "dimPanels": true,
-    "dockExclusive": false,
-    "fontSizeMultiplier": 1,
-    "pinnedExecs": [
-    ],
-    "profileImage": "/home/neonvoid/.face",
-    "randomWallpaper": true,
-    "reverseDayMonth": false,
-    "showActiveWindowIcon": true,
-    "showCorners": true,
-    "showDock": true,
-    "showMediaInBar": true,
-    "showSystemInfoInBar": true,
-    "showTaskbar": true,
-    "taskbarIconSize": 24,
-    "transitionDuration": 1.1,
-    "transitionFps": 60,
-    "transitionType": "random",
-    "use12HourClock": false,
-    "useFahrenheit": false,
-    "useSWWW": true,
-    "useWallpaperTheme": true,
-    "videoPath": "~/Videos/",
-    "visualizerType": "radial",
-    "wallpaperFolder": "~/pics",
-    "wallpaperInterval": 300,
-    "wallpaperResize": "crop",
-    "weatherCity": "Hooksett"
+    "appLauncher": {
+        "backgroundOpacity": 1,
+        "enableClipboardHistory": true,
+        "pinnedExecs": [
+        ],
+        "position": "center",
+        "sortByMostUsed": true,
+        "terminalCommand": "kitty -e",
+        "useApp2Unit": true
+    },
+    "audio": {
+        "cavaFrameRate": 60,
+        "mprisBlacklist": [
+        ],
+        "preferredPlayer": "spotify,clapper,vlc,firefox-developer-edition",
+        "visualizerType": "linear",
+        "volumeOverdrive": true,
+        "volumeStep": 5
+    },
+    "bar": {
+        "backgroundOpacity": 1,
+        "density": "comfortable",
+        "floating": true,
+        "marginHorizontal": 0.25,
+        "marginVertical": 0.25,
+        "monitors": [
+        ],
+        "position": "top",
+        "showCapsule": true,
+        "widgets": {
+            "center": [
+                {
+                    "autoHide": true,
+                    "id": "ActiveWindow",
+                    "scrollingMode": "always",
+                    "showIcon": true,
+                    "width": 150
+                }
+            ],
+            "left": [
+                {
+                    "customIconPath": "",
+                    "icon": "hyprland",
+                    "id": "ControlCenter",
+                    "useDistroLogo": false
+                },
+                {
+                    "hideUnoccupied": false,
+                    "id": "Workspace",
+                    "labelMode": "index"
+                },
+                {
+                    "id": "Spacer",
+                    "width": 20
+                },
+                {
+                    "autoHide": true,
+                    "id": "MediaMini",
+                    "scrollingMode": "hover",
+                    "showAlbumArt": true,
+                    "showVisualizer": true,
+                    "visualizerType": "linear"
+                }
+            ],
+            "right": [
+                {
+                    "id": "ScreenRecorder"
+                },
+                {
+                    "blacklist": [
+                    ],
+                    "id": "Tray"
+                },
+                {
+                    "id": "Bluetooth"
+                },
+                {
+                    "id": "KeepAwake"
+                },
+                {
+                    "displayMode": "onhover",
+                    "id": "Brightness"
+                },
+                {
+                    "displayMode": "onhover",
+                    "id": "Microphone"
+                },
+                {
+                    "displayMode": "onhover",
+                    "id": "Volume"
+                },
+                {
+                    "customFont": "",
+                    "formatHorizontal": "HH:mm ddd, MMM dd",
+                    "formatVertical": "HH mm - dd MM",
+                    "id": "Clock",
+                    "useCustomFont": false,
+                    "usePrimaryColor": true
+                },
+                {
+                    "hideWhenZero": true,
+                    "id": "NotificationHistory",
+                    "showUnreadBadge": true
+                }
+            ]
+        }
+    },
+    "brightness": {
+        "brightnessStep": 5
+    },
+    "colorSchemes": {
+        "darkMode": true,
+        "generateTemplatesForPredefined": true,
+        "matugenSchemeType": "scheme-fruit-salad",
+        "predefinedScheme": "Eldritch",
+        "useWallpaperColors": false
+    },
+    "controlCenter": {
+        "position": "close_to_bar_button",
+        "quickSettingsStyle": "compact",
+        "widgets": {
+            "quickSettings": [
+                {
+                    "id": "WiFi"
+                },
+                {
+                    "id": "Bluetooth"
+                },
+                {
+                    "id": "Notifications"
+                },
+                {
+                    "id": "ScreenRecorder"
+                },
+                {
+                    "id": "PowerProfile"
+                },
+                {
+                    "id": "WallpaperSelector"
+                }
+            ]
+        }
+    },
+    "dock": {
+        "backgroundOpacity": 1,
+        "displayMode": "auto_hide",
+        "floatingRatio": 1,
+        "monitors": [
+        ],
+        "onlySameOutput": true,
+        "pinnedApps": [
+        ]
+    },
+    "general": {
+        "animationDisabled": false,
+        "animationSpeed": 1,
+        "avatarImage": "/home/neonvoid/.face",
+        "dimDesktop": false,
+        "forceBlackScreenCorners": false,
+        "radiusRatio": 1,
+        "screenRadiusRatio": 1,
+        "showScreenCorners": false
+    },
+    "hooks": {
+        "darkModeChange": "",
+        "enabled": false,
+        "wallpaperChange": ""
+    },
+    "location": {
+        "name": "Hooksett, NH",
+        "showWeekNumberInCalendar": false,
+        "use12hourFormat": false,
+        "useFahrenheit": true
+    },
+    "network": {
+        "wifiEnabled": false
+    },
+    "nightLight": {
+        "autoSchedule": true,
+        "dayTemp": "6500",
+        "enabled": false,
+        "forced": false,
+        "manualSunrise": "06:30",
+        "manualSunset": "18:30",
+        "nightTemp": "4000"
+    },
+    "notifications": {
+        "alwaysOnTop": false,
+        "criticalUrgencyDuration": 15,
+        "doNotDisturb": false,
+        "lastSeenTs": 1760315513000,
+        "location": "top_right",
+        "lowUrgencyDuration": 3,
+        "monitors": [
+        ],
+        "normalUrgencyDuration": 8,
+        "respectExpireTimeout": true
+    },
+    "osd": {
+        "alwaysOnTop": true,
+        "autoHideMs": 2000,
+        "enabled": true,
+        "location": "top_right",
+        "monitors": [
+        ]
+    },
+    "screenRecorder": {
+        "audioCodec": "opus",
+        "audioSource": "both",
+        "colorRange": "limited",
+        "directory": "/home/neonvoid/Videos",
+        "frameRate": 60,
+        "quality": "very_high",
+        "showCursor": true,
+        "videoCodec": "h264",
+        "videoSource": "portal"
+    },
+    "settingsVersion": 15,
+    "templates": {
+        "discord": false,
+        "discord_armcord": false,
+        "discord_dorion": false,
+        "discord_equibop": false,
+        "discord_lightcord": false,
+        "discord_vesktop": false,
+        "discord_webcord": false,
+        "enableUserTemplates": false,
+        "foot": false,
+        "fuzzel": false,
+        "ghostty": false,
+        "gtk": false,
+        "kcolorscheme": false,
+        "kitty": false,
+        "pywalfox": false,
+        "qt": false
+    },
+    "ui": {
+        "fontDefault": "Roboto",
+        "fontDefaultScale": 1.04,
+        "fontFixed": "JetBrains Mono",
+        "fontFixedScale": 1.15,
+        "idleInhibitorEnabled": false,
+        "monitorsScaling": [
+            {
+                "name": "DP-2",
+                "scale": 1
+            }
+        ],
+        "tooltipsEnabled": true
+    },
+    "wallpaper": {
+        "defaultWallpaper": "/etc/xdg/quickshell/noctalia-shell/Assets/Wallpaper/noctalia.png",
+        "directory": "/home/neonvoid/Pictures/Wallpapers",
+        "enableMultiMonitorDirectories": true,
+        "enabled": true,
+        "fillColor": "#000000",
+        "fillMode": "crop",
+        "monitors": [
+            {
+                "directory": "/home/neonvoid/pics/vertical",
+                "name": "HDMI-A-1",
+                "wallpaper": "/home/neonvoid/pics/vertical/f2ozw9v341j31.png"
+            },
+            {
+                "directory": "/home/neonvoid/pics",
+                "name": "DP-2",
+                "wallpaper": "/home/neonvoid/pics/evil-anime-girl.png"
+            },
+            {
+                "directory": "/home/neonvoid/pics",
+                "name": "DP-3",
+                "wallpaper": "/home/neonvoid/pics/princess.png"
+            }
+        ],
+        "randomEnabled": true,
+        "randomIntervalSec": 300,
+        "setWallpaperOnAllMonitors": true,
+        "transitionDuration": 1500,
+        "transitionEdgeSmoothness": 0.05,
+        "transitionType": "random"
+    }
 }
