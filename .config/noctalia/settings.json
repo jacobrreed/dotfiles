@@ -124,7 +124,7 @@
                     "leftClickExec": "kitty -e paru",
                     "middleClickExec": "",
                     "rightClickExec": "",
-                    "textCommand": "pacman -Qu | wc -l | awk '{if($1>0) print $1}'",
+                    "textCommand": "paru -Qu | wc -l | awk '{if($1>0) print $1}'",
                     "textIntervalMs": 3000
                 },
                 {
@@ -321,7 +321,7 @@
             {
                 "directory": "/home/neonvoid/pics",
                 "name": "DP-3",
-                "wallpaper": "/home/neonvoid/pics/mima.png"
+                "wallpaper": "/home/neonvoid/pics/bikeranime.jpg"
             }
         ],
         "randomEnabled": true,

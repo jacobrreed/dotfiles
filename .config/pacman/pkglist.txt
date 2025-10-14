@@ -34,6 +34,7 @@ evtest
 eza
 fastfetch
 fd
+ffmpegthumbnailer
 figlet
 figlet-fonts
 firefox-developer-edition
@@ -107,9 +108,6 @@ mbuffer
 mkinitcpio-firmware
 mousepad
 nano
-nemo
-nemo-fileroller
-nemo-preview
 neovim
 nfs-utils
 nikto
@@ -127,6 +125,7 @@ openal
 opensc
 openssh
 os-prober
+pacman-contrib
 paru
 pavucontrol
 pipewire
@@ -165,8 +164,7 @@ steam
 steamcmd
 streamdeck-ui-git
 swappy
-sweet-folders-icons-git
-sweet-gtk-theme-dark
+tela-circle-icon-theme-dracula
 terminus-font
 termshark
 thefuck
@@ -186,6 +184,7 @@ ttf-jetbrains-mono
 ttf-material-symbols-variable-git
 ttf-nerd-fonts-symbols-mono
 ttf-roboto
+tumbler
 udiskie
 unrar
 usbutils
@@ -223,6 +222,7 @@ zram-generator
 zsh
 cliphist-debug
 dmenu-bluetooth
+dracula-gtk-theme
 grim-hyprland-git
 hyprcursor-dracula-kde-git
 hyprland-meta-git
@@ -237,7 +237,6 @@ rate-mirrors-bin
 scopebuddy-git
 selectdefaultapplication-git
 sgdboop
-sweet-cursors-hyprcursor-git
 ttf-font-awesome-5
 vencord-hook
 xorg-xwayland-git

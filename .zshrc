@@ -201,7 +201,7 @@ if command -v bat &> /dev/null; then
   alias cat="bat"
 fi
 if command -v pacman &> /dev/null; then
-  alias pacq="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
+  alias pacq="~/pacrm.sh"
 fi
 # if htop, replace btop
 if command -v btop &> /dev/null; then
