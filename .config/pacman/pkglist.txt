@@ -60,6 +60,7 @@ goverlay
 gptfdisk
 gpu-screen-recorder-git
 grub
+grub-btrfs
 gst-libav
 gst-plugin-pipewire
 gtk-doc
@@ -95,6 +96,7 @@ linux-zen-headers
 lsd
 lsof
 lutris
+ly
 lynx
 man-db
 man-pages
@@ -154,6 +156,8 @@ scdoc
 shellcheck
 slurp
 smartmontools
+snap-pac
+snapper
 spicetify-cli
 spotify
 sqlmap

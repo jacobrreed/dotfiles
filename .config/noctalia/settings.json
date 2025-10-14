@@ -64,7 +64,7 @@
                 {
                     "hideMode": "hidden",
                     "id": "MediaMini",
-                    "scrollingMode": "hover",
+                    "scrollingMode": "always",
                     "showAlbumArt": true,
                     "showVisualizer": true,
                     "visualizerType": "linear"
@@ -88,6 +88,9 @@
                     "rightClickExec": "~/.config/hypr/screen-toggle.sh off",
                     "textCommand": "hyprctl monitors | grep -q 'DP-2' && echo \"Triple \" || echo \"Double \"",
                     "textIntervalMs": 3000
+                },
+                {
+                    "id": "WallpaperSelector"
                 },
                 {
                     "id": "Bluetooth"
@@ -143,9 +146,26 @@
         "useWallpaperColors": false
     },
     "controlCenter": {
-        "audioControlsEnabled": true,
+        "cards": [
+            {
+                "enabled": true,
+                "id": "profile-card"
+            },
+            {
+                "enabled": true,
+                "id": "shortcuts-card"
+            },
+            {
+                "enabled": true,
+                "id": "audio-card"
+            },
+            {
+                "enabled": true,
+                "id": "media-sysmon-card"
+            }
+        ],
         "position": "close_to_bar_button",
-        "widgets": {
+        "shortcuts": {
             "left": [
                 {
                     "id": "WiFi"
@@ -154,18 +174,24 @@
                     "id": "Bluetooth"
                 },
                 {
-                    "id": "Notifications"
+                    "id": "ScreenRecorder"
+                },
+                {
+                    "id": "WallpaperSelector"
                 }
             ],
             "right": [
                 {
-                    "id": "ScreenRecorder"
+                    "id": "Notifications"
                 },
                 {
                     "id": "PowerProfile"
                 },
                 {
-                    "id": "WallpaperSelector"
+                    "id": "KeepAwake"
+                },
+                {
+                    "id": "NightLight"
                 }
             ]
         }
@@ -220,7 +246,7 @@
         "alwaysOnTop": false,
         "criticalUrgencyDuration": 15,
         "doNotDisturb": false,
-        "lastSeenTs": 1760382105000,
+        "lastSeenTs": 1760449662000,
         "location": "top_right",
         "lowUrgencyDuration": 3,
         "monitors": [
@@ -276,7 +302,7 @@
     },
     "wallpaper": {
         "defaultWallpaper": "/etc/xdg/quickshell/noctalia-shell/Assets/Wallpaper/noctalia.png",
-        "directory": "/home/neonvoid/Pictures/Wallpapers",
+        "directory": "/home/neonvoid/pics",
         "enableMultiMonitorDirectories": true,
         "enabled": true,
         "fillColor": "#000000",
@@ -285,17 +311,17 @@
             {
                 "directory": "/home/neonvoid/pics/vertical",
                 "name": "HDMI-A-1",
-                "wallpaper": "/home/neonvoid/pics/vertical/ggdfdxps514c1.jpeg"
+                "wallpaper": "/home/neonvoid/pics/vertical/f2ozw9v341j31.png"
             },
             {
                 "directory": "/home/neonvoid/pics",
                 "name": "DP-2",
-                "wallpaper": "/home/neonvoid/pics/anime-astronaut.jpg"
+                "wallpaper": "/home/neonvoid/pics/jynx.jpg"
             },
             {
                 "directory": "/home/neonvoid/pics",
                 "name": "DP-3",
-                "wallpaper": "/home/neonvoid/pics/cosmonaut-in-open-space-art-desktop-wallpaper.jpg"
+                "wallpaper": "/home/neonvoid/pics/princess.png"
             }
         ],
         "randomEnabled": true,
