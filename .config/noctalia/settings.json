@@ -14,7 +14,7 @@
         "mprisBlacklist": [
         ],
         "preferredPlayer": "spotify,clapper,vlc,firefox-developer-edition",
-        "visualizerType": "linear",
+        "visualizerType": "mirrored",
         "volumeOverdrive": true,
         "volumeStep": 5
     },
@@ -53,6 +53,7 @@
                 },
                 {
                     "colorizeIcons": false,
+                    "hideMode": "hidden",
                     "id": "Taskbar",
                     "onlyActiveWorkspaces": true,
                     "onlySameOutput": true
@@ -67,7 +68,7 @@
                     "scrollingMode": "always",
                     "showAlbumArt": true,
                     "showVisualizer": true,
-                    "visualizerType": "linear"
+                    "visualizerType": "mirrored"
                 }
             ],
             "right": [
@@ -81,6 +82,15 @@
                     "id": "Tray"
                 },
                 {
+                    "icon": "brand-openvpn",
+                    "id": "CustomButton",
+                    "leftClickExec": "nmcli c up proton",
+                    "middleClickExec": "bash -c \"notify-send $(curl ifconfig.me)\"",
+                    "rightClickExec": "nmcli c down proton",
+                    "textCommand": "bash -c \"~/.config/noctalia/vpn.sh\"",
+                    "textIntervalMs": 10000
+                },
+                {
                     "icon": "screen-share",
                     "id": "CustomButton",
                     "leftClickExec": "~/.config/hypr/screen-toggle.sh on",
@@ -88,9 +98,6 @@
                     "rightClickExec": "~/.config/hypr/screen-toggle.sh off",
                     "textCommand": "hyprctl monitors | grep -q 'DP-2' && echo \"Triple \" || echo \"Double \"",
                     "textIntervalMs": 3000
-                },
-                {
-                    "id": "WallpaperSelector"
                 },
                 {
                     "id": "Bluetooth"
@@ -119,15 +126,6 @@
                     "usePrimaryColor": true
                 },
                 {
-                    "icon": "package",
-                    "id": "CustomButton",
-                    "leftClickExec": "kitty -e paru",
-                    "middleClickExec": "",
-                    "rightClickExec": "",
-                    "textCommand": "paru -Qu | wc -l | awk '{if($1>0) print $1}'",
-                    "textIntervalMs": 3000
-                },
-                {
                     "hideWhenZero": true,
                     "id": "NotificationHistory",
                     "showUnreadBadge": true
@@ -135,12 +133,15 @@
             ]
         }
     },
+    "battery": {
+        "chargingMode": 0
+    },
     "brightness": {
         "brightnessStep": 5
     },
     "colorSchemes": {
         "darkMode": true,
-        "generateTemplatesForPredefined": true,
+        "generateTemplatesForPredefined": false,
         "matugenSchemeType": "scheme-fruit-salad",
         "predefinedScheme": "Eldritch",
         "useWallpaperColors": false
@@ -162,6 +163,10 @@
             {
                 "enabled": true,
                 "id": "media-sysmon-card"
+            },
+            {
+                "enabled": true,
+                "id": "weather-card"
             }
         ],
         "position": "close_to_bar_button",
@@ -183,9 +188,6 @@
             "right": [
                 {
                     "id": "Notifications"
-                },
-                {
-                    "id": "PowerProfile"
                 },
                 {
                     "id": "KeepAwake"
@@ -246,7 +248,7 @@
         "alwaysOnTop": false,
         "criticalUrgencyDuration": 15,
         "doNotDisturb": false,
-        "lastSeenTs": 1760449662000,
+        "lastSeenTs": 1760554220000,
         "location": "top_right",
         "lowUrgencyDuration": 3,
         "monitors": [
@@ -267,7 +269,7 @@
         "audioSource": "both",
         "colorRange": "limited",
         "directory": "/home/neonvoid/Videos",
-        "frameRate": 60,
+        "frameRate": 144,
         "quality": "very_high",
         "showCursor": true,
         "videoCodec": "h264",
@@ -311,17 +313,17 @@
             {
                 "directory": "/home/neonvoid/pics/vertical",
                 "name": "HDMI-A-1",
-                "wallpaper": "/home/neonvoid/pics/vertical/yhi2zdknv6741.png"
+                "wallpaper": "/home/neonvoid/pics/vertical/subway.jpg"
             },
             {
                 "directory": "/home/neonvoid/pics",
                 "name": "DP-2",
-                "wallpaper": "/home/neonvoid/pics/jynx.jpg"
+                "wallpaper": "/home/neonvoid/pics/awakening.png"
             },
             {
                 "directory": "/home/neonvoid/pics",
                 "name": "DP-3",
-                "wallpaper": "/home/neonvoid/pics/bikeranime.jpg"
+                "wallpaper": "/home/neonvoid/pics/anime-astronaut.jpg"
             }
         ],
         "randomEnabled": true,
@@ -329,6 +331,6 @@
         "setWallpaperOnAllMonitors": true,
         "transitionDuration": 1500,
         "transitionEdgeSmoothness": 0.05,
-        "transitionType": "random"
+        "transitionType": "wipe"
     }
 }

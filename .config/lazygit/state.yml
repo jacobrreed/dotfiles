@@ -1,6 +1,11 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/neonvoid
+    - /home/neonvoid/.config/nvim
+    - /home/neonvoid/dev/eldritch
+    - /home/neonvoid/dev/noctalia
+    - /home/neonvoid/dev/noctalia-shell
+    - /home/neonvoid/dev/wow/Interface/AddOns/BarNone
 startuppopupversion: 5
 didshowhunkstaginghint: true
 lastversion: 0.55.1

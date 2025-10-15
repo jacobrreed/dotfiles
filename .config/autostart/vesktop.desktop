@@ -5,3 +5,4 @@ Comment=Vesktop autostart script
 Exec="/usr/lib/vesktop/vesktop"
 StartupNotify=false
 Terminal=false
+Icon=vesktop
