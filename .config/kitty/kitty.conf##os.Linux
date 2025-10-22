@@ -1,0 +1,4 @@
+# vim:ft=kitty
+include ~/.config/kitty/kitty.conf##default 
+
+font_size 16
