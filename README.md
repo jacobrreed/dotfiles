@@ -5,6 +5,7 @@ Dotfiles for Arch and Mac managed using [YADM](https://yadm.io/docs/getting_star
 ### Bundled (not inclusive of everything)
 
 - Neovim (sub repo: <https://github.com/jacobrreed/nvim>)
+- Wallpapers (sub repo: <https://github.com/jacobrreed/pics>)
 - ZSH profile
 - Hyprland setup
   - All the rice
@@ -18,4 +19,4 @@ Dotfiles for Arch and Mac managed using [YADM](https://yadm.io/docs/getting_star
 - Arch:
   - Pacman packages and AUR packages backed up under .config/pacman
 - Mac:
-  - Homebrew packages can be installed by going to .config/brew and running `brew bundle`
+=31;OK  - Homebrew packages can be installed by going to .config/brew and running `brew bundle`
