@@ -1,0 +1,367 @@
+{
+    "appLauncher": {
+        "backgroundOpacity": 1,
+        "customLaunchPrefix": "",
+        "customLaunchPrefixEnabled": false,
+        "enableClipboardHistory": true,
+        "pinnedExecs": [
+        ],
+        "position": "center",
+        "sortByMostUsed": true,
+        "terminalCommand": "kitty -e",
+        "useApp2Unit": false
+    },
+    "audio": {
+        "cavaFrameRate": 60,
+        "mprisBlacklist": [
+        ],
+        "preferredPlayer": "spotify,clapper,vlc,firefox-developer-edition",
+        "visualizerType": "mirrored",
+        "volumeOverdrive": true,
+        "volumeStep": 5
+    },
+    "bar": {
+        "backgroundOpacity": 1,
+        "density": "comfortable",
+        "floating": true,
+        "marginHorizontal": 0.25,
+        "marginVertical": 0.25,
+        "monitors": [
+        ],
+        "position": "top",
+        "showCapsule": true,
+        "widgets": {
+            "center": [
+                {
+                    "colorizeIcons": false,
+                    "hideMode": "hidden",
+                    "id": "ActiveWindow",
+                    "maxWidth": 145,
+                    "scrollingMode": "hover",
+                    "showIcon": true,
+                    "useFixedWidth": false
+                }
+            ],
+            "left": [
+                {
+                    "customIconPath": "",
+                    "icon": "bomb",
+                    "id": "ControlCenter",
+                    "useDistroLogo": false
+                },
+                {
+                    "icon": "keyboard",
+                    "id": "CustomButton",
+                    "leftClickExec": "",
+                    "middleClickExec": "",
+                    "rightClickExec": "",
+                    "textCollapse": "",
+                    "textCommand": "bash -c \"~/.config/noctalia/hypr-submap.sh\"",
+                    "textIntervalMs": 1000,
+                    "textStream": true
+                },
+                {
+                    "characterCount": 2,
+                    "hideUnoccupied": false,
+                    "id": "Workspace",
+                    "labelMode": "index"
+                },
+                {
+                    "id": "TaskbarGrouped"
+                },
+                {
+                    "id": "Spacer",
+                    "width": 20
+                },
+                {
+                    "hideMode": "hidden",
+                    "id": "MediaMini",
+                    "maxWidth": 145,
+                    "scrollingMode": "always",
+                    "showAlbumArt": true,
+                    "showVisualizer": true,
+                    "useFixedWidth": false,
+                    "visualizerType": "mirrored"
+                }
+            ],
+            "right": [
+                {
+                    "id": "ScreenRecorder"
+                },
+                {
+                    "blacklist": [
+                    ],
+                    "colorizeIcons": false,
+                    "id": "Tray"
+                },
+                {
+                    "icon": "brand-openvpn",
+                    "id": "CustomButton",
+                    "leftClickExec": "nmcli c up proton",
+                    "middleClickExec": "bash -c \"notify-send $(curl ifconfig.me)\"",
+                    "rightClickExec": "nmcli c down proton",
+                    "textCollapse": "",
+                    "textCommand": "bash -c \"~/.config/noctalia/vpn.sh\"",
+                    "textIntervalMs": 10000,
+                    "textStream": false
+                },
+                {
+                    "icon": "screen-share",
+                    "id": "CustomButton",
+                    "leftClickExec": "~/.config/hypr/screen-toggle.sh on",
+                    "middleClickExec": "",
+                    "rightClickExec": "~/.config/hypr/screen-toggle.sh off",
+                    "textCollapse": "",
+                    "textCommand": "hyprctl monitors | grep -q 'DP-2' && echo \"Triple \" || echo \"Double \"",
+                    "textIntervalMs": 3000,
+                    "textStream": false
+                },
+                {
+                    "displayMode": "onhover",
+                    "id": "Bluetooth"
+                },
+                {
+                    "id": "KeepAwake"
+                },
+                {
+                    "displayMode": "onhover",
+                    "id": "Brightness"
+                },
+                {
+                    "displayMode": "onhover",
+                    "id": "Microphone"
+                },
+                {
+                    "displayMode": "onhover",
+                    "id": "Volume"
+                },
+                {
+                    "customFont": "",
+                    "formatHorizontal": "HH:mm ddd, MMM dd",
+                    "formatVertical": "HH mm - dd MM",
+                    "id": "Clock",
+                    "useCustomFont": false,
+                    "usePrimaryColor": true
+                },
+                {
+                    "hideWhenZero": true,
+                    "id": "NotificationHistory",
+                    "showUnreadBadge": true
+                }
+            ]
+        }
+    },
+    "battery": {
+        "chargingMode": 0
+    },
+    "brightness": {
+        "brightnessStep": 5,
+        "enforceMinimum": true
+    },
+    "colorSchemes": {
+        "darkMode": true,
+        "generateTemplatesForPredefined": true,
+        "manualSunrise": "06:30",
+        "manualSunset": "18:30",
+        "matugenSchemeType": "scheme-fruit-salad",
+        "predefinedScheme": "Eldritch",
+        "schedulingMode": "off",
+        "useWallpaperColors": false
+    },
+    "controlCenter": {
+        "cards": [
+            {
+                "enabled": true,
+                "id": "profile-card"
+            },
+            {
+                "enabled": true,
+                "id": "shortcuts-card"
+            },
+            {
+                "enabled": true,
+                "id": "audio-card"
+            },
+            {
+                "enabled": true,
+                "id": "media-sysmon-card"
+            },
+            {
+                "enabled": true,
+                "id": "weather-card"
+            }
+        ],
+        "position": "close_to_bar_button",
+        "shortcuts": {
+            "left": [
+                {
+                    "id": "WiFi"
+                },
+                {
+                    "id": "Bluetooth"
+                },
+                {
+                    "id": "ScreenRecorder"
+                },
+                {
+                    "id": "WallpaperSelector"
+                }
+            ],
+            "right": [
+                {
+                    "id": "Notifications"
+                },
+                {
+                    "id": "KeepAwake"
+                },
+                {
+                    "id": "NightLight"
+                }
+            ]
+        }
+    },
+    "dock": {
+        "backgroundOpacity": 1,
+        "colorizeIcons": false,
+        "displayMode": "auto_hide",
+        "floatingRatio": 1,
+        "monitors": [
+        ],
+        "onlySameOutput": true,
+        "pinnedApps": [
+        ],
+        "size": 1
+    },
+    "general": {
+        "animationDisabled": false,
+        "animationSpeed": 1,
+        "avatarImage": "/home/neonvoid/.face",
+        "compactLockScreen": false,
+        "dimDesktop": false,
+        "forceBlackScreenCorners": false,
+        "language": "",
+        "lockOnSuspend": true,
+        "radiusRatio": 1,
+        "scaleRatio": 1,
+        "screenRadiusRatio": 1,
+        "showScreenCorners": false
+    },
+    "hooks": {
+        "darkModeChange": "",
+        "enabled": false,
+        "wallpaperChange": ""
+    },
+    "location": {
+        "analogClockInCalendar": false,
+        "name": "Hooksett, NH",
+        "showCalendarEvents": true,
+        "showWeekNumberInCalendar": false,
+        "use12hourFormat": false,
+        "useFahrenheit": true,
+        "weatherEnabled": true
+    },
+    "network": {
+        "wifiEnabled": false
+    },
+    "nightLight": {
+        "autoSchedule": true,
+        "dayTemp": "6500",
+        "enabled": false,
+        "forced": false,
+        "manualSunrise": "06:30",
+        "manualSunset": "18:30",
+        "nightTemp": "4000"
+    },
+    "notifications": {
+        "backgroundOpacity": 1,
+        "criticalUrgencyDuration": 15,
+        "doNotDisturb": false,
+        "location": "top_right",
+        "lowUrgencyDuration": 3,
+        "monitors": [
+        ],
+        "normalUrgencyDuration": 8,
+        "overlayLayer": true,
+        "respectExpireTimeout": true
+    },
+    "osd": {
+        "autoHideMs": 2000,
+        "enabled": true,
+        "location": "top",
+        "monitors": [
+        ],
+        "overlayLayer": true
+    },
+    "screenRecorder": {
+        "audioCodec": "opus",
+        "audioSource": "both",
+        "colorRange": "limited",
+        "directory": "/home/neonvoid/Videos",
+        "frameRate": 144,
+        "quality": "very_high",
+        "showCursor": true,
+        "videoCodec": "h264",
+        "videoSource": "portal"
+    },
+    "settingsVersion": 16,
+    "setupCompleted": true,
+    "templates": {
+        "discord": false,
+        "discord_armcord": false,
+        "discord_dorion": false,
+        "discord_equibop": false,
+        "discord_lightcord": false,
+        "discord_vesktop": false,
+        "discord_webcord": false,
+        "enableUserTemplates": false,
+        "foot": false,
+        "fuzzel": false,
+        "ghostty": false,
+        "gtk": true,
+        "kcolorscheme": true,
+        "kitty": false,
+        "pywalfox": false,
+        "qt": true,
+        "vicinae": false
+    },
+    "ui": {
+        "fontDefault": "Roboto",
+        "fontDefaultScale": 1.04,
+        "fontFixed": "JetBrains Mono",
+        "fontFixedScale": 1.15,
+        "panelsOverlayLayer": true,
+        "tooltipsEnabled": true
+    },
+    "wallpaper": {
+        "defaultWallpaper": "/etc/xdg/quickshell/noctalia-shell/Assets/Wallpaper/noctalia.png",
+        "directory": "/home/neonvoid/pics",
+        "enableMultiMonitorDirectories": true,
+        "enabled": true,
+        "fillColor": "#000000",
+        "fillMode": "crop",
+        "monitors": [
+            {
+                "directory": "/home/neonvoid/pics/vertical",
+                "name": "HDMI-A-1",
+                "wallpaper": "/home/neonvoid/pics/vertical/prkcx9wxclz31.jpg"
+            },
+            {
+                "directory": "/home/neonvoid/pics",
+                "name": "DP-2",
+                "wallpaper": "/home/neonvoid/pics/racoon.png"
+            },
+            {
+                "directory": "/home/neonvoid/pics",
+                "name": "DP-3",
+                "wallpaper": "/home/neonvoid/pics/cosmonaut-in-open-space-art-desktop-wallpaper.jpg"
+            }
+        ],
+        "randomEnabled": true,
+        "randomIntervalSec": 300,
+        "recursiveSearch": false,
+        "setWallpaperOnAllMonitors": false,
+        "transitionDuration": 1500,
+        "transitionEdgeSmoothness": 0.05,
+        "transitionType": "wipe"
+    }
+}

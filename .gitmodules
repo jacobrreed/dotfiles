@@ -1,0 +1,9 @@
+[submodule "pics"]
+	path = pics
+	url = git@github.com:jacobrreed/pics.git
+  branch=master
+
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = git@github.com:jacobrreed/nvim.git
+  branch=master

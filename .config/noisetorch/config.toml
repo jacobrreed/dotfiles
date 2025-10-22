@@ -1,0 +1,7 @@
+Threshold = 80
+DisplayMonitorSources = true
+EnableUpdates = true
+FilterInput = true
+FilterOutput = false
+LastUsedInput = "alsa_input.usb-R__DE_Microphones_R__DE_NT-USB_Mini_F5DF5DCC-00.mono-fallback"
+LastUsedOutput = ""

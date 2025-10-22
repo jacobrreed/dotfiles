@@ -1,0 +1,301 @@
+ls
+ls | sort-by size
+ls | sort-by size | reverse
+ls
+l
+$env.config.buffer_editor = "nvim"
+config nu
+cd .config
+ls
+cd ..
+ls
+config nu
+ls
+$env.config.buffer_editor = "nvim"
+l
+ls
+datetime
+date
+date now
+config nu
+e
+l
+"test"
+config nu
+$env.config.buffer_editor = "nvim"
+config nu
+e
+config nu
+$env.config.buffer_editor = "nvim"
+config nu
+$env.config.buffer_editor = "nvim"
+config nu
+ls -al
+config env --default
+config env
+$env.config.buffer_editor = "nvim"
+config eng
+config env
+config nu
+e
+config nu
+cargo install nu-alias-converter
+sudo cargo install nu-alias-converter
+ls
+ls | sort-by size | reverse
+config nu --default
+config nu
+ls --all --recursive
+ls --all
+config nu
+ls --help
+config nu
+which
+which -q lazygit
+which lazygit
+config nu
+e
+config nu
+e
+config nu
+$env.config.buffer_editor = "nvim"
+config nu
+ls
+cd ~
+ls
+cd mkdir test
+mkdir test
+cd test
+ls
+z
+zoxide
+$nu.env-path
+nvim $nu.env-path
+nvim $nu.config-path
+cd dev
+cd ~/dev
+cd /opt
+cd dev
+config nu
+cd ~
+l
+ls
+ls -al
+zoxide init nushell | save -f ~/.zoxide.nu
+cd dev
+config nu
+$nu.env-path
+nvim $nu.env-path
+config nu
+$env.config.buffer_editor = "nvim"
+config nu
+config env
+config nu
+l
+config nu
+$nu.config-path
+nvim $nu.config-path
+ls
+ls -help
+ls --help
+ls -a
+ls -A
+ls -al
+ls -a
+nvim $nu.config-path
+ls --help
+tree
+ls
+ls --help
+ls -f
+ls
+ls --help
+ls -a **/*
+cd test
+ls
+touch test.x test.y test.z
+deleteall test
+config nu
+nvim $nu.config-path
+deleteall test
+ls
+config nu
+ls
+l
+ls -al
+la
+config nu
+deleteall test
+l
+ls ...(glob **/*{test})
+ls ...(glob **/*test*)
+config nu
+l
+deleteall test
+config nu
+deleteall test
+config nu
+deleteall test
+l
+deletall .DS
+deleteall .DS
+ls
+config nu
+ls
+findhere package.json
+config nu
+find .
+find --help
+find ~
+find --help
+config nu
+nvim $nu.config-path
+ls -a ~/dev
+ls -a ~/dev --recursive
+nvim $nu.config-path
+findsyms
+findsyms .
+findsyms ~
+nvim $nu.config-path
+findsyms .
+findsyms ~
+config  nu
+nvim $nu.config-path
+findsyms
+findsyms ~
+findsyms /opt/brew
+cd /opt
+ls
+findsyms /opt/homebrew
+nvim $nu.config-path
+findsyms /opt/homebrew
+config  nu
+findsyms /opt/homebrew
+config nu
+l
+tree
+findhere liblz
+config nu
+nvim $nu.config-path
+l
+config nu
+l
+findsyms /opt/homebrew
+config nu
+cd test
+cd ~/test
+cd ..
+cd test
+config nu
+config env
+config nu
+cd test
+z
+z test
+config nu
+cd ~
+cd ..
+cd test
+nvim $nu.config-path
+cd test
+z
+config env
+config nu
+z test
+cd test
+zoxide
+zoxide init nushell
+zoxide init --help
+zoxide init nushell --cmd cd
+config nu
+cd test
+nvim ~/.zoxide.nushell
+cd ~
+l
+l | where name ~= zox
+l | where name ==  zox
+l | where name contains "zox"
+l | select name
+l | select name | find zox
+l | find zox
+nvim ~/.zoxide.nu
+config env
+config nu
+cd test
+cd /
+cd test
+config nu
+$nu.default-config-dir
+$env.XDG_CONFIG_HOME
+config nu
+findsyms /opt/homebrew
+findsyms
+findhere cutier
+config nu
+nvim $nu.config-path
+findhere cutier
+config nu
+cd dev
+config nu
+zoxide init nushell | save -f ~/.zoxide.nu
+zoxide init nushell --cmd cd | save -f ~/.zoxide.nu
+config nu
+cd dev
+clear
+cd dev
+cd homebrew
+clear
+ls
+config nu
+nvim $nu.config-path
+cd dns
+ghcs
+config nu
+nvim $nu.config-path
+gh copilot
+gh copilot suggest how can i make a symbolic link at /usr/bin/nu that points to /opt/homebrew/bin/nu
+ln -s /opt/homebrew/bin/nu /usr/bin/nu
+sudo ln -s /opt/homebrew/bin/nu /usr/bin/nu
+sudo ln -s /opt/homebrew/bin/nu /bin/nu
+sudo nvim /etc/shells
+chsh -s /opt/homebrew/bin/nu
+sudo yabai --load-sa
+nvim ~/.zshrc
+config nu
+config env
+pyenv
+$(pyenv root)
+pyenv root
+config env
+config nu
+config nu
+zoxide init nushell --cmd cd | save -f ~/.zoxide.nu<\n>
+pyenv
+nvim ~/.zshrc
+config env
+pyenv
+pyenv
+which pyenv
+config env
+which pyenv
+which zoxide
+brew
+$env.PATH
+brew
+zoxide
+$env.PATH
+config env
+$env.path
+config nu
+$env.path
+config env
+$env.path
+$env.PATH
+which nu
+config nu
+chsh -s /usr/bin/zsh
+chsh -s /bin/zsh
+$env.path
+$env.PATH
+nu --help
+$nu.config-path
