@@ -15,9 +15,9 @@ brightnessctl
 btop
 btrfs-progs
 burpsuite
+chafa
 chaotic-keyring
 chaotic-mirrorlist
-chezmoi
 clapper
 clapper-enhancers
 cliphist
