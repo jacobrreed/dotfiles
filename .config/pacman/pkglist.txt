@@ -15,6 +15,7 @@ brightnessctl
 btop
 btrfs-progs
 burpsuite
+calf
 chafa
 chaotic-keyring
 chaotic-mirrorlist
@@ -31,6 +32,7 @@ dkms
 docker-rootless-extras
 dosfstools
 dracula-cursors-git
+easyeffects
 efibootmgr
 egl-wayland
 evtest
@@ -68,8 +70,6 @@ godot
 goverlay
 gptfdisk
 gpu-screen-recorder-git
-greetd
-greetd-regreet
 grub
 grub-btrfs
 gst-libav
@@ -110,8 +110,10 @@ linux-zen
 linux-zen-headers
 lsd
 lsof
+lsp-plugins-lv2
 luarocks
 lutris
+ly
 lynx
 man-db
 man-pages
@@ -119,6 +121,7 @@ mangohud-git
 masscan
 matugen-git
 mbuffer
+mda.lv2
 mkinitcpio-firmware
 mousepad
 nano
@@ -126,9 +129,7 @@ neovim
 network-manager-applet
 nfs-utils
 nikto
-niri
 nmap
-noisetorch
 nomacs
 noto-fonts-cjk
 nss-mdns
@@ -151,11 +152,13 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+plasma-meta
 plasma-workspace
 playerctl
 plocate
 plymouth
 plymouth-theme-dark-planet-git
+polkit-gnome
 proton-ge-custom-bin
 protontricks-git
 protonup-qt
@@ -259,6 +262,7 @@ hyprland-meta-git
 hyprlock-git-debug
 hyprutils-git-debug
 layer-shell-qt5
+libdeep_filter_ladspa-git
 lua-language-server-git
 lua-language-server-git-debug
 morewaita-icon-theme
@@ -266,6 +270,7 @@ noctalia-shell-git
 noisetorch-debug
 paru-debug
 python-proton-client
+qalculate-qt-git
 rate-mirrors-bin
 scopebuddy-git
 selectdefaultapplication-git

@@ -1,22 +1,27 @@
-font-family = "JetBrainsMono Nerd Font"
-# font-size doesn't change on config reload
-font-size = 20
+font-family = "JetBrainsMono Nerd Font Mono"
+font-size = 16
 theme = "Eldritch"
 cursor-style="bar"
-background-opacity=0.95
-background-blur-radius=20
 class="ghostty"
 window-padding-x=0,0
 window-padding-y=0,0
 window-vsync=true
-window-inherit-working-directory=false
+window-inherit-working-directory=true
 window-decoration=false
 macos-titlebar-style=hidden
 window-theme=dark
+shell-integration=detect
+shell-integration-features=cursor,sudo,title,ssh-env,ssh-terminfo
 window-save-state=always
 clipboard-write=allow
-copy-on-select=true
+clipboard-read=allow
+clipboard-trim-trailing-spaces=true
+clipboard-paste-protection=false
+clipboard-paste-bracketed-safe=true
+image-storage-limit=4000000000
+copy-on-select=clipboard
 confirm-close-surface=false
+link-previews = true
 
 # Keybinds
 keybind = ctrl+shift+c=copy_to_clipboard
