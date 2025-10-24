@@ -276,6 +276,7 @@ scopebuddy-git
 selectdefaultapplication-git
 sgdboop
 soil2-git
+spotify-tui-bin
 sysc-greet-debug
 ttf-font-awesome-5
 vencord-hook
