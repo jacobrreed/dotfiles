@@ -1,6 +1,8 @@
 {
     "appLauncher": {
         "backgroundOpacity": 1,
+        "customLaunchPrefix": "",
+        "customLaunchPrefixEnabled": false,
         "enableClipboardHistory": true,
         "pinnedExecs": [
         ],
@@ -249,6 +251,7 @@
         "wallpaperChange": ""
     },
     "location": {
+        "analogClockInCalendar": false,
         "name": "Hooksett, NH",
         "showCalendarEvents": true,
         "showWeekNumberInCalendar": false,
@@ -338,17 +341,17 @@
             {
                 "directory": "/home/neonvoid/pics/vertical",
                 "name": "HDMI-A-1",
-                "wallpaper": "/home/neonvoid/pics/vertical/f2ozw9v341j31.png"
+                "wallpaper": "/home/neonvoid/pics/vertical/subway.jpg"
             },
             {
                 "directory": "/home/neonvoid/pics",
                 "name": "DP-2",
-                "wallpaper": "/home/neonvoid/pics/kanji.png"
+                "wallpaper": "/home/neonvoid/pics/anime-astronaut.jpg"
             },
             {
                 "directory": "/home/neonvoid/pics",
                 "name": "DP-3",
-                "wallpaper": "/home/neonvoid/pics/princess.png"
+                "wallpaper": "/home/neonvoid/pics/rocketship.png"
             }
         ],
         "randomEnabled": true,

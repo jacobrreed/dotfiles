@@ -19,12 +19,13 @@ disable_monitor() {
 }
 
 enable_monitor() {
-  hyprctl keyword monitor "DP-2,3440x1440@143.92,4880x1440,1.0,bitdepth,10, cm, hdr, sdrbrightness, 1.3, sdrsaturation, 1.0"
+  hyprctl keyword monitor "DP-2,3440x1440@143.92,4880x1440,1.0,bitdepth,10, cm, hdredid, sdrbrightness, 1.3, sdrsaturation, 0.93"
 }
 
 if [ "$1" = "on" ]; then
   enable_monitor
   move_all_workspaces_to_monitor "$INTERNAL_MONITOR"
+  hyprctl dispatch moveworkspacetomonitor 2 "$EXTERNAL_MONITOR"
   exit
 else
   disable_monitor
