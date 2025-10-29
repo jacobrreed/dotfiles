@@ -31,11 +31,11 @@ input {
     touchpad {
         // off
         tap
-        // dwt
+        dwt
         // dwtp
         // drag false
         // drag-lock
-        natural-scroll
+        // natural-scroll
         // accel-speed 0.2
         // accel-profile "flat"
         // scroll-method "two-finger"
@@ -44,7 +44,7 @@ input {
 
     mouse {
         // off
-        // natural-scroll
+        //     natural-scroll
         // accel-speed 0.2
         // accel-profile "flat"
         // scroll-method "no-scroll"
@@ -75,6 +75,14 @@ input {
 // Find more information on the wiki:
 // https://yalter.github.io/niri/Configuration:-Outputs
 // Remember to uncomment the node by removing "/-"!
+
+output "eDP-1" {
+  scale 1.5
+    hot-corners {
+      off
+    }
+}
+
 output "DP-2" {
     // Uncomment this line to disable this output.
     // off
@@ -266,11 +274,11 @@ layout {
     border {
         // The settings are the same as for the focus ring.
         // If you enable the border, you probably want to disable the focus ring.
-        off
+        on
 
         width 1
-        active-color "#37f499"
-        inactive-color "#a48cf2"
+        // active-color "#37f499"
+        // inactive-color "#a48cf2"
 
         // Color of the border around windows that request your attention.
         urgent-color "#f16c75"
@@ -278,9 +286,8 @@ layout {
         // Gradients can use a few different interpolation color spaces.
         // For example, this is a pastel rainbow gradient via in="oklch longer hue".
         //
-        // active-gradient from="#e5989b" to="#ffb4a2" angle=45 relative-to="workspace-view" in="oklch longer hue"
-
-        // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
+        active-gradient from="#37f499" to="#04d1f9" angle=45
+        inactive-gradient from="#a48cf2" to="#7081d0" angle=45 relative-to="workspace-view"
     }
 
     // You can enable drop shadows for windows.
@@ -347,8 +354,8 @@ spawn-at-startup "nm-applet"
 spawn-sh-at-startup "~/.config/hypr/gtksettings.sh"
 spawn-sh-at-startup "import-gsettings"
 spawn-sh-at-startup "/usr/bin/streamdeck -n"
-spawn-at-startup "steam"
-spawn-at-startup "spotify"
+// spawn-at-startup "steam"
+// spawn-at-startup "spotify"
 spawn-at-startup "vesktop"
 spawn-at-startup "firefox-developer-edition"
 spawn-at-startup "thunderbird"
@@ -460,15 +467,15 @@ binds {
     Mod+K     { focus-window-up; }
     Mod+L     { focus-column-right; }
 
-    Mod+Shift+J     { move-window-down; }
-    Mod+Shift+K     { move-window-up; }
-    Mod+Shift+L     { move-window-right; }
-    Mod+Shift+H     { move-window-left; }
+    // Mod+Shift+J     { move-window-down; }
+    // Mod+Shift+K     { move-window-up; }
+    // Mod+Shift+L     { move-window-right; }
+    // Mod+Shift+H     { move-window-left; }
 
-    Mod+Shift+Ctrl+J     { move-window-down-or-to-workspace-down; }
-    Mod+Shift+Ctrl+K     { move-window-up-or-to-workspace-up; }
-    Mod+Shift+Ctrl+L     { move-window-down-or-to-workspace-right; }
-    Mod+Shift+Ctrl+H     { move-window-up-or-to-workspace-left; }
+    // Mod+Shift+Ctrl+J     { move-window-down-or-to-workspace-down; }
+    // Mod+Shift+Ctrl+K     { move-window-up-or-to-workspace-up; }
+    // Mod+Shift+Ctrl+L     { move-window-down-or-to-workspace-right; }
+    // Mod+Shift+Ctrl+H     { move-window-up-or-to-workspace-left; }
 
 
     // You can bind mouse wheel scroll ticks using the following syntax.

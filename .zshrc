@@ -66,7 +66,6 @@ zinit wait lucid light-mode for \
     zsh-users/zsh-completions
 
 zinit ice wait lucid light-mode
-zinit load starship/starship
 
 #  _                          _                       
 # | |__   ___  _ __ ___   ___| |__  _ __ _____      __
@@ -349,7 +348,7 @@ fi
 # thefuck
 eval $(thefuck --alias fk)
 # .env 
-set -a; source ~/.env; set +a
+# set -a; source ~/.env; set +a
 # Zoxide
 export _ZO_EXCLUDE_DIRS="/Applications/**:**/node_modules"
 export _ZO_RESOLVE_SYMLINKS=1

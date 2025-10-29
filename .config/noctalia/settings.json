@@ -139,6 +139,11 @@
                     "id": "Volume"
                 },
                 {
+                    "displayMode": "onhover",
+                    "id": "Battery",
+                    "warningThreshold": 30
+                },
+                {
                     "customFont": "",
                     "formatHorizontal": "HH:mm ddd, MMM dd",
                     "formatVertical": "HH mm - dd MM",
@@ -264,7 +269,7 @@
         "weatherEnabled": true
     },
     "network": {
-        "wifiEnabled": false
+        "wifiEnabled": true
     },
     "nightLight": {
         "autoSchedule": true,
@@ -325,7 +330,8 @@
         "kitty": false,
         "pywalfox": false,
         "qt": true,
-        "vicinae": false
+        "vicinae": false,
+        "walker": false
     },
     "ui": {
         "fontDefault": "Roboto",
@@ -357,6 +363,11 @@
                 "directory": "/home/neonvoid/pics",
                 "name": "DP-3",
                 "wallpaper": "/home/neonvoid/pics/vk1et87trlif1.jpeg"
+            },
+            {
+                "directory": "/home/neonvoid/pics",
+                "name": "eDP-1",
+                "wallpaper": "/home/neonvoid/pics/anime-orange-eye.png"
             }
         ],
         "randomEnabled": true,
