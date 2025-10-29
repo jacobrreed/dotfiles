@@ -64,6 +64,7 @@ github-cli
 glaze
 glib2-devel
 glm
+gnome-calculator
 gnome-common
 gnome-keyring
 go
@@ -280,7 +281,6 @@ noctalia-shell-git
 noisetorch-debug
 paru-debug
 python-proton-client
-qalculate-qt-git
 rate-mirrors-bin
 scopebuddy-git
 selectdefaultapplication-git

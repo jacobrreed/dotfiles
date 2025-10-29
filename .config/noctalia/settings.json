@@ -54,6 +54,7 @@
                     "id": "CustomButton",
                     "leftClickExec": "",
                     "middleClickExec": "",
+                    "parseJson": false,
                     "rightClickExec": "",
                     "textCollapse": "",
                     "textCommand": "bash -c \"~/.config/noctalia/hypr-submap.sh\"",
@@ -99,6 +100,7 @@
                     "id": "CustomButton",
                     "leftClickExec": "nmcli c up proton",
                     "middleClickExec": "bash -c \"notify-send $(curl ifconfig.me)\"",
+                    "parseJson": false,
                     "rightClickExec": "nmcli c down proton",
                     "textCollapse": "",
                     "textCommand": "bash -c \"~/.config/noctalia/vpn.sh\"",
@@ -110,6 +112,7 @@
                     "id": "CustomButton",
                     "leftClickExec": "~/.config/hypr/screen-toggle.sh on",
                     "middleClickExec": "",
+                    "parseJson": false,
                     "rightClickExec": "~/.config/hypr/screen-toggle.sh off",
                     "textCollapse": "",
                     "textCommand": "hyprctl monitors | grep -q 'DP-2' && echo \"Triple \" || echo \"Double \"",
@@ -343,17 +346,17 @@
             {
                 "directory": "/home/neonvoid/pics/vertical",
                 "name": "HDMI-A-1",
-                "wallpaper": "/home/neonvoid/pics/vertical/prkcx9wxclz31.jpg"
+                "wallpaper": "/home/neonvoid/pics/vertical/hearteyegirl.jpg"
             },
             {
                 "directory": "/home/neonvoid/pics",
                 "name": "DP-2",
-                "wallpaper": "/home/neonvoid/pics/racoon.png"
+                "wallpaper": "/home/neonvoid/pics/satoru.png"
             },
             {
                 "directory": "/home/neonvoid/pics",
                 "name": "DP-3",
-                "wallpaper": "/home/neonvoid/pics/cosmonaut-in-open-space-art-desktop-wallpaper.jpg"
+                "wallpaper": "/home/neonvoid/pics/vk1et87trlif1.jpeg"
             }
         ],
         "randomEnabled": true,
