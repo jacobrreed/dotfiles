@@ -396,6 +396,20 @@ animations {
 // Find more information on the wiki:
 // https://yalter.github.io/niri/Configuration:-Window-Rules
 
+workspace "dev"
+workspace "web"
+workspace "chat"
+workspace "email"
+
+window-rule {
+  match app-id=r#"kitty"#
+  open-on-workspace "dev"
+}
+window-rule {
+  match app-id=r#"firefox"#
+  open-on-workspace "web"
+}
+
 // Open the Firefox picture-in-picture player as floating by default.
 window-rule {
     // This app-id regular expression will work for both:
@@ -405,6 +419,10 @@ window-rule {
     open-floating true
 }
 
+window-rule {
+  match app-id=r#"vesktop"#
+  open-on-workspace "chat"
+}
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
 window-rule {
