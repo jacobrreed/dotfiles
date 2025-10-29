@@ -51,6 +51,7 @@ flatpak
 fnm
 fprintd
 fractal
+fwupd
 fzf
 game-devices-udev
 gamemode
@@ -160,7 +161,6 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
-plasma-meta
 plasma-workspace
 playerctl
 plocate
@@ -224,6 +224,7 @@ udiskie
 umu-launcher
 unrar
 usbutils
+uv
 ventoy-bin
 vesktop-git
 vim
