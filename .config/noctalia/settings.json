@@ -17,7 +17,7 @@
         ],
         "preferredPlayer": "spotify,clapper,vlc,firefox-developer-edition",
         "visualizerType": "mirrored",
-        "volumeOverdrive": true,
+        "volumeOverdrive": false,
         "volumeStep": 5
     },
     "bar": {
@@ -63,7 +63,7 @@
                 },
                 {
                     "characterCount": 2,
-                    "hideUnoccupied": false,
+                    "hideUnoccupied": true,
                     "id": "Workspace",
                     "labelMode": "index"
                 },
@@ -80,9 +80,14 @@
                     "maxWidth": 145,
                     "scrollingMode": "always",
                     "showAlbumArt": true,
-                    "showVisualizer": true,
+                    "showVisualizer": false,
                     "useFixedWidth": false,
                     "visualizerType": "mirrored"
+                },
+                {
+                    "hideWhenIdle": true,
+                    "id": "AudioVisualizer",
+                    "width": 200
                 }
             ],
             "right": [
@@ -269,7 +274,7 @@
         "weatherEnabled": true
     },
     "network": {
-        "wifiEnabled": true
+        "wifiEnabled": false
     },
     "nightLight": {
         "autoSchedule": true,
@@ -352,12 +357,12 @@
             {
                 "directory": "/home/neonvoid/pics/vertical",
                 "name": "HDMI-A-1",
-                "wallpaper": "/home/neonvoid/pics/vertical/darklust.jpg"
+                "wallpaper": "/home/neonvoid/pics/vertical/yhi2zdknv6741.png"
             },
             {
                 "directory": "/home/neonvoid/pics",
                 "name": "DP-2",
-                "wallpaper": "/home/neonvoid/pics/watereyes.jpg"
+                "wallpaper": "/home/neonvoid/pics/shadowsoftheerdtree.jpg"
             },
             {
                 "directory": "/home/neonvoid/pics",

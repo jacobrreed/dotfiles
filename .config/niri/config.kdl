@@ -115,7 +115,7 @@ output "DP-2" {
     // so to put another output directly adjacent to it on the right, set its x to 1920.
     // If the position is unset or results in an overlap, the output is instead placed
     // automatically.
-    position x=3440 y=1440
+    position x=4880 y=1440
 }
 output "DP-3" {
     // Uncomment this line to disable this output.
@@ -149,7 +149,7 @@ output "DP-3" {
     // so to put another output directly adjacent to it on the right, set its x to 1920.
     // If the position is unset or results in an overlap, the output is instead placed
     // automatically.
-    position x=3440 y=0
+    position x=4880 y=0
 }
 output "HDMI-A-1" {
     // Uncomment this line to disable this output.
@@ -182,7 +182,7 @@ output "HDMI-A-1" {
     // so to put another output directly adjacent to it on the right, set its x to 1920.
     // If the position is unset or results in an overlap, the output is instead placed
     // automatically.
-    position x=0 y=500
+    position x=3440 y=727
 }
 
 // Settings that influence how windows are positioned and sized.
@@ -354,8 +354,8 @@ spawn-at-startup "nm-applet"
 spawn-sh-at-startup "~/.config/hypr/gtksettings.sh"
 spawn-sh-at-startup "import-gsettings"
 spawn-sh-at-startup "/usr/bin/streamdeck -n"
-// spawn-at-startup "steam"
-// spawn-at-startup "spotify"
+spawn-at-startup "steam"
+spawn-at-startup "spotify"
 spawn-at-startup "vesktop"
 spawn-at-startup "firefox-developer-edition"
 spawn-at-startup "thunderbird"
@@ -396,10 +396,24 @@ animations {
 // Find more information on the wiki:
 // https://yalter.github.io/niri/Configuration:-Window-Rules
 
-workspace "dev"
-workspace "web"
-workspace "chat"
-workspace "email"
+workspace "dev" {
+  open-on-output "DP-2"
+}
+workspace "web" {
+  open-on-output "DP-3"
+}
+workspace "chat" {
+  open-on-output "HDMI-A-1"
+}
+workspace "email" {
+  open-on-output "DP-3"
+}
+workspace "steam" {
+  open-on-output "DP-2"
+}
+workspace "game" {
+  open-on-output "DP-2"
+}
 
 window-rule {
   match app-id=r#"kitty"#
@@ -423,6 +437,11 @@ window-rule {
   match app-id=r#"vesktop"#
   open-on-workspace "chat"
 }
+window-rule {
+  match app-id=r#"spotify"#
+  open-on-workspace "chat"
+}
+
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
 window-rule {
@@ -480,20 +499,21 @@ binds {
 
     Mod+Q repeat=false { close-window; }
 
+    Mod+Shift+Space { toggle-window-floating;}
     Mod+H     { focus-column-left; }
     Mod+J     { focus-window-down; }
     Mod+K     { focus-window-up; }
     Mod+L     { focus-column-right; }
 
-    // Mod+Shift+J     { move-window-down; }
-    // Mod+Shift+K     { move-window-up; }
-    // Mod+Shift+L     { move-window-right; }
-    // Mod+Shift+H     { move-window-left; }
+    Mod+Shift+J     { move-window-down; }
+    Mod+Shift+K     { move-window-up; }
+    Mod+Shift+L     { move-column-right; }
+    Mod+Shift+H     { move-column-left; }
 
-    // Mod+Shift+Ctrl+J     { move-window-down-or-to-workspace-down; }
-    // Mod+Shift+Ctrl+K     { move-window-up-or-to-workspace-up; }
-    // Mod+Shift+Ctrl+L     { move-window-down-or-to-workspace-right; }
-    // Mod+Shift+Ctrl+H     { move-window-up-or-to-workspace-left; }
+    Mod+Shift+Ctrl+J     { move-window-down-or-to-workspace-down; }
+    Mod+Shift+Ctrl+K     { move-window-up-or-to-workspace-up; }
+    Mod+Shift+Ctrl+L     { move-column-right-or-to-monitor-right; }
+    Mod+Shift+Ctrl+H     { move-column-left-or-to-monitor-left; }
 
 
     // You can bind mouse wheel scroll ticks using the following syntax.

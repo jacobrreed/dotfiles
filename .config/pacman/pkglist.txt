@@ -138,6 +138,7 @@ neovim
 network-manager-applet
 nfs-utils
 nikto
+niri-git
 nmap
 nomacs
 noto-fonts-cjk

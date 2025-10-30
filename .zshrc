@@ -338,6 +338,9 @@ fi
 if command -v fastfetch &> /dev/null; then
   fastfetch
 fi
+if command -v cmake &> /dev/null && command -v ninja &> /dev/null; then
+  alias cmakeninja='cmake -S . -B build -G Ninja'
+fi
 
 #  _____            _    ___     ____                           
 # | ____|_   ____ _| |  ( _ )   / ___|  ___  _   _ _ __ ___ ___ 
@@ -366,9 +369,6 @@ if [ -z $SSH_AGENT_PID ] && [ -z $SSH_TTY ]; then  # if no agent & not in ssh
   eval `ssh-agent -s` > /dev/null
 fi
 
-# if CMD defined run
-[[ -n $CMD ]] &&
-  eval "$CMD"
 
 # Uncomment to profile
 # zprof
