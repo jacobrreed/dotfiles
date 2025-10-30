@@ -1,0 +1,15 @@
+#AutoRaise config file
+pollMillis=50
+delay=1
+focusDelay=250
+warpX=0.5
+warpY=0.1
+scale=2.5
+altTaskSwitcher=false
+ignoreSpaceChanged=false
+invertIgnoreApps=false
+ignoreApps="Slack"
+ignoreTitles=""
+stayFocusedBundleIds="com.apple.SecurityAgent,com.cisco.anyconnect.gui"
+disableKey="control"
+mouseDelta=0.1
