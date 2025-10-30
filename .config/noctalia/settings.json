@@ -101,18 +101,6 @@
                     "id": "Tray"
                 },
                 {
-                    "icon": "brand-openvpn",
-                    "id": "CustomButton",
-                    "leftClickExec": "nmcli c up proton",
-                    "middleClickExec": "bash -c \"notify-send $(curl ifconfig.me)\"",
-                    "parseJson": false,
-                    "rightClickExec": "nmcli c down proton",
-                    "textCollapse": "",
-                    "textCommand": "bash -c \"~/.config/noctalia/vpn.sh\"",
-                    "textIntervalMs": 10000,
-                    "textStream": false
-                },
-                {
                     "icon": "screen-share",
                     "id": "CustomButton",
                     "leftClickExec": "~/.config/hypr/screen-toggle.sh on",
@@ -357,17 +345,17 @@
             {
                 "directory": "/home/neonvoid/pics/vertical",
                 "name": "HDMI-A-1",
-                "wallpaper": "/home/neonvoid/pics/vertical/yhi2zdknv6741.png"
+                "wallpaper": "/home/neonvoid/pics/vertical/catbiker.jpg"
             },
             {
                 "directory": "/home/neonvoid/pics",
                 "name": "DP-2",
-                "wallpaper": "/home/neonvoid/pics/shadowsoftheerdtree.jpg"
+                "wallpaper": "/home/neonvoid/pics/cyberpunk-edgerunners.jpg"
             },
             {
                 "directory": "/home/neonvoid/pics",
                 "name": "DP-3",
-                "wallpaper": "/home/neonvoid/pics/vk1et87trlif1.jpeg"
+                "wallpaper": "/home/neonvoid/pics/facinggod.jpg"
             },
             {
                 "directory": "/home/neonvoid/pics",
